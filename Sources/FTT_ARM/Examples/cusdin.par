@@ -1,0 +1,16 @@
+tmax=100
+restart=1
+tplot=2
+maxLevel=8
+maxNumberOfOcts=20000
+Lx=1.0
+Ly=1.0
+xc=0.5
+yc=0.25
+radius=0.1
+yc=0.0
+radius=0.2
+xShock=0.28
+nbPropagation=3
+iBalance=1
+

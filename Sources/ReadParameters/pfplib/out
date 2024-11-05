@@ -1,0 +1,43 @@
+cc -O2 -I.   -c -o pfplib.o pfplib.c
+pfplib.c:19:1: warning: return type defaults to ‘int’ [-Wimplicit-int]
+   19 | main(int argc, char *argv[])
+      | ^~~~
+pfplib.c: In function ‘main’:
+pfplib.c:22:3: warning: ‘return’ with no value, in function returning non-void
+   22 |   return;
+      |   ^~~~~~
+pfplib.c:19:1: note: declared here
+   19 | main(int argc, char *argv[])
+      | ^~~~
+pfplib.c: In function ‘getPars’:
+pfplib.c:47:6: warning: implicit declaration of function ‘sfetch’ [-Wimplicit-function-declaration]
+   47 |   if(sfetch("in",infilename))
+      |      ^~~~~~
+pfplib.c:57:7: warning: implicit declaration of function ‘isapipe’ [-Wimplicit-function-declaration]
+   57 |   if (isapipe(fileno(stdout)))
+      |       ^~~~~~~
+pfplib.c:59:31: warning: implicit declaration of function ‘getpid’ [-Wimplicit-function-declaration]
+   59 |     sprintf(outname,"/tmp/%d",getpid());
+      |                               ^~~~~~
+pfplib.c:86:3: warning: implicit declaration of function ‘MAIN’ [-Wimplicit-function-declaration]
+   86 |   MAIN(argc,argv);
+      |   ^~~~
+pfplib.c:75:7: warning: ignoring return value of ‘fscanf’, declared with attribute warn_unused_result [-Wunused-result]
+   75 |       fscanf(datapathfile,"datapath=%s",datapath);
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+pfplib.c:76:26: warning: ‘%s’ directive writing up to 159 bytes into a region of size between 1 and 160 [-Wformat-overflow=]
+   76 |       sprintf(outname,"%s%s",datapath,outfilename);
+      |                          ^~           ~~~~~~~~~~~
+In file included from /usr/include/stdio.h:867,
+                 from pfplib.c:4:
+/usr/include/x86_64-linux-gnu/bits/stdio2.h:36:10: note: ‘__builtin___sprintf_chk’ output between 1 and 319 bytes into a destination of size 160
+   36 |   return __builtin___sprintf_chk (__s, __USE_FORTIFY_LEVEL - 1,
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+   37 |       __bos (__s), __fmt, __va_arg_pack ());
+      |       ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+MACHINE =
+ar cr libpfp.a ffetch.o getpars.o ifetch.o  isapipe.o  sfetch.o  alloc.o redin.o dfetch.o pfplib.o nrutil.o
+cp nrutil.h /home/jl305/include/nrutil.h
+cp pfplib.h /home/jl305/include/
+mv libpfp.a /home/jl305/lib
+cp checkMemory.h /home/jl305/include/
