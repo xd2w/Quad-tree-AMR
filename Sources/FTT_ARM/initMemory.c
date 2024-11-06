@@ -3,49 +3,50 @@
 #include "ftt.h"
 #include "nrutil.h"
 
-/* 
- Four adjacent cells form an Oct. 
- Initialize the first Oct which is composed of the first four cells. 
- This Oct is at level 1.  Each cell is given coordinates at the 
+/*
+ Four adjacent cells form an Oct.
+ Initialize the first Oct which is composed of the first four cells.
+ This Oct is at level 1.  Each cell is given coordinates at the
  south-west corner but no child Oct: cellChOct[0,1,2,3] = 0.
  The first Oct will never have parent cell: octPrCell[0] is not defined.
 */
 
+// allocate memory for the FTT data structure with maxsize
 void initMemory(void)
 {
   int iCell, iLv;
   Real dx, dy;
 
-/* global parameters defined FTT */
-  maxNumberOfCells = maxNumberOfOcts*cellNumberInOct;
+  /* global parameters defined FTT */
+  maxNumberOfCells = maxNumberOfOcts * cellNumberInOct;
   dxCell = dvector(0, maxLevel);
   dyCell = dvector(0, maxLevel);
 #if (ocTree) /* 3D */
   dzOct = dvector(0, maxLevel);
 #endif
 
-/* ftt oct variables */
+  /* ftt oct variables */
   octFlag = ivector(0, maxNumberOfOcts);
   octMark = ivector(0, maxNumberOfOcts);
   octLv = ivector(0, maxNumberOfOcts);
   octPrCell = ivector(0, maxNumberOfOcts);
-  octNb = imatrix(0, nbNumberOfOct-1, 0, maxNumberOfOcts);
-/* ftt cell variable */
+  octNb = imatrix(0, nbNumberOfOct - 1, 0, maxNumberOfOcts);
+  /* ftt cell variable */
   cellChOct = ivector(0, maxNumberOfCells);
   cellFlag = ivector(0, maxNumberOfCells);
   cellMark = ivector(0, maxNumberOfCells);
   cellType = ivector(0, maxNumberOfCells);
   cellHilb = ivector(0, maxNumberOfCells);
-  cellNb = imatrix(0, nbNumberOfOct-1, 0, maxNumberOfCells);
+  cellNb = imatrix(0, nbNumberOfOct - 1, 0, maxNumberOfCells);
 
-/* geometric quantities of cell */
+  /* geometric quantities of cell */
   xCell = dvector(0, maxNumberOfCells);
   yCell = dvector(0, maxNumberOfCells);
 #if (ocTree) /* 3D */
   zCell = dvector(0, maxNumberOfCells);
 #endif
 
-/* cell related physical quantities */
+  /* cell related physical quantities */
   u = dvector(0, maxNumberOfCells);
   v = dvector(0, maxNumberOfCells);
   p = dvector(0, maxNumberOfCells);

@@ -5,6 +5,7 @@
 extern void splitFlagCellsAtLevel(int level);
 extern void oct_PrCellFlagAtLvel(int level);
 
+// flags the interface cells and refines the flaged cells
 void reMesh(int itNb)
 {
   int level;

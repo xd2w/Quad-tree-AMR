@@ -23,11 +23,13 @@ int main(int argc, char *argv[])
   tplot = 1;
   ifetch("tmax", &tmax);
   ifetch("tplot", &tplot);
-  //  plotFTT(0);
-  //  plotSFC(0);
-  initVOF(0);
-  // plotFTTInterf(0);
+  plotFTT(0);
+  plotSFC(0);
+  // initVOF(0);
+  plotFTTInterf(0);
   // seekCell(0,.343, .473); printf("vof %g\n", vof[55]); exit(1);
+
+  exit(1);
 
   for (itNb = 0; itNb <= tmax; itNb++)
   {

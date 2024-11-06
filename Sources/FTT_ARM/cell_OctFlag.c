@@ -124,7 +124,7 @@ void cell_OctFlagAtLevel(int level)
   }
 }
 
-// flagg all prCells of octs
+// flags all prCells of octs
 void oct_PrCellFlag(void)
 {
   int iOct, prCell;
@@ -135,7 +135,7 @@ void oct_PrCellFlag(void)
   }
 }
 
-// flagg all prCells of octs at a given level
+// flags all prCells of octs at a given level
 void oct_PrCellFlagAtLvel(int level)
 {
   int iOct, prCell;
