@@ -31,27 +31,25 @@ void initPotential(int itNb)
     return;
 }
 
-void initCircle(int resolution)
+void initCircle()
 {
     Real xc, yc, radius, pi, theta;
     xc = 0.5;
     yc = 0.5;
     radius = 0.2;
+    numberOfCirclePoints = 20;
 
     pi = 3.14159265;
-    theta = 0;
+    theta = 0.02;
 
     dfetch("xc", &xc);
     dfetch("yc", &yc);
     dfetch("radius", &radius);
-    if (resolution <= maxNumberOfCirclePoints)
+    ifetch("numberOfCirclePoints", &numberOfCirclePoints);
+    if (numberOfCirclePoints > maxNumberOfCirclePoints)
     {
-        numberOfCirclePoints = resolution;
-    }
-    else
-    {
-        printf("initial resolution is too hight\n");
-        exit(1);
+        numberOfCirclePoints = maxNumberOfCirclePoints;
+        printf("numberOfCirclePoints too high, capped to max");
     }
 
     for (int i = 0; i < numberOfCirclePoints; i++)

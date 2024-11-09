@@ -25,8 +25,8 @@ void reMesh(int itNb)
     cell_OctFlagAtLevel(level);               // flagging Octs of the flaged cell
     setCellInt1DZeroAtLevel(cellFlag, level); // wipe flag of all cells
     propagateOctFlagAtLevel(level);           // propagating the flag to neighbouring cells
-    // propagateOctFlagAtLevel(level); // im gussing this was here to make refineing less sudden
-    splitFlagCellsAtLevel(level - 1); // split flagged cells
+    propagateOctFlagAtLevel(level);           // im gussing this was here to make refineing less sudden
+    splitFlagCellsAtLevel(level - 1);         // split flagged cells
     binCollectionAtLevel(level);
     oct_PrCellFlagAtLvel(level);
     establishNb();

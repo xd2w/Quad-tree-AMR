@@ -5,7 +5,7 @@
 
 void plotFTTInterf(int ndata)
 {
-   int iCell, i, i1, i2, i3, index;
+   int iCell, iOct, iLv, i, i1, i2, i3, index;
    Real fraction, left, right, top, bottom, x, y;
    char fname[] = "DATA/intf.000";
    FILE *finterf;
@@ -27,15 +27,18 @@ void plotFTTInterf(int ndata)
    {
       if (cellChOct[iCell] == 0)
       {
+         iOct = iCell / cellNumberInOct;
+         iLv = octLv[iOct];
+
          left = xCell[iCell];
          bottom = xCell[iCell];
-         right = left + dxCell[iCell] * 2;
-         top = bottom + dyCell[iCell] * 2;
+         right = left + dxCell[iLv];
+         top = bottom + dyCell[iLv];
 
          for (index = 0; index < 200; index++)
          {
             x = xCircle[index];
-            y = xCircle[index];
+            y = yCircle[index];
 
             if (((left < x) && (x < right)) && ((bottom < y) && (y < top)))
             {

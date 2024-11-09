@@ -167,11 +167,12 @@ extern void setOctInt1DZero(Int1D val);
 extern void reMesh(int itNb);
 
 extern void initPotential(int itNb);
-extern void initCircle(int resolution);
+extern void initCircle();
 extern void computePotential(int iCell, int itNb);
 extern Real computeVX(Real x, Real y, Real gamma);
 extern Real computeVY(Real x, Real y, Real gamma);
 extern void propagateCircles(float dt);
 extern void stream();
+extern void plotCircle(int ndata);
 
 #endif
