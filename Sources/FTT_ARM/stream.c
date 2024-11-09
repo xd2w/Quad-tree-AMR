@@ -9,12 +9,14 @@ void stream(void)
 {
     printf("streaming\n");
     initPotential(0);
-    propagateCircles(1);
-    // flagInterfCells()
-    propagateFlag(0);
-    propagateFlag(0);
-    propagateFlag(1);
-    propagateFlag(1);
+    propagateCircles(0.01);
+    flagInterfCells();
+
+    // flagInterfCells();
+    // propagateFlag(0);
+    // propagateFlag(0);
+    // propagateFlag(1);
+    // propagateFlag(1);
 }
 
 // flag cells at the interface of 2 fluids
@@ -56,16 +58,20 @@ void flagInterfCells(void)
 
 void propagateCircles(float dt)
 {
-    int index, iCell;
+    int index, iCell, iOct, iLv;
     float x, y, left, right, top, bottom;
     for (iCell = 0; iCell < numberOfCells; iCell++)
     {
-        left = xCell[iCell];
-        bottom = xCell[iCell];
-        right = left + dxCell[iCell] * 2;
-        top = bottom + dyCell[iCell] * 2;
 
-        for (index = 0; index < 200; index++)
+        iOct = iCell / cellNumberInOct;
+        iLv = octLv[iOct];
+
+        left = xCell[iCell];
+        bottom = yCell[iCell];
+        right = left + dxCell[iLv];
+        top = bottom + dyCell[iLv];
+
+        for (index = 0; index < numberOfCirclePoints; index++)
         {
             x = xCircle[index];
             y = yCircle[index];
@@ -73,8 +79,8 @@ void propagateCircles(float dt)
             if (((left < x) && (x < right)) && ((bottom < y) && (y < top)))
             {
                 cellFlag[iCell] = 1;
-                xCircle[index] += dt * vx[index];
-                yCircle[index] += dt * vy[index];
+                xCircle[index] += dt * vx[iCell];
+                yCircle[index] += dt * vy[iCell];
             }
         }
     }

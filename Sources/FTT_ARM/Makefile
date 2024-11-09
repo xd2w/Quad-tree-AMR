@@ -11,7 +11,7 @@ ICBC = initialize.o initPotential.o computePotential.o markVOF.o initFTT_Yung.o 
 #ICBC = initialize.o initVOF.o computePotential.o markVOF.o initFTT_Dodd.o refineFTT_Dodd.o bcOctTree_Dodd.o
 ICBC = initialize.o initPotential.o computePotential.o initFTT_Yung.o refineFTT_Yung.o bcOctTree_Yung.o
 
-IO  = readData.o plotFTTOct.o plotFTT.o plotSFC.o printFTTCell.o drawNgbCells.o drawChCells.o drawPrCells.o saveFTT.o readFTT.o initMemory.o computeCoord.o
+IO  = readData.o plotFTTOct.o plotFTT.o plotSFC.o printFTTCell.o drawNgbCells.o drawChCells.o drawPrCells.o saveFTT.o readFTT.o initMemory.o computeCoord.o plotCircle.o
 
 OBJECTS = $(FTT_ARM) $(ICBC) $(IO)
 CFLAGS= -O2  -I$(HOME)/include

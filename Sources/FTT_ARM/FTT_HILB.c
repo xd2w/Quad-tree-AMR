@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
     // plotFTT(0);
     // plotSFC(0);
     initPotential(0);
-    initCircle(20);
+    initCircle();
     // plotFTTInterf(0);
     // seekCell(0,.343, .473); printf("vof %g\n", vof[55]); exit(1);
 
@@ -44,7 +44,8 @@ int main(int argc, char *argv[])
             plotFTT(ndata);
             plotSFC(ndata);
             plotHilbertSFC(ndata);
-            plotFTTInterf(ndata);
+            // plotFTTInterf(ndata);
+            plotCircle(ndata);
         }
         // plic();          // calculating VOF + Flagging cells
         stream();
