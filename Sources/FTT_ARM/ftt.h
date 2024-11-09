@@ -6,27 +6,27 @@
 
 /* ftt tree relations */
 #if (ocTree) /* 3D */
-# define cellNumberInOct     8
-# define nbNumberOfOct       6
-#else  /* 2D */
-# define cellNumberInOct     4
-# define nbNumberOfOct       4
-#endif 
+#define cellNumberInOct 8
+#define nbNumberOfOct 6
+#else /* 2D */
+#define cellNumberInOct 4
+#define nbNumberOfOct 4
+#endif
 
 static int hilbert_map[4][4] =
-{
-  0, 2, 3, 1, // H
-  0, 1, 3, 2, // A
-  3, 2, 0, 1, // B
-  3, 1, 0, 2  // C
+    {
+        0, 2, 3, 1, // H
+        0, 1, 3, 2, // A
+        3, 2, 0, 1, // B
+        3, 1, 0, 2  // C
 };
 
 static int hilbert_production[4][4] =
-{
-  1, 2, 0, 0, // H -> ABHH
-  0, 1, 3, 1, // A -> HACA
-  2, 0, 2, 3, // B -> BHBC
-  3, 3, 1, 2  // C -> CCAB
+    {
+        1, 2, 0, 0, // H -> ABHH
+        0, 1, 3, 1, // A -> HACA
+        2, 0, 2, 3, // B -> BHBC
+        3, 3, 1, 2  // C -> CCAB
 };
 
 extern int maxLevel, minLevel, maxNumberOfOcts, maxNumberOfCells;
@@ -53,23 +53,29 @@ extern Int1D cellHilb;
 extern Real1D xCell;
 extern Real1D yCell;
 #if (ocTree) /* 3D */
-  extern Real1D zCell;
+extern Real1D zCell;
 #endif
 
 /* physical quantities */
 // velocity at cell corners
-extern Real1D u;
-extern Real1D v;
-extern Real1D w;
+// extern Real1D u;
+// extern Real1D v;
+// extern Real1D w;
 // velocity flux at cell faces
-extern Real1D U;
-extern Real1D V;
-extern Real1D W;
+// extern Real1D U;
+// extern Real1D V;
+// extern Real1D W;
 // pressure at cell centers
-extern Real1D p;
-extern Real1D dive;
-extern Real1D vof;
-extern Real1D work1, work2, work3;
+// extern Real1D p;
+// extern Real1D dive;
+// extern Real1D vof;
+// extern Real1D work1, work2, work3;
+extern Real1D vx;
+extern Real1D vy;
+extern Real1D xCircle;
+extern Real1D yCircle;
+extern int numberOfCirclePoints;
+extern int maxNumberOfCirclePoints;
 
 extern void initFTT(void);
 extern void initMemory(void);
@@ -123,7 +129,7 @@ extern void binCollection(void);
 extern void binCollectionAtLevel(int level);
 extern void drawNgbCells(int iCell);
 extern void drawPrCells(int iCell);
-extern void drawChCells(int iCell, FILE* fp);
+extern void drawChCells(int iCell, FILE *fp);
 extern int seekCell(int iCell, Real x, Real y);
 extern void checkOctTree(void);
 extern void establishNb(void);
@@ -144,11 +150,11 @@ extern void plotCellInterf(int iCell, FILE *fp);
 extern void printCellNgbVOF(int iCell);
 extern void octTreeXSwp(int iCell);
 extern void octTreeYSwp(int iCell);
-extern Real VOL2(Real mx,Real mz,Real alpha,Real b);
+extern Real VOL2(Real mx, Real mz, Real alpha, Real b);
 extern void plic(void);
 extern void computeXVOF(void);
 extern void computeYVOF(void);
-extern void  copyCellInt1D(Int1D from, Int1D to);
+extern void copyCellInt1D(Int1D from, Int1D to);
 extern void copyOctInt1D(Int1D from, Int1D to);
 extern void flagInterfCells(void);
 extern void propagateFlag(int dir);
@@ -159,5 +165,13 @@ extern void setCellInt1DZeroAtLevel(Int1D val, int level);
 extern void setOctInt1DZeroAtLevel(Int1D val, int level);
 extern void setOctInt1DZero(Int1D val);
 extern void reMesh(int itNb);
+
+extern void initPotential(int itNb);
+extern void initCircle(int resolution);
+extern void computePotential(int iCell, int itNb);
+extern Real computeVX(Real x, Real y, Real gamma);
+extern Real computeVY(Real x, Real y, Real gamma);
+extern void propagateCircles(float dt);
+extern void stream();
 
 #endif

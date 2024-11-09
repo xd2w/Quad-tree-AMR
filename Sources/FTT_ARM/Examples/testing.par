@@ -1,0 +1,14 @@
+tmax=5
+tplot=1
+minLevel=1
+maxLevel=6
+maxNumberOfOcts=20000
+Lx=1.0
+Ly=1.0
+xPoint=0
+yPoint=0
+xc=0.25
+yc=0.25
+radius=0.2
+iBalance=1
+

@@ -47,16 +47,21 @@ void initMemory(void)
 #endif
 
   /* cell related physical quantities */
-  u = dvector(0, maxNumberOfCells);
-  v = dvector(0, maxNumberOfCells);
-  p = dvector(0, maxNumberOfCells);
-  U = dvector(0, maxNumberOfCells);
-  V = dvector(0, maxNumberOfCells);
-  dive = dvector(0, maxNumberOfCells);
-  vof = dvector(0, maxNumberOfCells);
-  work1 = dvector(0, maxNumberOfCells);
-  work2 = dvector(0, maxNumberOfCells);
-  work3 = dvector(0, maxNumberOfCells);
+  // u = dvector(0, maxNumberOfCells);
+  // v = dvector(0, maxNumberOfCells);
+  // p = dvector(0, maxNumberOfCells);
+  // U = dvector(0, maxNumberOfCells);
+  // V = dvector(0, maxNumberOfCells);
+  // dive = dvector(0, maxNumberOfCells);
+  // vof = dvector(0, maxNumberOfCells);
+  // work1 = dvector(0, maxNumberOfCells);
+  // work2 = dvector(0, maxNumberOfCells);
+  // work3 = dvector(0, maxNumberOfCells);
+
+  vx = dvector(0, maxNumberOfCells);
+  vy = dvector(0, maxNumberOfCells);
+  xCircle = dvector(0, maxNumberOfCirclePoints);
+  yCircle = dvector(0, maxNumberOfCirclePoints);
 
 #if (ocTree) /* 3D */
   w = dvector(0, maxNumberOfCells);

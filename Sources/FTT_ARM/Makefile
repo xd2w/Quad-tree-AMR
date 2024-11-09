@@ -1,11 +1,15 @@
 
 #   These are the objects required for the ftt code
 BALANCE = balanceFTT.o balanceFTTxP.o balanceFTTxN.o balanceFTTyP.o balanceFTTyN.o
-FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag.o restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o plotFTTInterf.o plotCellInterf.o plic.o vol2.o octTreeXSwp.o octTreeYSwp.o reMesh.o
+# FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag.o restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o plotFTTInterf.o plotCellInterf.o stream.o vol2.o octTreeXSwp.o octTreeYSwp.o reMesh.o
 
-ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT.o refineFTT.o bcOctTree.o
-ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT_Yung.o refineFTT_Yung.o bcOctTree_Yung.o
-#ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT_Dodd.o refineFTT_Dodd.o bcOctTree_Dodd.o
+FTT_ARM = FTT_HILB.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag.o restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o stream.o reMesh.o plotFTTInterf.o plotCellInterf.o
+
+
+ICBC = initialize.o initPotential.o computePotential.o markVOF.o initFTT.o refineFTT.o bcOctTree.o
+ICBC = initialize.o initPotential.o computePotential.o markVOF.o initFTT_Yung.o refineFTT_Yung.o bcOctTree_Yung.o
+#ICBC = initialize.o initVOF.o computePotential.o markVOF.o initFTT_Dodd.o refineFTT_Dodd.o bcOctTree_Dodd.o
+ICBC = initialize.o initPotential.o computePotential.o initFTT_Yung.o refineFTT_Yung.o bcOctTree_Yung.o
 
 IO  = readData.o plotFTTOct.o plotFTT.o plotSFC.o printFTTCell.o drawNgbCells.o drawChCells.o drawPrCells.o saveFTT.o readFTT.o initMemory.o computeCoord.o
 
@@ -16,8 +20,8 @@ CFLAGS= -g  -I$(HOME)/include
 CLIB=  -L$(HOME)/lib -lpfp
 
 FTT_ARM: $(OBJECTS) $(LIB)
-	$(CC) $(CFLAGS) -o FTT_ARM $(OBJECTS)  $(CLIB) -lm
-	mv FTT_ARM Examples
+	$(CC) $(CFLAGS) -o FTT_HILB $(OBJECTS)  $(CLIB) -lm
+	mv FTT_HILB Examples
 
 
 tousb:

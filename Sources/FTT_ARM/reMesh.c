@@ -11,17 +11,18 @@ void reMesh(int itNb)
   int level;
 
   // previous flag is cleared
-  setCellInt1DZero(cellFlag);
+  // setCellInt1DZero(cellFlag);
   setOctInt1DZero(octFlag);
 
   // interface cells are flaged
+  printf("calling flag interface");
   flagInterfCells();
 
   //  for(level=maxLevel; level>maxLevel-1; level--)
   for (level = maxLevel; level > minLevel; level--)
   {
     setOctInt1DZeroAtLevel(octFlag, level);   // making sure no flag from previous level is carried over?
-    cell_OctFlagAtLevel(level);               // fagging Octs of the flaged cell
+    cell_OctFlagAtLevel(level);               // flagging Octs of the flaged cell
     setCellInt1DZeroAtLevel(cellFlag, level); // wipe flag of all cells
     propagateOctFlagAtLevel(level);           // propagating the flag to neighbouring cells
     // propagateOctFlagAtLevel(level); // im gussing this was here to make refineing less sudden
@@ -31,7 +32,7 @@ void reMesh(int itNb)
     establishNb();
     checkNb();
   }
-  restrField(vof);
+  // restrField(vof);
   /*
     drawNgbCells(510);
     printCellNgbVOF(510);

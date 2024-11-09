@@ -76,10 +76,20 @@ void binCollectionAtLevel(int level)
         xCell[octCell + 3] = xCell[iCell + 3];
         yCell[octCell + 3] = yCell[iCell + 3];
         // copy vof
-        vof[octCell] = vof[iCell];
-        vof[octCell + 1] = vof[iCell + 1];
-        vof[octCell + 2] = vof[iCell + 2];
-        vof[octCell + 3] = vof[iCell + 3];
+        // vof[octCell] = vof[iCell];
+        // vof[octCell + 1] = vof[iCell + 1];
+        // vof[octCell + 2] = vof[iCell + 2];
+        // vof[octCell + 3] = vof[iCell + 3];
+
+        vx[octCell + 0] = vx[iCell + 0];
+        vx[octCell + 1] = vx[iCell + 1];
+        vx[octCell + 2] = vx[iCell + 2];
+        vx[octCell + 3] = vx[iCell + 3];
+
+        vy[octCell + 0] = vy[iCell + 0];
+        vy[octCell + 1] = vy[iCell + 1];
+        vy[octCell + 2] = vy[iCell + 2];
+        vy[octCell + 3] = vy[iCell + 3];
 
         cellFlag[octCell] = cellFlag[iCell];
         cellFlag[octCell + 1] = cellFlag[iCell + 1];
