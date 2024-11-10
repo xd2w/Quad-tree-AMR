@@ -3,14 +3,17 @@
 #include <math.h>
 #include "ftt.h"
 #include "nrutil.h"
+#include "box.h"
+#include "pfplib.h"
 
 // calculated VOF of flagged cells in both x and y dirs
 void stream(void)
 {
     printf("streaming\n");
     initPotential(0);
-    propagateCircles(0.01);
-    flagInterfCells();
+    // propagateCircles(0.001);
+    propagateCirclesTruePosition(0.01);
+    // flagInterfCells();
 
     // flagInterfCells();
     // propagateFlag(0);
@@ -41,12 +44,12 @@ void flagInterfCells(void)
             // printf("%f, %f\n", dxCell[iLv], dyCell[iLv]);
             // exit(1);
 
-            for (index = 0; index < 200; index++)
+            for (index = 0; index < numberOfCirclePoints; index++)
             {
                 x = xCircle[index];
                 y = yCircle[index];
 
-                if (((left < x) && (x < right)) && ((bottom < y) && (y < top)))
+                if (((left <= x) && (x < right)) && ((bottom <= y) && (y < top)))
                 {
                     cellFlag[iCell] = 1;
                     printf("cell %i flagged\n", iCell);
@@ -83,6 +86,38 @@ void propagateCircles(float dt)
                 yCircle[index] += dt * vy[iCell];
             }
         }
+    }
+}
+
+void propagateCirclesTruePosition(float dt)
+{
+    float x, y, gam, vx, vy;
+
+    gam = 5;
+    ffetch("circulation", &gam);
+    ffetch("dt", &dt);
+
+    for (int index = 0; index < numberOfCirclePoints; index++)
+    {
+        x = xCircle[index];
+        y = yCircle[index];
+
+        vx = computeVX(x, y, gam);
+        vy = computeVY(x, y, gam);
+
+        // for image method to create a rough boundary around the domain
+        vx += computeVX(x, y - 2 * Ly, gam);
+        vx += computeVX(x, y + 2 * Ly, gam);
+        vx += computeVX(x - 2 * Lx, y, gam);
+        vx += computeVX(x + 2 * Lx, y, gam);
+
+        vy += computeVY(x, y - 2 * Ly, gam);
+        vy += computeVY(x, y + 2 * Ly, gam);
+        vy += computeVY(x - 2 * Lx, y, gam);
+        vy += computeVY(x + 2 * Lx, y, gam);
+
+        xCircle[index] += dt * vx;
+        yCircle[index] += dt * vy;
     }
 }
 

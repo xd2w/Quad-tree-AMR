@@ -38,8 +38,8 @@ void computePotential(int iCell, int itNb)
     dy = dyCell[cLv];
     printf("dx %g dy %g\n", dx, dy);
 
-    x = xCell[iCell] + dx;
-    y = yCell[iCell] + dy;
+    x = xCell[iCell] + dx*0.5;
+    y = yCell[iCell] + dy*0.5;
 
     vx[iCell] = computeVX(x, y, circulation);
     vy[iCell] = computeVY(x, y, circulation);
