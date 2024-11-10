@@ -23,6 +23,42 @@ void stream(void)
 }
 
 // flag cells at the interface of 2 fluids
+// void flagInterfCells(void)
+// {
+//     printf("Flagging cells\n");
+//     int iCell, iOct, iLv, index;
+//     Real fraction, left, right, top, bottom, x, y;
+//     for (iCell = 0; iCell < numberOfCells; iCell++)
+//     {
+//         cellFlag[iCell] = 0;
+//         iOct = iCell / cellNumberInOct;
+//         iLv = octLv[iOct];
+//         if (iLv == maxLevel)
+//         {
+//             left = xCell[iCell];
+//             bottom = yCell[iCell];
+//             right = left + dxCell[iLv];
+//             top = bottom + dyCell[iLv];
+
+//             // printf("%f, %f, %f, %f\n", left, right, top, bottom);
+//             // printf("%f, %f\n", dxCell[iLv], dyCell[iLv]);
+//             // exit(1);
+
+//             for (index = 0; index < numberOfCirclePoints; index++)
+//             {
+//                 x = xCircle[index];
+//                 y = yCircle[index];
+
+//                 if (((left <= x) && (x < right)) && ((bottom <= y) && (y < top)))
+//                 {
+//                     cellFlag[iCell] = 1;
+//                     printf("cell %i flagged\n", iCell);
+//                 }
+//             }
+//         }
+//     }
+// }
+
 void flagInterfCells(void)
 {
     printf("Flagging cells\n");
@@ -33,29 +69,29 @@ void flagInterfCells(void)
         cellFlag[iCell] = 0;
         iOct = iCell / cellNumberInOct;
         iLv = octLv[iOct];
-        if (iLv == maxLevel)
+        // if (iLv == maxLevel)
+        // {
+        left = xCell[iCell];
+        bottom = yCell[iCell];
+        right = left + dxCell[iLv];
+        top = bottom + dyCell[iLv];
+
+        // printf("%f, %f, %f, %f\n", left, right, top, bottom);
+        // printf("%f, %f\n", dxCell[iLv], dyCell[iLv]);
+        // exit(1);
+
+        for (index = 0; index < numberOfCirclePoints; index++)
         {
-            left = xCell[iCell];
-            bottom = yCell[iCell];
-            right = left + dxCell[iLv];
-            top = bottom + dyCell[iLv];
+            x = xCircle[index];
+            y = yCircle[index];
 
-            // printf("%f, %f, %f, %f\n", left, right, top, bottom);
-            // printf("%f, %f\n", dxCell[iLv], dyCell[iLv]);
-            // exit(1);
-
-            for (index = 0; index < numberOfCirclePoints; index++)
+            if (((left <= x) && (x < right)) && ((bottom <= y) && (y < top)))
             {
-                x = xCircle[index];
-                y = yCircle[index];
-
-                if (((left <= x) && (x < right)) && ((bottom <= y) && (y < top)))
-                {
-                    cellFlag[iCell] = 1;
-                    printf("cell %i flagged\n", iCell);
-                }
+                cellFlag[iCell] = 1;
+                // printf("cell %i flagged\n", iCell);
             }
         }
+        // }
     }
 }
 
@@ -120,6 +156,48 @@ void propagateCirclesTruePosition(float dt)
         yCircle[index] += dt * vy;
     }
 }
+// void propagateCirclesTruePosition(float dt)
+// {
+//     float x, y, xp, yp, gam, vx, vy;
+//     int queue[maxNumberOfCirclePoints];
+//     int queueStart = 0;
+//     int queueEnd = 0;
+
+//     gam = 5;
+//     ffetch("circulation", &gam);
+//     ffetch("dt", &dt);
+
+//     for (int index = 0; index + 1 < numberOfCirclePoints + (queueEnd - queueStart); index++)
+//     {
+//         x = xCircle[index];
+//         y = yCircle[index];
+
+//         xp = xCircle[index + 1];
+//         yp = yCircle[index + 1];
+
+//         if ((x - xp) * (x - xp) + (y - xp) * (y - yp) > sqrt(2.0 * Ly * Lx) / (1 << (maxLevel)))
+//         {
+//             x, y = cubicSpine()
+//         }
+
+//         vx = computeVX(x, y, gam);
+//         vy = computeVY(x, y, gam);
+
+//         // for image method to create a rough boundary around the domain
+//         vx += computeVX(x, y - 2 * Ly, gam);
+//         vx += computeVX(x, y + 2 * Ly, gam);
+//         vx += computeVX(x - 2 * Lx, y, gam);
+//         vx += computeVX(x + 2 * Lx, y, gam);
+
+//         vy += computeVY(x, y - 2 * Ly, gam);
+//         vy += computeVY(x, y + 2 * Ly, gam);
+//         vy += computeVY(x - 2 * Lx, y, gam);
+//         vy += computeVY(x + 2 * Lx, y, gam);
+
+//         xCircle[index] += dt * vx;
+//         yCircle[index] += dt * vy;
+//     }
+// }
 
 // copy from one array to another
 void copyCellInt1D(Int1D from, Int1D to)
@@ -162,3 +240,8 @@ void propagateFlag(int dir)
         }
     }
 }
+
+// Real cubicSpine(Real x0, Real y0, Real x1, Real y1, Real x2, Real y2, Real x3, Real y3)
+// {
+
+// }

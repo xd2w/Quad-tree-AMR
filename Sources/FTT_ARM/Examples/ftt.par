@@ -1,5 +1,5 @@
-tmax=400
-tplot=4
+tmax=1000
+tplot=10
 minLevel=2
 maxLevel=8
 maxNumberOfOcts=20000
@@ -11,7 +11,7 @@ xPoint=.2
 yPoint=.72
 xc=0.35
 yc=0.70
-dt=0.005
+dt=0.01
 radius=0.2
 xShock=0.28
 iBalance=1
