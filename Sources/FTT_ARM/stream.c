@@ -9,17 +9,10 @@
 // calculated VOF of flagged cells in both x and y dirs
 void stream(void)
 {
-    printf("streaming\n");
-    initPotential(0);
+    // printf("streaming\n");
+    // initPotential(0);
     // propagateCircles(0.001);
     propagateCirclesTruePosition(0.01);
-    // flagInterfCells();
-
-    // flagInterfCells();
-    // propagateFlag(0);
-    // propagateFlag(0);
-    // propagateFlag(1);
-    // propagateFlag(1);
 }
 
 // flag cells at the interface of 2 fluids
@@ -127,10 +120,7 @@ void propagateCircles(float dt)
 
 void propagateCirclesTruePosition(float dt)
 {
-    float x, y, gam, vx, vy;
-
-    gam = 5;
-    ffetch("circulation", &gam);
+    float x, y, vx, vy;
     ffetch("dt", &dt);
 
     for (int index = 0; index < numberOfCirclePoints; index++)
@@ -138,19 +128,19 @@ void propagateCirclesTruePosition(float dt)
         x = xCircle[index];
         y = yCircle[index];
 
-        vx = computeVX(x, y, gam);
-        vy = computeVY(x, y, gam);
+        vx = computeVX(x, y);
+        vy = computeVY(x, y);
 
         // for image method to create a rough boundary around the domain
-        vx += computeVX(x, y - 2 * Ly, gam);
-        vx += computeVX(x, y + 2 * Ly, gam);
-        vx += computeVX(x - 2 * Lx, y, gam);
-        vx += computeVX(x + 2 * Lx, y, gam);
+        // vx += computeVX(x, y - 2 * Ly, gam);
+        // vx += computeVX(x, y + 2 * Ly, gam);
+        // vx += computeVX(x - 2 * Lx, y, gam);
+        // vx += computeVX(x + 2 * Lx, y, gam);
 
-        vy += computeVY(x, y - 2 * Ly, gam);
-        vy += computeVY(x, y + 2 * Ly, gam);
-        vy += computeVY(x - 2 * Lx, y, gam);
-        vy += computeVY(x + 2 * Lx, y, gam);
+        // vy += computeVY(x, y - 2 * Ly, gam);
+        // vy += computeVY(x, y + 2 * Ly, gam);
+        // vy += computeVY(x - 2 * Lx, y, gam);
+        // vy += computeVY(x + 2 * Lx, y, gam);
 
         xCircle[index] += dt * vx;
         yCircle[index] += dt * vy;

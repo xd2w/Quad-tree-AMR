@@ -7,6 +7,8 @@
 #include "box.h"
 #include "pfplib.h"
 
+#define pi 3.14159265
+
 void computePotential(int iCell, int itNb)
 {
     int iOct, cLv, i, count;
@@ -38,34 +40,34 @@ void computePotential(int iCell, int itNb)
     dy = dyCell[cLv];
     printf("dx %g dy %g\n", dx, dy);
 
-    x = xCell[iCell] + dx*0.5;
-    y = yCell[iCell] + dy*0.5;
+    x = xCell[iCell] + dx * 0.5;
+    y = yCell[iCell] + dy * 0.5;
 
-    vx[iCell] = computeVX(x, y, circulation);
-    vy[iCell] = computeVY(x, y, circulation);
+    vx[iCell] = computeVX(x, y);
+    vy[iCell] = computeVY(x, y);
 
     // for image method to create a rough boundary around the domain
-    vx[iCell] += computeVX(x, y - 2 * Ly, circulation);
-    vx[iCell] += computeVX(x, y + 2 * Ly, circulation);
-    vx[iCell] += computeVX(x - 2 * Lx, y, circulation);
-    vx[iCell] += computeVX(x + 2 * Lx, y, circulation);
+    // vx[iCell] += computeVX(x, y - 2 * Ly, circulation);
+    // vx[iCell] += computeVX(x, y + 2 * Ly, circulation);
+    // vx[iCell] += computeVX(x - 2 * Lx, y, circulation);
+    // vx[iCell] += computeVX(x + 2 * Lx, y, circulation);
 
-    vy[iCell] += computeVY(x, y - 2 * Ly, circulation);
-    vy[iCell] += computeVY(x, y + 2 * Ly, circulation);
-    vy[iCell] += computeVY(x - 2 * Lx, y, circulation);
-    vy[iCell] += computeVY(x + 2 * Lx, y, circulation);
+    // vy[iCell] += computeVY(x, y - 2 * Ly, circulation);
+    // vy[iCell] += computeVY(x, y + 2 * Ly, circulation);
+    // vy[iCell] += computeVY(x - 2 * Lx, y, circulation);
+    // vy[iCell] += computeVY(x + 2 * Lx, y, circulation);
 
     printf("calculating potential at (%g, %g), with (vx, vy) = (%f, %f)\n", x, y, vx[iCell], vy[iCell]);
 }
 
-Real computeVX(Real x, Real y, Real gamma)
+Real computeVX(Real x, Real y)
 {
-    return (gamma / (2 * 3.14159265)) * (y / sqrt(x * x + y * y));
+    return 2 * sin(pi * x) * sin(pi * x) * sin(pi * y) * cos(pi * y);
 }
 
-Real computeVY(Real x, Real y, Real gamma)
+Real computeVY(Real x, Real y)
 {
-    return (-gamma / (2 * 3.14159265)) * (x / sqrt(x * x + y * y));
+    return 2 * cos(pi * x) * sin(pi * x) * cos(pi * y) * cos(pi * y);
 }
 
 Real polyArea(Real1D xList, Real1D yList, int count)

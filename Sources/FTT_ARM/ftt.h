@@ -76,6 +76,7 @@ extern Real1D xCircle;
 extern Real1D yCircle;
 extern int numberOfCirclePoints;
 extern int maxNumberOfCirclePoints;
+extern Int1D hilbLeaves;
 
 extern void initFTT(void);
 extern void initMemory(void);
@@ -169,8 +170,8 @@ extern void reMesh(int itNb);
 extern void initPotential(int itNb);
 extern void initCircle();
 extern void computePotential(int iCell, int itNb);
-extern Real computeVX(Real x, Real y, Real gamma);
-extern Real computeVY(Real x, Real y, Real gamma);
+extern Real computeVX(Real x, Real y);
+extern Real computeVY(Real x, Real y);
 extern void propagateCircles(float dt);
 extern void stream();
 extern void plotCircle(int ndata);
