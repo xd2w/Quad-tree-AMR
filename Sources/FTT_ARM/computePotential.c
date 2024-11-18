@@ -38,7 +38,7 @@ void computePotential(int iCell, int itNb)
 
     dx = dxCell[cLv];
     dy = dyCell[cLv];
-    printf("dx %g dy %g\n", dx, dy);
+    // printf("dx %g dy %g\n", dx, dy);
 
     x = xCell[iCell] + dx * 0.5;
     y = yCell[iCell] + dy * 0.5;
@@ -57,7 +57,7 @@ void computePotential(int iCell, int itNb)
     // vy[iCell] += computeVY(x - 2 * Lx, y, circulation);
     // vy[iCell] += computeVY(x + 2 * Lx, y, circulation);
 
-    printf("calculating potential at (%g, %g), with (vx, vy) = (%f, %f)\n", x, y, vx[iCell], vy[iCell]);
+    // printf("calculating potential at (%g, %g), with (vx, vy) = (%f, %f)\n", x, y, vx[iCell], vy[iCell]);
 }
 
 Real computeVX(Real x, Real y)

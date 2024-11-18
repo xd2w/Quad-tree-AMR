@@ -3,7 +3,7 @@
 BALANCE = balanceFTT.o balanceFTTxP.o balanceFTTxN.o balanceFTTyP.o balanceFTTyN.o
 # FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag.o restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o plotFTTInterf.o plotCellInterf.o stream.o vol2.o octTreeXSwp.o octTreeYSwp.o reMesh.o
 
-FTT_ARM = FTT_HILB.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag.o restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o stream.o reMesh.o plotFTTInterf.o plotCellInterf.o
+FTT_ARM = FTT_HILB.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag.o restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o stream.o reMesh.o plotFTTInterf.o plotCellInterf.o interpolation.o
 
 
 ICBC = initialize.o initPotential.o computePotential.o markVOF.o initFTT.o refineFTT.o bcOctTree.o
@@ -22,6 +22,9 @@ CLIB=  -L$(HOME)/lib -lpfp
 FTT_ARM: $(OBJECTS) $(LIB)
 	$(CC) $(CFLAGS) -o FTT_HILB $(OBJECTS)  $(CLIB) -lm
 	mv FTT_HILB Examples
+
+intp_test:
+	gcc -g  -I/homes/da533/include -o intp_test.o intp_test.c interpolation.o -L/homes/da533/lib -lpfp  -lm
 
 
 tousb:

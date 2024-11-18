@@ -5,6 +5,10 @@
 #include "nrutil.h"
 #include "box.h"
 #include "pfplib.h"
+#include "interpolation.h"
+
+void copyArray(Real1D from, double *to, int length);
+void propagateCirclesTruePosition(float dt);
 
 // calculated VOF of flagged cells in both x and y dirs
 void stream(void)
@@ -120,74 +124,76 @@ void propagateCircles(float dt)
 
 void propagateCirclesTruePosition(float dt)
 {
-    float x, y, vx, vy;
+    double x, y, vx, vy, xprev, yprev, newx, newy;
     ffetch("dt", &dt);
+    double *bufferx = dvector(1, numberOfCirclePoints);
+    double *buffery = dvector(1, numberOfCirclePoints);
+    double *y2 = dvector(1, numberOfCirclePoints);
 
-    for (int index = 0; index < numberOfCirclePoints; index++)
+    int deg = 4;
+
+    double *xslice = dvector(1, deg);
+    double *yslice = dvector(1, deg);
+
+    int og_length = numberOfCirclePoints;
+    float tol = 5 * sqrt(2) * sqrt(Lx * Ly) * pow(2.0, -maxLevel);
+    double dydx = (yCircle[og_length - 1] - yCircle[0]) / (xCircle[og_length - 1] - xCircle[0]);
+
+    copyArray(xCircle, bufferx, og_length);
+    copyArray(yCircle, buffery, og_length);
+
+    // printf("spline started\n");
+    spline(buffery, buffery, og_length, dydx, dydx, y2);
+    printf("spline is done\n");
+
+    xprev = xCircle[og_length - 1];
+    yprev = yCircle[og_length - 1];
+
+    int counter = 0;
+    for (int index = 0; index < og_length; index++)
     {
-        x = xCircle[index];
-        y = yCircle[index];
+        x = bufferx[index];
+        y = buffery[index];
+        if (numberOfCirclePoints < maxNumberOfCirclePoints)
+        {
+            // printf("so for so good");
+            if (sqrt((x - xprev) * (x - xprev) + (y - yprev) * (y - yprev)) > tol)
+            {
+                for (int k = 0; k < deg; k++)
+                {
+                    xslice[k] = bufferx[(og_length - 2 + k + index) % og_length];
+                    xslice[k] = bufferx[(og_length - 2 + k + index) % og_length];
+                }
+                // printf("%d, (%d) : %f \n", index, (og_length + index - 1) % og_length, sqrt((x - xprev) * (x - xprev) + (y - yprev) * (y - yprev)));
+                newx = 0.5 * (x + xprev);
+                // splint(xslice, yslice, y2, og_length, newx, &newy); // interpolates y for given x
+                newy = 0.5 * (y + yprev);
+                printf("(%f %f) (%f %f) (%f %f)\n", x, y, newx, newy, xprev, yprev);
+
+                vx = computeVX(newx, newy);
+                vy = computeVY(newx, newy);
+
+                xCircle[counter] = newx + (dt * vx);
+                yCircle[counter] = newy + (dt * vy);
+                counter++;
+                numberOfCirclePoints++;
+            }
+        }
 
         vx = computeVX(x, y);
         vy = computeVY(x, y);
 
-        // for image method to create a rough boundary around the domain
-        // vx += computeVX(x, y - 2 * Ly, gam);
-        // vx += computeVX(x, y + 2 * Ly, gam);
-        // vx += computeVX(x - 2 * Lx, y, gam);
-        // vx += computeVX(x + 2 * Lx, y, gam);
+        xCircle[counter] = x + (dt * vx);
+        yCircle[counter] = y + (dt * vy);
+        counter++;
 
-        // vy += computeVY(x, y - 2 * Ly, gam);
-        // vy += computeVY(x, y + 2 * Ly, gam);
-        // vy += computeVY(x - 2 * Lx, y, gam);
-        // vy += computeVY(x + 2 * Lx, y, gam);
-
-        xCircle[index] += dt * vx;
-        yCircle[index] += dt * vy;
+        xprev = x;
+        yprev = y;
     }
+    // free_dvector(bufferx, 1, maxNumberOfCirclePoints);
+    // free_dvector(buffery, 1, maxNumberOfCirclePoints);
+    // free_dvector(y2, 1, maxNumberOfCirclePoints);
 }
-// void propagateCirclesTruePosition(float dt)
-// {
-//     float x, y, xp, yp, gam, vx, vy;
-//     int queue[maxNumberOfCirclePoints];
-//     int queueStart = 0;
-//     int queueEnd = 0;
-
-//     gam = 5;
-//     ffetch("circulation", &gam);
-//     ffetch("dt", &dt);
-
-//     for (int index = 0; index + 1 < numberOfCirclePoints + (queueEnd - queueStart); index++)
-//     {
-//         x = xCircle[index];
-//         y = yCircle[index];
-
-//         xp = xCircle[index + 1];
-//         yp = yCircle[index + 1];
-
-//         if ((x - xp) * (x - xp) + (y - xp) * (y - yp) > sqrt(2.0 * Ly * Lx) / (1 << (maxLevel)))
-//         {
-//             x, y = cubicSpine()
-//         }
-
-//         vx = computeVX(x, y, gam);
-//         vy = computeVY(x, y, gam);
-
-//         // for image method to create a rough boundary around the domain
-//         vx += computeVX(x, y - 2 * Ly, gam);
-//         vx += computeVX(x, y + 2 * Ly, gam);
-//         vx += computeVX(x - 2 * Lx, y, gam);
-//         vx += computeVX(x + 2 * Lx, y, gam);
-
-//         vy += computeVY(x, y - 2 * Ly, gam);
-//         vy += computeVY(x, y + 2 * Ly, gam);
-//         vy += computeVY(x - 2 * Lx, y, gam);
-//         vy += computeVY(x + 2 * Lx, y, gam);
-
-//         xCircle[index] += dt * vx;
-//         yCircle[index] += dt * vy;
-//     }
-// }
 
 // copy from one array to another
 void copyCellInt1D(Int1D from, Int1D to)
@@ -196,6 +202,16 @@ void copyCellInt1D(Int1D from, Int1D to)
     for (iCell = 0; iCell < numberOfCells; iCell++)
     {
         to[iCell] = from[iCell];
+    }
+}
+
+// copy from one array to another
+void copyArray(Real1D from, double *to, int length)
+{
+    int i;
+    for (i = 0; i < length; i++)
+    {
+        to[i] = from[i];
     }
 }
 
@@ -230,8 +246,3 @@ void propagateFlag(int dir)
         }
     }
 }
-
-// Real cubicSpine(Real x0, Real y0, Real x1, Real y1, Real x2, Real y2, Real x3, Real y3)
-// {
-
-// }

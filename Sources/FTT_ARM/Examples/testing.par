@@ -1,14 +1,17 @@
-tmax=5
-tplot=1
-minLevel=1
-maxLevel=6
+tmax=100
+tplot=2
+minLevel=2
+maxLevel=8
 maxNumberOfOcts=20000
+maxNumberOfCirclePoints=200
+numberOfCirclePoints=100
 Lx=1.0
 Ly=1.0
-xPoint=0
-yPoint=0
-xc=0.25
-yc=0.25
-radius=0.2
+xPoint=0.5
+yPoint=0.5
+xc=0.50
+yc=0.75
+dt=0.01
+radius=0.15
 iBalance=1
 
