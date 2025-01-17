@@ -5,10 +5,11 @@
 #include "nrutil.h"
 #include "box.h"
 #include "pfplib.h"
-#include "interpolation.h"
+// #include "interpolation.h"
 
 void copyArray(Real1D from, double *to, int length);
 void propagateCirclesTruePosition(float dt);
+void propagateVoFinTime(float dt);
 
 // calculated VOF of flagged cells in both x and y dirs
 void stream(void)
@@ -16,81 +17,12 @@ void stream(void)
     // printf("streaming\n");
     // initPotential(0);
     // propagateCircles(0.001);
-    propagateCirclesTruePosition(0.01);
+    // propagateCirclesTruePosition(0.01);
 }
 
-// flag cells at the interface of 2 fluids
-// void flagInterfCells(void)
+// void propagateVOFinTime(float dt)
 // {
-//     printf("Flagging cells\n");
-//     int iCell, iOct, iLv, index;
-//     Real fraction, left, right, top, bottom, x, y;
-//     for (iCell = 0; iCell < numberOfCells; iCell++)
-//     {
-//         cellFlag[iCell] = 0;
-//         iOct = iCell / cellNumberInOct;
-//         iLv = octLv[iOct];
-//         if (iLv == maxLevel)
-//         {
-//             left = xCell[iCell];
-//             bottom = yCell[iCell];
-//             right = left + dxCell[iLv];
-//             top = bottom + dyCell[iLv];
-
-//             // printf("%f, %f, %f, %f\n", left, right, top, bottom);
-//             // printf("%f, %f\n", dxCell[iLv], dyCell[iLv]);
-//             // exit(1);
-
-//             for (index = 0; index < numberOfCirclePoints; index++)
-//             {
-//                 x = xCircle[index];
-//                 y = yCircle[index];
-
-//                 if (((left <= x) && (x < right)) && ((bottom <= y) && (y < top)))
-//                 {
-//                     cellFlag[iCell] = 1;
-//                     printf("cell %i flagged\n", iCell);
-//                 }
-//             }
-//         }
-//     }
 // }
-
-void flagInterfCells(void)
-{
-    printf("Flagging cells\n");
-    int iCell, iOct, iLv, index;
-    Real fraction, left, right, top, bottom, x, y;
-    for (iCell = 0; iCell < numberOfCells; iCell++)
-    {
-        cellFlag[iCell] = 0;
-        iOct = iCell / cellNumberInOct;
-        iLv = octLv[iOct];
-        // if (iLv == maxLevel)
-        // {
-        left = xCell[iCell];
-        bottom = yCell[iCell];
-        right = left + dxCell[iLv];
-        top = bottom + dyCell[iLv];
-
-        // printf("%f, %f, %f, %f\n", left, right, top, bottom);
-        // printf("%f, %f\n", dxCell[iLv], dyCell[iLv]);
-        // exit(1);
-
-        for (index = 0; index < numberOfCirclePoints; index++)
-        {
-            x = xCircle[index];
-            y = yCircle[index];
-
-            if (((left <= x) && (x < right)) && ((bottom <= y) && (y < top)))
-            {
-                cellFlag[iCell] = 1;
-                // printf("cell %i flagged\n", iCell);
-            }
-        }
-        // }
-    }
-}
 
 void propagateCircles(float dt)
 {

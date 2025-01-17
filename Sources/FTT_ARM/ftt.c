@@ -48,22 +48,18 @@ Real1D zCell;
 
 /* physical quantities */
 // velocity at cell corners
-// Real1D u;
-// Real1D v;
-// Real1D w;
-// // velocity flux at cell faces
-// Real1D U;
-// Real1D V;
-// Real1D W;
-// // pressure at cell centers
-// Real1D p;
-// Real1D dive;
-// Real1D vof;
-// Real1D work1, work2, work3;
+Real1D u;
+Real1D v;
+Real1D w;
+// velocity flux at cell faces
+Real1D U;
+Real1D V;
+Real1D W;
+// pressure at cell centers
+Real1D p;
+Real1D dive;
+Real1D vof;
+Real1D work1, work2, work3;
 
-Real1D vx;
-Real1D vy;
-Real1D xCircle;
-Real1D yCircle;
-int numberOfCirclePoints;
-int maxNumberOfCirclePoints;
+Real cfl;
+Real time;

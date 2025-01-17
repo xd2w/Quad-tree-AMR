@@ -4,7 +4,6 @@
 #include "ftt.h"
 #include "nrutil.h"
 
-// calculated VOF of flagged cells in both x and y dirs
 void plic(void)
 {
 
@@ -81,8 +80,6 @@ void computeYVOF(void)
     }
   }
 }
-
-// copy from one array to another
 void copyCellInt1D(Int1D from, Int1D to)
 {
   int iCell;
@@ -92,7 +89,6 @@ void copyCellInt1D(Int1D from, Int1D to)
   }
 }
 
-// flag cells at the interface of 2 fluids
 void flagInterfCells(void)
 {
   int iCell, iOct, iLv;
@@ -113,9 +109,7 @@ void flagInterfCells(void)
   }
 }
 
-/* propagate flag in direction dir
-(flags the neighboring cells of the flagged cells in direction x or y)
-*/
+/* propagate flag in direction dir */
 void propagateFlag(int dir)
 {
   int iCell, ngbCell;
@@ -123,11 +117,10 @@ void propagateFlag(int dir)
   copyCellInt1D(cellFlag, cellMark);
   for (iCell = 0; iCell < numberOfCells; iCell++)
   {
-    if (cellMark[iCell]) // cellMark is Copy of cellFlag
+    if (cellMark[iCell])
     {
       if (dir == 0)
       {
-        // left 0  right 1
         ngbCell = cellNb[0][iCell];
         cellFlag[ngbCell] = 1;
         ngbCell = cellNb[1][iCell];
@@ -135,7 +128,6 @@ void propagateFlag(int dir)
       }
       else
       {
-        // down 2  up 3
         ngbCell = cellNb[2][iCell];
         cellFlag[ngbCell] = 1;
         ngbCell = cellNb[3][iCell];

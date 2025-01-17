@@ -58,25 +58,21 @@ extern Real1D zCell;
 
 /* physical quantities */
 // velocity at cell corners
-// extern Real1D u;
-// extern Real1D v;
-// extern Real1D w;
+extern Real1D u;
+extern Real1D v;
+extern Real1D w;
 // velocity flux at cell faces
-// extern Real1D U;
-// extern Real1D V;
-// extern Real1D W;
+extern Real1D U;
+extern Real1D V;
+extern Real1D W;
 // pressure at cell centers
-// extern Real1D p;
-// extern Real1D dive;
-// extern Real1D vof;
-// extern Real1D work1, work2, work3;
-extern Real1D vx;
-extern Real1D vy;
-extern Real1D xCircle;
-extern Real1D yCircle;
-extern int numberOfCirclePoints;
-extern int maxNumberOfCirclePoints;
-extern Int1D hilbLeaves;
+extern Real1D p;
+extern Real1D dive;
+extern Real1D vof;
+extern Real1D work1, work2, work3;
+
+extern Real cfl;
+extern Real time;
 
 extern void initFTT(void);
 extern void initMemory(void);
@@ -167,13 +163,16 @@ extern void setOctInt1DZeroAtLevel(Int1D val, int level);
 extern void setOctInt1DZero(Int1D val);
 extern void reMesh(int itNb);
 
-extern void initPotential(int itNb);
-extern void initCircle();
-extern void computePotential(int iCell, int itNb);
 extern Real computeVX(Real x, Real y);
 extern Real computeVY(Real x, Real y);
-extern void propagateCircles(float dt);
-extern void stream();
-extern void plotCircle(int ndata);
 
+extern void neighbouringInterf(int iCell, int *outlist, int *list_size, int *stack);
+extern void computeN(int iCell, float *n);
+extern float computeKappa(int iCell, float *n, float f_th);
+
+extern void svdfit_mod(int index[], float y[], float sig[], int ndata, float a[], int ma,
+                       float **u, float **v, float w[], float *chisq,
+                       void (*funcs)(int, float[], int));
+
+extern void computeSurfaceNormal(int iNt);
 #endif

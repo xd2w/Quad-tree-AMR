@@ -1,0 +1,3638 @@
+
+---------------------------------------------
+Job command: ./FTT_HILB  ftt.par
+---------------------------------------------
+--------------------------------
+Fully Threaded Tree Algorithms for Adaptive Refinement Methods
+--------------------------------
+Max Number Of Octs in FTT: 20000
+Max Number Of Cells in FTT: 80000
+An Oct is composed of 4 cells
+Max Level of FTT: 8
+Max Number of Circles resolution : 500
+physical domain: Lx = 0.5, Ly = 0.5
+At level  0, cell size 1 1
+At level  1, cell size 0.5 0.5
+At level  2, cell size 0.25 0.25
+At level  3, cell size 0.125 0.125
+At level  4, cell size 0.0625 0.0625
+At level  5, cell size 0.03125 0.03125
+At level  6, cell size 0.015625 0.015625
+At level  7, cell size 0.0078125 0.0078125
+At level  8, cell size 0.00390625 0.00390625
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 2004 Number Of Octs = 501 
+Flaged cell number = 421, flaged oct number = 105
+
+Fully Threaded Tree Data Structure: iteration = 0
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 3148 Number Of Octs = 787 
+Flaged cell number = 36, flaged oct number = 9
+
+Fully Threaded Tree Data Structure: iteration = 1
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 3988 Number Of Octs = 997 
+Flaged cell number = 47, flaged oct number = 11
+
+Fully Threaded Tree Data Structure: iteration = 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 4580 Number Of Octs = 1145 
+Flaged cell number = 53, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 3
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 5080 Number Of Octs = 1270 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 4
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 5632 Number Of Octs = 1408 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 5
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 5952 Number Of Octs = 1488 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 6
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 6420 Number Of Octs = 1605 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 7
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 6576 Number Of Octs = 1644 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 8
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 6772 Number Of Octs = 1693 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 9
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 6836 Number Of Octs = 1709 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 10
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 6888 Number Of Octs = 1722 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 11
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 6992 Number Of Octs = 1748 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 12
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7136 Number Of Octs = 1784 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 13
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7292 Number Of Octs = 1823 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 14
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7248 Number Of Octs = 1812 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 15
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7348 Number Of Octs = 1837 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 16
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7480 Number Of Octs = 1870 
+Flaged cell number = 53, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 17
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7592 Number Of Octs = 1898 
+Flaged cell number = 53, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 18
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7688 Number Of Octs = 1922 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 19
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7712 Number Of Octs = 1928 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 20
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7648 Number Of Octs = 1912 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 21
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7832 Number Of Octs = 1958 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 22
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 7940 Number Of Octs = 1985 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 23
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 8068 Number Of Octs = 2017 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 24
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 8112 Number Of Octs = 2028 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 25
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 8208 Number Of Octs = 2052 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 26
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 8432 Number Of Octs = 2108 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 27
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 8460 Number Of Octs = 2115 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 28
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 8536 Number Of Octs = 2134 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 29
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 8596 Number Of Octs = 2149 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 30
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 8808 Number Of Octs = 2202 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 31
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 8900 Number Of Octs = 2225 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 32
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 9052 Number Of Octs = 2263 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 33
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 9136 Number Of Octs = 2284 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 34
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 9304 Number Of Octs = 2326 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 35
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 9452 Number Of Octs = 2363 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 36
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 9468 Number Of Octs = 2367 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 37
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 9680 Number Of Octs = 2420 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 38
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 9780 Number Of Octs = 2445 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 39
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 9884 Number Of Octs = 2471 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 40
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 10068 Number Of Octs = 2517 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 41
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 10180 Number Of Octs = 2545 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 42
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 10372 Number Of Octs = 2593 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 43
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 10512 Number Of Octs = 2628 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 44
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 10692 Number Of Octs = 2673 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 45
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 10732 Number Of Octs = 2683 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 46
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 10872 Number Of Octs = 2718 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 47
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 11064 Number Of Octs = 2766 
+Flaged cell number = 52, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 48
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 11164 Number Of Octs = 2791 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 49
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 11268 Number Of Octs = 2817 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 50
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 11380 Number Of Octs = 2845 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 51
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 11500 Number Of Octs = 2875 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 52
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 11700 Number Of Octs = 2925 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 53
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 11804 Number Of Octs = 2951 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 54
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 11928 Number Of Octs = 2982 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 55
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 12060 Number Of Octs = 3015 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 56
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 12148 Number Of Octs = 3037 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 57
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 12304 Number Of Octs = 3076 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 58
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 12376 Number Of Octs = 3094 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 59
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 12516 Number Of Octs = 3129 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 60
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 12592 Number Of Octs = 3148 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 61
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 12792 Number Of Octs = 3198 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 62
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 12852 Number Of Octs = 3213 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 63
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 12952 Number Of Octs = 3238 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 64
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 12996 Number Of Octs = 3249 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 65
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 13268 Number Of Octs = 3317 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 66
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 13232 Number Of Octs = 3308 
+Flaged cell number = 51, flaged oct number = 12
+
+Fully Threaded Tree Data Structure: iteration = 67
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 13428 Number Of Octs = 3357 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 68
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 13472 Number Of Octs = 3368 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 69
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 13660 Number Of Octs = 3415 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 70
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 13852 Number Of Octs = 3463 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 71
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 13892 Number Of Octs = 3473 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 72
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 14032 Number Of Octs = 3508 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 73
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 14212 Number Of Octs = 3553 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 74
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 14252 Number Of Octs = 3563 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 75
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 14404 Number Of Octs = 3601 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 76
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 14496 Number Of Octs = 3624 
+Flaged cell number = 54, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 77
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 14596 Number Of Octs = 3649 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 78
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 14756 Number Of Octs = 3689 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 79
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 14852 Number Of Octs = 3713 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 80
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 15092 Number Of Octs = 3773 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 81
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 15164 Number Of Octs = 3791 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 82
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 15232 Number Of Octs = 3808 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 83
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 15292 Number Of Octs = 3823 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 84
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 15496 Number Of Octs = 3874 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 85
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 15572 Number Of Octs = 3893 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 86
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 15644 Number Of Octs = 3911 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 87
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 15612 Number Of Octs = 3903 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 88
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 15948 Number Of Octs = 3987 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 89
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 16076 Number Of Octs = 4019 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 90
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 16116 Number Of Octs = 4029 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 91
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 16196 Number Of Octs = 4049 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 92
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 16336 Number Of Octs = 4084 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 93
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 16596 Number Of Octs = 4149 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 94
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 16736 Number Of Octs = 4184 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 95
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 16680 Number Of Octs = 4170 
+Flaged cell number = 55, flaged oct number = 13
+
+Fully Threaded Tree Data Structure: iteration = 96
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 16888 Number Of Octs = 4222 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 97
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 16932 Number Of Octs = 4233 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 98
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 17016 Number Of Octs = 4254 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 99
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 17196 Number Of Octs = 4299 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 100
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 17312 Number Of Octs = 4328 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 101
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 17396 Number Of Octs = 4349 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 102
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 17568 Number Of Octs = 4392 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 103
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 17624 Number Of Octs = 4406 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 104
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 17708 Number Of Octs = 4427 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 105
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 17972 Number Of Octs = 4493 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 106
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 17984 Number Of Octs = 4496 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 107
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 18096 Number Of Octs = 4524 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 108
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 18108 Number Of Octs = 4527 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 109
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 18228 Number Of Octs = 4557 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 110
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 18368 Number Of Octs = 4592 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 111
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 18344 Number Of Octs = 4586 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 112
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 18560 Number Of Octs = 4640 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 113
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 18672 Number Of Octs = 4668 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 114
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 18740 Number Of Octs = 4685 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 115
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 18832 Number Of Octs = 4708 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 116
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 18912 Number Of Octs = 4728 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 117
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19112 Number Of Octs = 4778 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 118
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19180 Number Of Octs = 4795 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 119
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19300 Number Of Octs = 4825 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 120
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19348 Number Of Octs = 4837 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 121
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19464 Number Of Octs = 4866 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 122
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19484 Number Of Octs = 4871 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 123
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19660 Number Of Octs = 4915 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 124
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19616 Number Of Octs = 4904 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 125
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19728 Number Of Octs = 4932 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 126
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19832 Number Of Octs = 4958 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 127
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19936 Number Of Octs = 4984 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 128
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 19980 Number Of Octs = 4995 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 129
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20120 Number Of Octs = 5030 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 130
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20176 Number Of Octs = 5044 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 131
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20240 Number Of Octs = 5060 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 132
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20348 Number Of Octs = 5087 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 133
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20356 Number Of Octs = 5089 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 134
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20496 Number Of Octs = 5124 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 135
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20580 Number Of Octs = 5145 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 136
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20704 Number Of Octs = 5176 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 137
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20728 Number Of Octs = 5182 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 138
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20740 Number Of Octs = 5185 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 139
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 20912 Number Of Octs = 5228 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 140
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21060 Number Of Octs = 5265 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 141
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21168 Number Of Octs = 5292 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 142
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21244 Number Of Octs = 5311 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 143
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21252 Number Of Octs = 5313 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 144
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21404 Number Of Octs = 5351 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 145
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21500 Number Of Octs = 5375 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 146
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21620 Number Of Octs = 5405 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 147
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21700 Number Of Octs = 5425 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 148
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21808 Number Of Octs = 5452 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 149
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21752 Number Of Octs = 5438 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 150
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21856 Number Of Octs = 5464 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 151
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21884 Number Of Octs = 5471 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 152
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22008 Number Of Octs = 5502 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 153
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 21988 Number Of Octs = 5497 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 154
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22064 Number Of Octs = 5516 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 155
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22148 Number Of Octs = 5537 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 156
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22164 Number Of Octs = 5541 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 157
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22232 Number Of Octs = 5558 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 158
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22344 Number Of Octs = 5586 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 159
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22520 Number Of Octs = 5630 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 160
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22568 Number Of Octs = 5642 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 161
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22668 Number Of Octs = 5667 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 162
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22780 Number Of Octs = 5695 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 163
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22868 Number Of Octs = 5717 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 164
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22908 Number Of Octs = 5727 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 165
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23080 Number Of Octs = 5770 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 166
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 22996 Number Of Octs = 5749 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 167
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23172 Number Of Octs = 5793 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 168
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23204 Number Of Octs = 5801 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 169
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23244 Number Of Octs = 5811 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 170
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23332 Number Of Octs = 5833 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 171
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23400 Number Of Octs = 5850 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 172
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23452 Number Of Octs = 5863 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 173
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23696 Number Of Octs = 5924 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 174
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23692 Number Of Octs = 5923 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 175
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23852 Number Of Octs = 5963 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 176
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23828 Number Of Octs = 5957 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 177
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 23848 Number Of Octs = 5962 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 178
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24028 Number Of Octs = 6007 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 179
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24128 Number Of Octs = 6032 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 180
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24184 Number Of Octs = 6046 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 181
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24312 Number Of Octs = 6078 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 182
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24416 Number Of Octs = 6104 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 183
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24448 Number Of Octs = 6112 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 184
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24516 Number Of Octs = 6129 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 185
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24640 Number Of Octs = 6160 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 186
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24724 Number Of Octs = 6181 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 187
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24732 Number Of Octs = 6183 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 188
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24824 Number Of Octs = 6206 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 189
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24804 Number Of Octs = 6201 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 190
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24896 Number Of Octs = 6224 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 191
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 24940 Number Of Octs = 6235 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 192
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 25036 Number Of Octs = 6259 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 193
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 25256 Number Of Octs = 6314 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 194
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 25244 Number Of Octs = 6311 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 195
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 25396 Number Of Octs = 6349 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 196
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 25492 Number Of Octs = 6373 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 197
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 25452 Number Of Octs = 6363 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 198
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 25632 Number Of Octs = 6408 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 199
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 25824 Number Of Octs = 6456 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 200
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 25864 Number Of Octs = 6466 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 201
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 25992 Number Of Octs = 6498 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 202
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26000 Number Of Octs = 6500 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 203
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26056 Number Of Octs = 6514 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 204
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26160 Number Of Octs = 6540 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 205
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26076 Number Of Octs = 6519 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 206
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26188 Number Of Octs = 6547 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 207
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26292 Number Of Octs = 6573 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 208
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26440 Number Of Octs = 6610 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 209
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26460 Number Of Octs = 6615 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 210
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26456 Number Of Octs = 6614 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 211
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26524 Number Of Octs = 6631 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 212
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26520 Number Of Octs = 6630 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 213
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26724 Number Of Octs = 6681 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 214
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26680 Number Of Octs = 6670 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 215
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26816 Number Of Octs = 6704 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 216
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 26852 Number Of Octs = 6713 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 217
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27048 Number Of Octs = 6762 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 218
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27032 Number Of Octs = 6758 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 219
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27108 Number Of Octs = 6777 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 220
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27116 Number Of Octs = 6779 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 221
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27220 Number Of Octs = 6805 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 222
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27144 Number Of Octs = 6786 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 223
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27284 Number Of Octs = 6821 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 224
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27184 Number Of Octs = 6796 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 225
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27456 Number Of Octs = 6864 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 226
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27464 Number Of Octs = 6866 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 227
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27504 Number Of Octs = 6876 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 228
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27600 Number Of Octs = 6900 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 229
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27736 Number Of Octs = 6934 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 230
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27692 Number Of Octs = 6923 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 231
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27784 Number Of Octs = 6946 
+Flaged cell number = 57, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 232
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27936 Number Of Octs = 6984 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 233
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28008 Number Of Octs = 7002 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 234
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 27952 Number Of Octs = 6988 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 235
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28044 Number Of Octs = 7011 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 236
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28040 Number Of Octs = 7010 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 237
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28040 Number Of Octs = 7010 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 238
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28036 Number Of Octs = 7009 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 239
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28168 Number Of Octs = 7042 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 240
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28276 Number Of Octs = 7069 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 241
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28216 Number Of Octs = 7054 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 242
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28464 Number Of Octs = 7116 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 243
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28520 Number Of Octs = 7130 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 244
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28588 Number Of Octs = 7147 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 245
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28684 Number Of Octs = 7171 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 246
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28656 Number Of Octs = 7164 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 247
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28744 Number Of Octs = 7186 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 248
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28684 Number Of Octs = 7171 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 249
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28912 Number Of Octs = 7228 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 250
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28872 Number Of Octs = 7218 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 251
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 28948 Number Of Octs = 7237 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 252
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29056 Number Of Octs = 7264 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 253
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29068 Number Of Octs = 7267 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 254
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29048 Number Of Octs = 7262 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 255
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29156 Number Of Octs = 7289 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 256
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29168 Number Of Octs = 7292 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 257
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29240 Number Of Octs = 7310 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 258
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29256 Number Of Octs = 7314 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 259
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29264 Number Of Octs = 7316 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 260
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29256 Number Of Octs = 7314 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 261
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29224 Number Of Octs = 7306 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 262
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29304 Number Of Octs = 7326 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 263
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29280 Number Of Octs = 7320 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 264
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29408 Number Of Octs = 7352 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 265
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29464 Number Of Octs = 7366 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 266
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29520 Number Of Octs = 7380 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 267
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29636 Number Of Octs = 7409 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 268
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29628 Number Of Octs = 7407 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 269
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29632 Number Of Octs = 7408 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 270
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29648 Number Of Octs = 7412 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 271
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29768 Number Of Octs = 7442 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 272
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29868 Number Of Octs = 7467 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 273
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29748 Number Of Octs = 7437 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 274
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29744 Number Of Octs = 7436 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 275
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29812 Number Of Octs = 7453 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 276
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30072 Number Of Octs = 7518 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 277
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 29996 Number Of Octs = 7499 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 278
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30100 Number Of Octs = 7525 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 279
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30052 Number Of Octs = 7513 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 280
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30056 Number Of Octs = 7514 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 281
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30216 Number Of Octs = 7554 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 282
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30248 Number Of Octs = 7562 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 283
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30320 Number Of Octs = 7580 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 284
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30332 Number Of Octs = 7583 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 285
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30340 Number Of Octs = 7585 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 286
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30368 Number Of Octs = 7592 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 287
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30408 Number Of Octs = 7602 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 288
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30412 Number Of Octs = 7603 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 289
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30468 Number Of Octs = 7617 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 290
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30448 Number Of Octs = 7612 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 291
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30488 Number Of Octs = 7622 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 292
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30724 Number Of Octs = 7681 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 293
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30640 Number Of Octs = 7660 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 294
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30532 Number Of Octs = 7633 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 295
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30668 Number Of Octs = 7667 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 296
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30732 Number Of Octs = 7683 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 297
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30832 Number Of Octs = 7708 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 298
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30684 Number Of Octs = 7671 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 299
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30932 Number Of Octs = 7733 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 300
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31080 Number Of Octs = 7770 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 301
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 30868 Number Of Octs = 7717 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 302
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31180 Number Of Octs = 7795 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 303
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31024 Number Of Octs = 7756 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 304
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31168 Number Of Octs = 7792 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 305
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31188 Number Of Octs = 7797 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 306
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31260 Number Of Octs = 7815 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 307
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31332 Number Of Octs = 7833 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 308
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31292 Number Of Octs = 7823 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 309
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31460 Number Of Octs = 7865 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 310
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31352 Number Of Octs = 7838 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 311
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31316 Number Of Octs = 7829 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 312
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31436 Number Of Octs = 7859 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 313
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31520 Number Of Octs = 7880 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 314
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31668 Number Of Octs = 7917 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 315
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31532 Number Of Octs = 7883 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 316
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31712 Number Of Octs = 7928 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 317
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31624 Number Of Octs = 7906 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 318
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31644 Number Of Octs = 7911 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 319
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31724 Number Of Octs = 7931 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 320
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31700 Number Of Octs = 7925 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 321
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31808 Number Of Octs = 7952 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 322
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31916 Number Of Octs = 7979 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 323
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31792 Number Of Octs = 7948 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 324
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31928 Number Of Octs = 7982 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 325
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32016 Number Of Octs = 8004 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 326
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 31944 Number Of Octs = 7986 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 327
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32084 Number Of Octs = 8021 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 328
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32288 Number Of Octs = 8072 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 329
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32180 Number Of Octs = 8045 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 330
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32244 Number Of Octs = 8061 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 331
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32256 Number Of Octs = 8064 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 332
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32196 Number Of Octs = 8049 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 333
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32264 Number Of Octs = 8066 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 334
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32344 Number Of Octs = 8086 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 335
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32380 Number Of Octs = 8095 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 336
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32408 Number Of Octs = 8102 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 337
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32512 Number Of Octs = 8128 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 338
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32488 Number Of Octs = 8122 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 339
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32736 Number Of Octs = 8184 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 340
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32660 Number Of Octs = 8165 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 341
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32804 Number Of Octs = 8201 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 342
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32792 Number Of Octs = 8198 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 343
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32800 Number Of Octs = 8200 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 344
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32820 Number Of Octs = 8205 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 345
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33040 Number Of Octs = 8260 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 346
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32820 Number Of Octs = 8205 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 347
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32936 Number Of Octs = 8234 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 348
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 32916 Number Of Octs = 8229 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 349
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33016 Number Of Octs = 8254 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 350
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33032 Number Of Octs = 8258 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 351
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33156 Number Of Octs = 8289 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 352
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33168 Number Of Octs = 8292 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 353
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33200 Number Of Octs = 8300 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 354
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33224 Number Of Octs = 8306 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 355
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33304 Number Of Octs = 8326 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 356
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33284 Number Of Octs = 8321 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 357
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33480 Number Of Octs = 8370 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 358
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33236 Number Of Octs = 8309 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 359
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33440 Number Of Octs = 8360 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 360
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33392 Number Of Octs = 8348 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 361
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33460 Number Of Octs = 8365 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 362
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33624 Number Of Octs = 8406 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 363
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33628 Number Of Octs = 8407 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 364
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33788 Number Of Octs = 8447 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 365
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33644 Number Of Octs = 8411 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 366
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33760 Number Of Octs = 8440 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 367
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33944 Number Of Octs = 8486 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 368
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33884 Number Of Octs = 8471 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 369
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33928 Number Of Octs = 8482 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 370
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33972 Number Of Octs = 8493 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 371
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34004 Number Of Octs = 8501 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 372
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 33944 Number Of Octs = 8486 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 373
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34080 Number Of Octs = 8520 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 374
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34136 Number Of Octs = 8534 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 375
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34264 Number Of Octs = 8566 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 376
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34140 Number Of Octs = 8535 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 377
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34276 Number Of Octs = 8569 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 378
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34140 Number Of Octs = 8535 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 379
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34240 Number Of Octs = 8560 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 380
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34316 Number Of Octs = 8579 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 381
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34456 Number Of Octs = 8614 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 382
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34196 Number Of Octs = 8549 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 383
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34284 Number Of Octs = 8571 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 384
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34416 Number Of Octs = 8604 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 385
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34600 Number Of Octs = 8650 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 386
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34384 Number Of Octs = 8596 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 387
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34500 Number Of Octs = 8625 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 388
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34392 Number Of Octs = 8598 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 389
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34504 Number Of Octs = 8626 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 390
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34492 Number Of Octs = 8623 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 391
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34436 Number Of Octs = 8609 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 392
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34544 Number Of Octs = 8636 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 393
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34724 Number Of Octs = 8681 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 394
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34748 Number Of Octs = 8687 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 395
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34680 Number Of Octs = 8670 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 396
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34656 Number Of Octs = 8664 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 397
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34700 Number Of Octs = 8675 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 398
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34792 Number Of Octs = 8698 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 399
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34764 Number Of Octs = 8691 
+Flaged cell number = 58, flaged oct number = 14
+
+Fully Threaded Tree Data Structure: iteration = 400
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+0spline is done
+calling flag interfaceFlagging cells
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 8
+Number Of Cells = 34924 Number Of Octs = 8731 
+Flaged cell number = 58, flaged oct number = 14

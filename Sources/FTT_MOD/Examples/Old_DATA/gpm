@@ -1,0 +1,306 @@
+ set term png
+ set output '000.png'
+ plot [0:1.5][0:1]'mesh.000'w l
+ !convert 000.png 000.gif
+ !mv 000.gif gif.000
+ !rm 000.png
+ set term png
+ set output '001.png'
+ plot [0:1.5][0:1]'mesh.001'w l
+ !convert 001.png 001.gif
+ !mv 001.gif gif.001
+ !rm 001.png
+ set term png
+ set output '002.png'
+ plot [0:1.5][0:1]'mesh.002'w l
+ !convert 002.png 002.gif
+ !mv 002.gif gif.002
+ !rm 002.png
+ set term png
+ set output '003.png'
+ plot [0:1.5][0:1]'mesh.003'w l
+ !convert 003.png 003.gif
+ !mv 003.gif gif.003
+ !rm 003.png
+ set term png
+ set output '004.png'
+ plot [0:1.5][0:1]'mesh.004'w l
+ !convert 004.png 004.gif
+ !mv 004.gif gif.004
+ !rm 004.png
+ set term png
+ set output '005.png'
+ plot [0:1.5][0:1]'mesh.005'w l
+ !convert 005.png 005.gif
+ !mv 005.gif gif.005
+ !rm 005.png
+ set term png
+ set output '006.png'
+ plot [0:1.5][0:1]'mesh.006'w l
+ !convert 006.png 006.gif
+ !mv 006.gif gif.006
+ !rm 006.png
+ set term png
+ set output '007.png'
+ plot [0:1.5][0:1]'mesh.007'w l
+ !convert 007.png 007.gif
+ !mv 007.gif gif.007
+ !rm 007.png
+ set term png
+ set output '008.png'
+ plot [0:1.5][0:1]'mesh.008'w l
+ !convert 008.png 008.gif
+ !mv 008.gif gif.008
+ !rm 008.png
+ set term png
+ set output '009.png'
+ plot [0:1.5][0:1]'mesh.009'w l
+ !convert 009.png 009.gif
+ !mv 009.gif gif.009
+ !rm 009.png
+ set term png
+ set output '010.png'
+ plot [0:1.5][0:1]'mesh.010'w l
+ !convert 010.png 010.gif
+ !mv 010.gif gif.010
+ !rm 010.png
+ set term png
+ set output '011.png'
+ plot [0:1.5][0:1]'mesh.011'w l
+ !convert 011.png 011.gif
+ !mv 011.gif gif.011
+ !rm 011.png
+ set term png
+ set output '012.png'
+ plot [0:1.5][0:1]'mesh.012'w l
+ !convert 012.png 012.gif
+ !mv 012.gif gif.012
+ !rm 012.png
+ set term png
+ set output '013.png'
+ plot [0:1.5][0:1]'mesh.013'w l
+ !convert 013.png 013.gif
+ !mv 013.gif gif.013
+ !rm 013.png
+ set term png
+ set output '014.png'
+ plot [0:1.5][0:1]'mesh.014'w l
+ !convert 014.png 014.gif
+ !mv 014.gif gif.014
+ !rm 014.png
+ set term png
+ set output '015.png'
+ plot [0:1.5][0:1]'mesh.015'w l
+ !convert 015.png 015.gif
+ !mv 015.gif gif.015
+ !rm 015.png
+ set term png
+ set output '016.png'
+ plot [0:1.5][0:1]'mesh.016'w l
+ !convert 016.png 016.gif
+ !mv 016.gif gif.016
+ !rm 016.png
+ set term png
+ set output '017.png'
+ plot [0:1.5][0:1]'mesh.017'w l
+ !convert 017.png 017.gif
+ !mv 017.gif gif.017
+ !rm 017.png
+ set term png
+ set output '018.png'
+ plot [0:1.5][0:1]'mesh.018'w l
+ !convert 018.png 018.gif
+ !mv 018.gif gif.018
+ !rm 018.png
+ set term png
+ set output '019.png'
+ plot [0:1.5][0:1]'mesh.019'w l
+ !convert 019.png 019.gif
+ !mv 019.gif gif.019
+ !rm 019.png
+ set term png
+ set output '020.png'
+ plot [0:1.5][0:1]'mesh.020'w l
+ !convert 020.png 020.gif
+ !mv 020.gif gif.020
+ !rm 020.png
+ set term png
+ set output '021.png'
+ plot [0:1.5][0:1]'mesh.021'w l
+ !convert 021.png 021.gif
+ !mv 021.gif gif.021
+ !rm 021.png
+ set term png
+ set output '022.png'
+ plot [0:1.5][0:1]'mesh.022'w l
+ !convert 022.png 022.gif
+ !mv 022.gif gif.022
+ !rm 022.png
+ set term png
+ set output '023.png'
+ plot [0:1.5][0:1]'mesh.023'w l
+ !convert 023.png 023.gif
+ !mv 023.gif gif.023
+ !rm 023.png
+ set term png
+ set output '024.png'
+ plot [0:1.5][0:1]'mesh.024'w l
+ !convert 024.png 024.gif
+ !mv 024.gif gif.024
+ !rm 024.png
+ set term png
+ set output '025.png'
+ plot [0:1.5][0:1]'mesh.025'w l
+ !convert 025.png 025.gif
+ !mv 025.gif gif.025
+ !rm 025.png
+ set term png
+ set output '026.png'
+ plot [0:1.5][0:1]'mesh.026'w l
+ !convert 026.png 026.gif
+ !mv 026.gif gif.026
+ !rm 026.png
+ set term png
+ set output '027.png'
+ plot [0:1.5][0:1]'mesh.027'w l
+ !convert 027.png 027.gif
+ !mv 027.gif gif.027
+ !rm 027.png
+ set term png
+ set output '028.png'
+ plot [0:1.5][0:1]'mesh.028'w l
+ !convert 028.png 028.gif
+ !mv 028.gif gif.028
+ !rm 028.png
+ set term png
+ set output '029.png'
+ plot [0:1.5][0:1]'mesh.029'w l
+ !convert 029.png 029.gif
+ !mv 029.gif gif.029
+ !rm 029.png
+ set term png
+ set output '030.png'
+ plot [0:1.5][0:1]'mesh.030'w l
+ !convert 030.png 030.gif
+ !mv 030.gif gif.030
+ !rm 030.png
+ set term png
+ set output '031.png'
+ plot [0:1.5][0:1]'mesh.031'w l
+ !convert 031.png 031.gif
+ !mv 031.gif gif.031
+ !rm 031.png
+ set term png
+ set output '032.png'
+ plot [0:1.5][0:1]'mesh.032'w l
+ !convert 032.png 032.gif
+ !mv 032.gif gif.032
+ !rm 032.png
+ set term png
+ set output '033.png'
+ plot [0:1.5][0:1]'mesh.033'w l
+ !convert 033.png 033.gif
+ !mv 033.gif gif.033
+ !rm 033.png
+ set term png
+ set output '034.png'
+ plot [0:1.5][0:1]'mesh.034'w l
+ !convert 034.png 034.gif
+ !mv 034.gif gif.034
+ !rm 034.png
+ set term png
+ set output '035.png'
+ plot [0:1.5][0:1]'mesh.035'w l
+ !convert 035.png 035.gif
+ !mv 035.gif gif.035
+ !rm 035.png
+ set term png
+ set output '036.png'
+ plot [0:1.5][0:1]'mesh.036'w l
+ !convert 036.png 036.gif
+ !mv 036.gif gif.036
+ !rm 036.png
+ set term png
+ set output '037.png'
+ plot [0:1.5][0:1]'mesh.037'w l
+ !convert 037.png 037.gif
+ !mv 037.gif gif.037
+ !rm 037.png
+ set term png
+ set output '038.png'
+ plot [0:1.5][0:1]'mesh.038'w l
+ !convert 038.png 038.gif
+ !mv 038.gif gif.038
+ !rm 038.png
+ set term png
+ set output '039.png'
+ plot [0:1.5][0:1]'mesh.039'w l
+ !convert 039.png 039.gif
+ !mv 039.gif gif.039
+ !rm 039.png
+ set term png
+ set output '040.png'
+ plot [0:1.5][0:1]'mesh.040'w l
+ !convert 040.png 040.gif
+ !mv 040.gif gif.040
+ !rm 040.png
+ set term png
+ set output '041.png'
+ plot [0:1.5][0:1]'mesh.041'w l
+ !convert 041.png 041.gif
+ !mv 041.gif gif.041
+ !rm 041.png
+ set term png
+ set output '042.png'
+ plot [0:1.5][0:1]'mesh.042'w l
+ !convert 042.png 042.gif
+ !mv 042.gif gif.042
+ !rm 042.png
+ set term png
+ set output '043.png'
+ plot [0:1.5][0:1]'mesh.043'w l
+ !convert 043.png 043.gif
+ !mv 043.gif gif.043
+ !rm 043.png
+ set term png
+ set output '044.png'
+ plot [0:1.5][0:1]'mesh.044'w l
+ !convert 044.png 044.gif
+ !mv 044.gif gif.044
+ !rm 044.png
+ set term png
+ set output '045.png'
+ plot [0:1.5][0:1]'mesh.045'w l
+ !convert 045.png 045.gif
+ !mv 045.gif gif.045
+ !rm 045.png
+ set term png
+ set output '046.png'
+ plot [0:1.5][0:1]'mesh.046'w l
+ !convert 046.png 046.gif
+ !mv 046.gif gif.046
+ !rm 046.png
+ set term png
+ set output '047.png'
+ plot [0:1.5][0:1]'mesh.047'w l
+ !convert 047.png 047.gif
+ !mv 047.gif gif.047
+ !rm 047.png
+ set term png
+ set output '048.png'
+ plot [0:1.5][0:1]'mesh.048'w l
+ !convert 048.png 048.gif
+ !mv 048.gif gif.048
+ !rm 048.png
+ set term png
+ set output '049.png'
+ plot [0:1.5][0:1]'mesh.049'w l
+ !convert 049.png 049.gif
+ !mv 049.gif gif.049
+ !rm 049.png
+ set term png
+ set output '050.png'
+ plot [0:1.5][0:1]'mesh.050'w l
+ !convert 050.png 050.gif
+ !mv 050.gif gif.050
+ !rm 050.png
