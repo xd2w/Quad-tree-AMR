@@ -148,7 +148,7 @@ extern Real VOL2(Real mx,Real mz,Real alpha,Real b);
 extern void plic(void);
 extern void computeXVOF(void);
 extern void computeYVOF(void);
-extern void  copyCellInt1D(Int1D from, Int1D to);
+extern void copyCellInt1D(Int1D from, Int1D to);
 extern void copyOctInt1D(Int1D from, Int1D to);
 extern void flagInterfCells(void);
 extern void propagateFlag(int dir);
@@ -159,5 +159,8 @@ extern void setCellInt1DZeroAtLevel(Int1D val, int level);
 extern void setOctInt1DZeroAtLevel(Int1D val, int level);
 extern void setOctInt1DZero(Int1D val);
 extern void reMesh(int itNb);
+
+
+extern Real computeVOF_ellipse(int iCell, int itNb, Real a, Real b, Real c);
 
 #endif
