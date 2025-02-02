@@ -1,0 +1,61 @@
+This package contains a set of C program dealing with Quad(Oct)
+data structure. Useful information can be found in the Makefile. 
+Parameters are read by a library defined by macro "CLIB" in Makefile.
+
+
+1) To compile the code, type
+   make (this creates "FTT_ARM" and mv it into subdirectory "Examples")
+
+2) To run the code, type
+   cd Examples/
+   ./FTT_ARM  ftt.par
+
+   This will read a series of points in "elliptic", and generate
+   a quadtree structure. When a cell contains a point in "elliptic",
+   and its level is less than "maxLevel", it will be splited. 
+
+   Output DATA of mesh and interface are saved in directory "DATA", to visualize them,
+   type 
+     cd DATA
+     gnuplot
+     set size ratio -1
+     plot './mesh.000'w l,'./intf.000'w l
+
+
+3) parameter file "ftt.par"
+   maxLevel=8               // level of tree structure allowed
+   maxNumberOfOcts=10000    // maximum number of octs (quads) allowed
+   Lx=1.5                  // the computational domain size
+   Ly=1.0
+   "ftt.par" contains numerical and physical parameters. It is
+   read by a library defined by macro "CLIB" in Makefile.
+   Examples can be found in "readData.c". To read integer, use ifetch.
+   Typical syntax
+     ifetch("nx", &nx)
+   /* look for string "nx" in the file "ftt.par", and assign the
+   value after "=" to nx */
+   to read double, use dfetch.  Typical syntax
+    dfetch("Lx", &Lx).
+
+4) code structure: 
+   Main program: FTT_ARM.c
+   (1) initialize(): initialization of the code
+          (i) readData() --> read parametters
+          (ii) initFTT() --> initialize the fully threaded tree
+   (2) refineFTT()--> When a cell contains a point in "elliptic",
+   and its level is less than "maxLevel", it will be splited.
+   (3) balanceFTT()--> ensure that the size ratio of neighbours is less than 2.
+   (4) plotFTT()--> save quadtree in "mesh".
+5) Key variables are defined in "ftt.c":
+
+   /* oct variables */
+   Int1D octLv;
+   Int1D octPrCell;
+   /* cell variables */
+   Int1D cellChOct;
+   Int1D cellFlag;
+
+   
+  
+6) How to Compile the library "CLIB".
+   

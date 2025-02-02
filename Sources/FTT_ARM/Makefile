@@ -1,10 +1,10 @@
 
 #   These are the objects required for the ftt code
 BALANCE = balanceFTT.o balanceFTTxP.o balanceFTTxN.o balanceFTTyP.o balanceFTTyN.o
-FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o linalg.o leastSquareFit.o splitCell.o fttStatistics.o cell_OctFlag.o restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o plotFTTInterf.o plotCellInterf.o plic.o vol2.o octTreeXSwp.o octTreeYSwp.o reMesh.o
+FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag.o restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o plotFTTInterf.o plotCellInterf.o plic.o vol2.o octTreeXSwp.o octTreeYSwp.o reMesh.o
 
 ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT.o refineFTT.o bcOctTree.o
-ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT_Yung.o refineFTT_Yung.o bcOctTree_Yung.o computePotential.o
+ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT_Yung.o refineFTT_Yung.o bcOctTree_Yung.o
 #ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT_Dodd.o refineFTT_Dodd.o bcOctTree_Dodd.o
 
 IO  = readData.o plotFTTOct.o plotFTT.o plotSFC.o printFTTCell.o drawNgbCells.o drawChCells.o drawPrCells.o saveFTT.o readFTT.o initMemory.o computeCoord.o

@@ -1,0 +1,55 @@
+
+void plotFTTCellHilbert(int iCell, FILE *fsfc)
+{
+  int iOct, cLv;
+  Real xLeft, yLeft, xRight, yRight;
+
+// do not draw if cell is not a leaf
+//  if(cellFlag[iCell]) return;
+
+  iOct = iCell/cellNumberInOct;
+  cLv = octLv[iOct];
+  //printf("iCell %d iOct %d cLv %d\n", iCell, iOct, cLv);
+  xLeft = xCell[iCell]; yLeft = yCell[iCell];
+ 
+  Real xx= xLeft+.5*dxCell[cLv];
+  Real yy= yLeft+.5*dyCell[cLv];
+
+  /* only plot on leaves of the tree */
+  iOct = cellChOct[iCell];
+  if(iOct==0)
+  {
+    fprintf(fsfc,"%g %g\n", xx, yy);
+  }
+  else
+  {
+     iCell = iOct*cellNumberInOct; 
+     plotFTTCellHilbert(iCell, fsfc);
+     plotFTTCellHilbert(iCell+1, fsfc);
+     plotFTTCellHilbert(iCell+2, fsfc);
+     plotFTTCellHilbert(iCell+3, fsfc);
+  }
+  return;
+}
+void plotHilbert(int ndata)
+{
+  int iCell, i, i1, i2, i3;
+  char fsfcv[] = "DATA/sfcv.000";
+  FILE *fsfc;
+  i = ndata;
+  i1 = i % 10; i /= 10;
+  i2 = i % 10; i /= 10;
+  i3 = i % 10;
+  fsfcv[10] ='0'+i3;
+  fsfcv[11] ='0'+i2;
+  fsfcv[12] ='0'+i1;
+
+  fsfc =  fopen(fsfcv, "w");
+  for(iCell = 0; iCell < cellNumberInOct; iCell++)
+  {
+    plotFTTCellHilbert(iCell, fsfc);
+  }
+  fclose(fsfc); 
+
+  return;
+}

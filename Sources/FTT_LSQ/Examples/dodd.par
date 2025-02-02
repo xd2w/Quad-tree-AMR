@@ -1,0 +1,13 @@
+tmax=100
+restart=0
+tplot=2
+maxLevel=10
+maxNumberOfOcts=20000
+Lx=1.50
+Ly=1.0
+xc=0.75
+yc=0.5
+deltaHeight=0.015625
+nbPropagation=3
+iBalance=1
+

@@ -1,16 +1,15 @@
-tmax=20000
-tplot=200
-minLevel=3
-maxLevel=7
+tmax=400
+tplot=4
+minLevel=1
+maxLevel=6
 maxNumberOfOcts=20000
-Lx=1.0
+Lx=1.5
 Ly=1.0
 xPoint=.2
 yPoint=.72
 xc=0.5
-yc=0.25
-radius=0.15
+yc=0.35
+radius=0.1
 xShock=0.28
 iBalance=1
-cfl=0.4
 
