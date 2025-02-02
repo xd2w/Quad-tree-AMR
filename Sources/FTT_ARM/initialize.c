@@ -17,7 +17,7 @@ void initialize(void)
   if(restart == 0)
   {
     initFTT();
-    refineFTT();
+    refineFTT_ellipse();
     //plotFTT(0);
     //plotSFC(0);
     //exit(1);

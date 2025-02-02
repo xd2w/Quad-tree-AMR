@@ -19,6 +19,12 @@ int main(int argc, char *argv[])
   printf("Fully Threaded Tree Algorithms for Adaptive Refinement Methods\n");
   printf("--------------------------------\n");
 
+  init_VOF_coefs[0] = 1; // a
+  init_VOF_coefs[1] = 1; // b
+  init_VOF_coefs[2] = 1; // c
+
+  // a*X^2 + b*X*Y + c*Y^2 = radius^2
+
   initialize();
   fttStatistics();
   // exit(1);

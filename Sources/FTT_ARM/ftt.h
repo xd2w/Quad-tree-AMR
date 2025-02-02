@@ -71,6 +71,8 @@ extern Real1D dive;
 extern Real1D vof;
 extern Real1D work1, work2, work3;
 
+extern Real init_VOF_coefs[3];
+
 extern void initFTT(void);
 extern void initMemory(void);
 extern void computeCoord(void);
@@ -161,6 +163,7 @@ extern void setOctInt1DZero(Int1D val);
 extern void reMesh(int itNb);
 
 
-extern Real computeVOF_ellipse(int iCell, int itNb, Real a, Real b, Real c);
+extern Real computeVOF_ellipse(int iCell, int itNb);
+extern void refineFTT_ellipse(void);
 
 #endif

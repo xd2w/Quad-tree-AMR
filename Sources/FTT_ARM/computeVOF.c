@@ -144,7 +144,7 @@ Real polyArea(Real1D xList, Real1D yList, int count)
 }
 
 
-Real computeVOF_ellipse(int iCell, int itNb, Real a, Real b, Real c)
+Real computeVOF_ellipse(int iCell, int itNb)
 {
   int iOct, cLv, i, count;
   Real xc, yc, radius;
@@ -180,9 +180,9 @@ Real computeVOF_ellipse(int iCell, int itNb, Real a, Real b, Real c)
   for(i=0; i<5; i++)
   {
     printf("box %d %g %g \n", i, xcoor[i], ycoor[i]);
-    color[i] = a*(xcoor[i]-xc)*(xcoor[i]-xc) 
-             + b*(xcoor[i]-xc)*(ycoor[i]-yc)
-             + c*(ycoor[i]-yc)*(ycoor[i]-yc) - radius*radius; 
+    color[i] = init_VOF_coefs[0]*(xcoor[i]-xc)*(xcoor[i]-xc) 
+             + init_VOF_coefs[1]*(xcoor[i]-xc)*(ycoor[i]-yc)
+             + init_VOF_coefs[2]*(ycoor[i]-yc)*(ycoor[i]-yc) - radius*radius; 
   } 
   if(color[0]<0.0)
    if(color[1]<0.0)

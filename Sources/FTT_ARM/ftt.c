@@ -61,4 +61,6 @@ Real1D dive;
 Real1D vof;
 Real1D work1, work2, work3;
 
+Real init_VOF_coefs[3];
+
 
