@@ -160,7 +160,7 @@ Real computeVOF_ellipse(int iCell, int itNb)
   xc +=.0075*itNb;
   yc +=.005*itNb;
 
-  printf("\ncircle center at (%g,%g), radius = %g itNb %d\n", xc, yc, radius, itNb);
+  printf("\nellipse center at (%g,%g), radius = %g itNb %d\n", xc, yc, radius, itNb);
 
   iOct = iCell/cellNumberInOct;
   cLv = octLv[iOct];

@@ -16,12 +16,17 @@ int main(int argc, char *argv[])
   int it, itNb, tmax, iCell, ndata, tplot;
   FILE* fp;
   printf("--------------------------------\n");
-  printf("Fully Threaded Tree Algorithms for Adaptive Refinement Methods\n");
+  printf("Fully Threaded Tree Algorithms for Adaptive Refinement Methods Modified\n");
   printf("--------------------------------\n");
 
-  init_VOF_coefs[0] = 1; // a
-  init_VOF_coefs[1] = 1; // b
-  init_VOF_coefs[2] = 1; // c
+  dfetch("ellipse_A", &init_VOF_coefs[0]);
+  dfetch("ellipse_B", &init_VOF_coefs[1]);
+  dfetch("ellipse_C", &init_VOF_coefs[2]);
+
+
+  // init_VOF_coefs[0] = 1 ; // a
+  // init_VOF_coefs[1] = 0.1; // b
+  // init_VOF_coefs[2] = 2; // c
 
   // a*X^2 + b*X*Y + c*Y^2 = radius^2
 
@@ -35,9 +40,9 @@ int main(int argc, char *argv[])
 //  plotFTT(0);
 //  plotSFC(0);
   initVOF(0);
- // plotFTTInterf(0); 
+  // plotFTTInterf(0); 
   //seekCell(0,.343, .473); printf("vof %g\n", vof[55]); exit(1);
- 
+  // exit(1);
   for(itNb=0; itNb<=tmax;itNb++)
   {
     printf("\nFully Threaded Tree Data Structure: iteration = %d\n", itNb);

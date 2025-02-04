@@ -18,8 +18,7 @@ void initVOF(int itNb)
   {
     if(cellChOct[iCell]==0)
     {
-      // vof[iCell] = computeVOF(iCell, itNb);
-      vof[iCell] = computeVOF_ellipse(iCell, itNb);
+      vof[iCell] = computeVOF(iCell, itNb);
     }
   }
   restrField(vof);
