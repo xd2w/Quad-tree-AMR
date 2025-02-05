@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "pfplib.h"
      
 int xargc;
 char xargv[100][80];
@@ -14,7 +15,16 @@ char infilename[160],outfilename[160];
      
 typedef struct { float re,im;} complex;
      
-int getPars(int argc,char *argv)
+extern int getPars(int argc, char *argv[]);
+
+/*
+int main(int argc, char *argv[])
+{
+  getPars(argc, argv);
+  return 1;
+}
+*/
+int getPars(int argc, char *argv[])
 {
   int i;
   FILE *datapathfile,*fopen();
@@ -74,7 +84,7 @@ int getPars(int argc,char *argv)
   }
   outfd = fopen(outname,"w");
   /*printf("in=%s\n",outname);*/
-
-  return 1;     
+     
+  return 1;
 }
 

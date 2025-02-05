@@ -1,0 +1,1 @@
+plot './nvec.000' using 1:2:3:4 with vectors

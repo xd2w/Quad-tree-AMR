@@ -1,7 +1,4 @@
-/* AKG attempt at mimicking the fetch function */
-
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
 #include "pfplib.h"
 
@@ -10,16 +7,14 @@ extern int npar;
 extern char *parname[100],*parvalue[100];
 extern char *string,*parfile;
 
-/*int dfetch(name,var)
+int sfetch(name,var)
 
 char *name;
-double *var;
-*/
-int dfetch(char *name, double *var)
-{
-  int i;
-  float a;
+char *var;
 
+{
+  int i,len;
+   
   if (!opened)
     getpars();
 
@@ -27,9 +22,19 @@ int dfetch(char *name, double *var)
 
   if (i>=0)
   {
-    sscanf(parvalue[i],"%f",&a);
-    *var = a;
-    return 1;
+    if (strlen(parvalue[i])>0)
+      sscanf(parvalue[i],"%s",var);
+
+    if (var[0] == '"')
+    {
+      len = strlen(var);
+
+      for (i=0;i<len-2;i++)
+        var[i] = var[i+1];
+ 
+      var[len-2] = '\0';
+    }
+    return(1);
   }
-  return 0;
+  return(0);
 }

@@ -14,7 +14,6 @@ OBJ = ffetch.o getpars.o ifetch.o  isapipe.o  sfetch.o  alloc.o redin.o\
 
 CFLAGS = -DCHECKMEMORY -O2 -I.
 CFLAGS = -O2 -I.
-CC = gcc-14
 #CFLAGS = -g -I.
 #CFLAGS = -DCHECKMEMORY -g -I.
 Lib = -L$(HOME)/lib -lpfp

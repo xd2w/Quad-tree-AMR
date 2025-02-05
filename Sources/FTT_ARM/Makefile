@@ -13,10 +13,12 @@ IO  = readData.o plotFTTOct.o plotFTT.o plotSFC.o printFTTCell.o drawNgbCells.o 
 OBJECTS = $(FTT_ARM) $(ICBC) $(IO)
 CFLAGS= -O2  -I$(HOME)/include
 CFLAGS= -g  -I$(HOME)/include
-#LIB= alloc.o   ffetch.o   ifetch.o   nrutil.o  redin.o dfetch.o  getpars.o  isapipe.o  pfplib.o  sfetch.o
+LIB= alloc.o   ffetch.o   ifetch.o   nrutil.o  redin.o dfetch.o  getpars.o  isapipe.o  pfplib.o  sfetch.o
 CLIB=  -L$(HOME)/lib -lpfp
+# CLIB=  -L -lpfp
 
-FTT_ARM: $(OBJECTS) $(LIB)
+FTT_ARM: $(OBJECTS) #$(LIB)
+	#$(CC) $(CFLAGS) -o FTT_ARM $(OBJECTS)  $(LIB) -lm
 	$(CC) $(CFLAGS) -o FTT_ARM $(OBJECTS)  $(CLIB) -lm
 	mv FTT_ARM Examples
 
