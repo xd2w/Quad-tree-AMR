@@ -1,5 +1,5 @@
-tmax=4
-tplot=4
+tmax=2
+tplot=1
 minLevel=1
 maxLevel=12
 maxNumberOfOcts=20000

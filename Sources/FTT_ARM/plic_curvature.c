@@ -41,12 +41,12 @@ void computeXVOF(void)
   {
     if(cellMark[iCell])
     {
-      leftNgb = cellNb[0][iCell];
-      rightNgb = cellNb[1][iCell];
-      fraction = work3[leftNgb]+work2[iCell]+work1[rightNgb];
-      if(fraction > MaxVof) fraction = 1.0; 
-      if(fraction < MinVof) fraction = 0.0; 
-      vof[iCell] = fraction;
+      // leftNgb = cellNb[0][iCell];
+      // rightNgb = cellNb[1][iCell];
+      // fraction = work3[leftNgb]+work2[iCell]+work1[rightNgb];
+      // if(fraction > MaxVof) fraction = 1.0; 
+      // if(fraction < MinVof) fraction = 0.0; 
+      // vof[iCell] = fraction;
     }
   }
 }
@@ -69,12 +69,12 @@ void computeYVOF(void)
   {
     if(cellMark[iCell])
     {
-      leftNgb = cellNb[2][iCell];
-      rightNgb = cellNb[3][iCell];
-      fraction = work3[leftNgb]+work2[iCell]+work1[rightNgb];
-      if(fraction > MaxVof) fraction = 1.0;
-      if(fraction < MinVof) fraction = 0.0;
-      vof[iCell] = fraction;
+      // leftNgb = cellNb[2][iCell];
+      // rightNgb = cellNb[3][iCell];
+      // fraction = work3[leftNgb]+work2[iCell]+work1[rightNgb];
+      // if(fraction > MaxVof) fraction = 1.0;
+      // if(fraction < MinVof) fraction = 0.0;
+      // vof[iCell] = fraction;
     }
   }
 
@@ -97,7 +97,7 @@ void flagInterfCells(void)
     cellFlag[iCell] = 0;
     iOct = iCell/cellNumberInOct;
     iLv = octLv[iOct];
-    if(iLv == maxLevel)
+    // if(iLv == maxLevel)
     {
       fraction = vof[iCell];
       if(fraction > 0.0 && fraction <1.0)

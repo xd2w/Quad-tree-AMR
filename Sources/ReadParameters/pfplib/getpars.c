@@ -1,80 +1,50 @@
-/* pfplib program header */
-/* AKG May, 1989 */
-     
+/* AKG attempt at mimicking the fetch function */
+/* Modified 24/04/93 by SZ to initialize correctly parname and parvalue */
+
+
 #include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
-     
-int xargc;
-char xargv[100][80];
-FILE *infd,*outfd;
-     
-char datapath[160],outname[160];
-char infilename[160],outfilename[160];
-     
-typedef struct { float re,im;} complex;
-     
-int getPars(int argc,char *argv)
+
+int opened=0;
+char *parname[100],*parvalue[100];
+char string[80],parfile[80];
+int npar=0;
+
+extern int xargc;
+extern char xargv[100][80];
+extern char *alloc(int size);
+
+void getpars(void)
+
 {
-  int i;
-  FILE *datapathfile,*fopen();
+  FILE *fp,*fopen();
+  
+  int i,namelen,foundparfile=0;
+  char *equal;
 
-  if(argc !=2)
+  int *varint;
+  float *varfloat;
+  
+  fp = fopen(xargv[1],"r"); 
+ 
+  while (fscanf(fp, "%s",string) != EOF)
   {
-    printf("\nUsage: command  par.file\n\n");
-    exit(1);
-  }
-  else
-  {
-    printf("\n---------------------------------------------\n");
-    printf("Job command: %s  %s\n", argv[0], argv[1]);
-    printf("---------------------------------------------\n");
+    parname[npar]  = (char *) alloc(80);
+    parvalue[npar] = (char *) alloc(80);
+    
+    bzero(parname[npar],80);
+    bzero(parvalue[npar],80);
+
+    equal = (char *) strchr(string,'=');
+
+    if (equal != NULL)
+    {
+      namelen = equal-string;
+      strncpy(parname[npar],string,namelen);
+      strcpy(parvalue[npar],string+namelen+1);
+      npar++;
+    }
   }
 
-  xargc = argc;
-     
-  for (i=0;i<xargc;i++)
-    strcpy(xargv[i],argv[i]);
-     
-  if(sfetch("in",infilename))
-  {
-    fprintf(stderr,"in=%s\n",infilename);
-    if ((infd = fopen(infilename,"r")) == NULL)
-    {
-      fprintf(stderr,"pfplib: Unable to open infd %s\n",infilename);
-      exit(0);
-    }
-  }
-     
-  if (isapipe(fileno(stdout)))
-  {
-    sprintf(outname,"/tmp/%d",getpid());
-  }
-  else
-  {
-    if (!sfetch("out",outfilename))
-    {
-      strcpy(outfilename,"/dev/null");
-    }
-     
-    if (outfilename[0] != '/')
-    {
-      if ((datapathfile = fopen(".datapath","r")) == NULL)
-      {
-        fprintf(stderr,"pfplib: Unable to find .datapath\n");
-        exit(0);
-      }
-      fscanf(datapathfile,"datapath=%s",datapath);
-      sprintf(outname,"%s%s",datapath,outfilename);
-    }
-    else
-    {
-      strcpy(outname,outfilename);
-    }
-  }
-  outfd = fopen(outname,"w");
-  /*printf("in=%s\n",outname);*/
-
-  return 1;     
+  opened = 1;
 }
-

@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <string.h>
-#include "pfplib.h"
 
 extern int opened;
 extern int npar;

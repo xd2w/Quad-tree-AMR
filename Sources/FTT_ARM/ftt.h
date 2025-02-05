@@ -163,7 +163,7 @@ extern void setOctInt1DZero(Int1D val);
 extern void reMesh(int itNb);
 
 
-extern Real computeVOF_ellipse(int iCell, int itNb);
-extern void refineFTT_ellipse(void);
+// extern Real computeVOF_ellipse(int iCell, int itNb);
+// extern void refineFTT_ellipse(void);
 
 #endif

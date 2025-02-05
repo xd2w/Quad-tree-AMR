@@ -1,6 +1,9 @@
 /* AKG attempt at mimicking the fetch function */
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "pfplib.h"
 
 extern int opened;
 extern int npar;
