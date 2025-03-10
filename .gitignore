@@ -3,3 +3,4 @@
 .vscode/
 bin/
 **/*.[0-9]+
+../../.gitignore

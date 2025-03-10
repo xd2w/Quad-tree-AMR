@@ -1,5 +1,6 @@
 set xrange [0:1]
-set yrange [-0.5:0.5]
+#set yrange [-0.5:0.5]
+set yrange [0:1]
 
 set size ratio -1
 

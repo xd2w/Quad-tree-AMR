@@ -10,9 +10,9 @@ int seekCell(int iCell, Real x, Real y)
   int iOct, chCell, within, cLv;
   Real dx, dy;
   iOct = cellChOct[iCell];
-  
-    printf("%g %g is in cell %d type %d\n", x, y, iCell, cellType[iCell]);
-  if(iOct == 0) 
+
+  printf("%g %g is in cell %d type %d\n", x, y, iCell, cellType[iCell]);
+  if (iOct == 0)
   {
     printf("*****************************\n");
     printf("%g %g is in cell %d\n", x, y, iCell);
@@ -24,30 +24,29 @@ int seekCell(int iCell, Real x, Real y)
   dx = dxCell[cLv];
   dy = dyCell[cLv];
 
-  chCell = iOct*4;
-  if(xCell[chCell] <= x && x < xCell[chCell] + dx &&
-     yCell[chCell] <= y && y < yCell[chCell] + dy )
+  chCell = iOct * 4;
+  if (xCell[chCell] <= x && x < xCell[chCell] + dx &&
+      yCell[chCell] <= y && y < yCell[chCell] + dy)
   {
     seekCell(chCell, x, y);
   }
   chCell++;
-  if(xCell[chCell] <= x && x < xCell[chCell] + dx &&
-     yCell[chCell] <= y && y < yCell[chCell] + dy )
+  if (xCell[chCell] <= x && x < xCell[chCell] + dx &&
+      yCell[chCell] <= y && y < yCell[chCell] + dy)
   {
     seekCell(chCell, x, y);
   }
   chCell++;
-  if(xCell[chCell] <= x && x < xCell[chCell] + dx &&
-     yCell[chCell] <= y && y < yCell[chCell] + dy )
+  if (xCell[chCell] <= x && x < xCell[chCell] + dx &&
+      yCell[chCell] <= y && y < yCell[chCell] + dy)
   {
     seekCell(chCell, x, y);
   }
   chCell++;
-  if(xCell[chCell] <= x && x < xCell[chCell] + dx &&
-     yCell[chCell] <= y && y < yCell[chCell] + dy )
+  if (xCell[chCell] <= x && x < xCell[chCell] + dx &&
+      yCell[chCell] <= y && y < yCell[chCell] + dy)
   {
     seekCell(chCell, x, y);
   }
+  // return -1;
 }
-
-

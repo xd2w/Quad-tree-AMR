@@ -6,27 +6,105 @@
 
 /* ftt tree relations */
 #if (ocTree) /* 3D */
-# define cellNumberInOct     8
-# define nbNumberOfOct       6
-#else  /* 2D */
-# define cellNumberInOct     4
-# define nbNumberOfOct       4
-#endif 
+#define cellNumberInOct 8
+#define nbNumberOfOct 6
+#else /* 2D */
+#define cellNumberInOct 4
+#define nbNumberOfOct 4
+#endif
 
 static int hilbert_map[4][4] =
-{
-  0, 2, 3, 1, // H
-  0, 1, 3, 2, // A
-  3, 2, 0, 1, // B
-  3, 1, 0, 2  // C
+    {
+        0, 2, 3, 1, // H
+        0, 1, 3, 2, // A
+        3, 2, 0, 1, // B
+        3, 1, 0, 2  // C
 };
 
 static int hilbert_production[4][4] =
-{
-  1, 2, 0, 0, // H -> ABHH
-  0, 1, 3, 1, // A -> HACA
-  2, 0, 2, 3, // B -> BHBC
-  3, 3, 1, 2  // C -> CCAB
+    {
+        1, 2, 0, 0, // H -> ABHH
+        0, 1, 3, 1, // A -> HACA
+        2, 0, 2, 3, // B -> BHBC
+        3, 3, 1, 2  // C -> CCAB
+};
+
+// [direction][myposition]
+// if >4 its outside the Oct (subtract 4 to get index)
+static int morton_lookup[4][4] =
+    {
+        5, 0, 7, 2,
+        1, 4, 3, 6,
+        6, 7, 0, 1,
+        2, 3, 4, 5};
+
+static double est1[20] = {
+    +8.809173 * 1e-3,
+    -7.302646 * 1e-2,
+    +1.476918 * 1e-1,
+    +8.127531 * 1e-1,
+    +1.662098 * 1e-1,
+    -3.158622 * 1e-1,
+    -7.899257 * 1e-2,
+    -2.954707 * 1e-1,
+    -8.268886 * 1e-1,
+    +1.961225 * 1e-2,
+    -1.107777 * 1e-1,
+    -4.160499 * 1e-4,
+    -1.507973 * 1e-2,
+    -1.792648 * 1e-4,
+    +8.268877 * 1e-1,
+    +6.325443 * 1e-1,
+    -6.501391 * 1e-2,
+    +1.579836 * 1e-1,
+    +2.944518 * 1e-6,
+    +4.704595 * 1e-6,
+};
+
+static double est2[20] = {
+    +8.744777 * 1e-3,
+    -4.773088 * 1e-2,
+    +1.911265 * 1e-1,
+    +1.051815 * 100,
+    +9.073978 * 1e-2,
+    -3.656622 * 1e-1,
+    -1.242422 * 1e-1,
+    -3.824833 * 1e-1,
+    -2.037791 * 1e-1,
+    -9.380094 * 1e-1,
+    -6.043060 * 1e-2,
+    -1.001143 * 1e-3,
+    -5.859334 * 1e-2,
+    -3.742121 * 1e-4,
+    +2.037529 * 1e-1,
+    +7.331659 * 1e-1,
+    +4.143641 * 1e-1,
+    +2.482401 * 1e-1,
+    +3.065368 * 1e-4,
+    +1.256257 * 1e-4,
+};
+
+static double est3[20] = {
+    +6.411956 * 1e-3,
+    -1.217681 * 1e-1,
+    +1.213353 * 1e-1,
+    +1.091137 * 100,
+    +3.268512 * 1e-1,
+    -1.658780 * 1e-1,
+    +9.856956 * 1e-2,
+    -2.427756 * 1e-1,
+    -1.522460 * 1e-1,
+    -8.981913 * 1e-1,
+    -2.178954 * 1e-1,
+    -2.737967 * 1e-4,
+    -2.349028 * 100,
+    -2.355644 * 1e-5,
+    +1.522527 * 1e-1,
+    +3.322431 * 1e-1,
+    +2.703116 * 1e-1,
+    -1.982763 * 1e-1,
+    +1.363379 * 1e-3,
+    -3.048371 * 1e-7,
 };
 
 extern int maxLevel, minLevel, maxNumberOfOcts, maxNumberOfCells;
@@ -53,7 +131,7 @@ extern Int1D cellHilb;
 extern Real1D xCell;
 extern Real1D yCell;
 #if (ocTree) /* 3D */
-  extern Real1D zCell;
+extern Real1D zCell;
 #endif
 
 /* physical quantities */
@@ -71,7 +149,13 @@ extern Real1D dive;
 extern Real1D vof;
 extern Real1D work1, work2, work3;
 
+// newly added variables for ellipse case
+
+// coefficient of ellipse Axx + Bxy + Cyy = radius^2 [A, B, C]
 extern Real init_VOF_coefs[3];
+extern Real1D temp_vof;
+extern Real CFL;
+extern Real global_dt;
 
 extern void initFTT(void);
 extern void initMemory(void);
@@ -91,6 +175,10 @@ extern void balanceFTTyN(int iCell, int levelDrop);
 extern void refineFTT(void);
 extern void plotSFC(int ndata);
 extern void plotFTTCell(int iCell, FILE *fp);
+extern void plotCellGrad(int iCell, FILE *fpGd);
+extern void plotCellGradSmoothed(int iCell, FILE *fpGd);
+extern void plotCellGrad_4x4(int iCell, FILE *fpGd);
+extern void plotCellGradSmoothed_4x4(int iCell, FILE *fpGd);
 extern void plotHilbertSFC(int ndata);
 extern void plotFTTCellHilbert(int iCell, FILE *fsfc);
 extern void plotFTTCellSFC(int iCell, FILE *fsfc);
@@ -125,7 +213,7 @@ extern void binCollection(void);
 extern void binCollectionAtLevel(int level);
 extern void drawNgbCells(int iCell);
 extern void drawPrCells(int iCell);
-extern void drawChCells(int iCell, FILE* fp);
+extern void drawChCells(int iCell, FILE *fp);
 extern int seekCell(int iCell, Real x, Real y);
 extern void checkOctTree(void);
 extern void establishNb(void);
@@ -146,7 +234,7 @@ extern void plotCellInterf(int iCell, FILE *fp);
 extern void printCellNgbVOF(int iCell);
 extern void octTreeXSwp(int iCell);
 extern void octTreeYSwp(int iCell);
-extern Real VOL2(Real mx,Real mz,Real alpha,Real b);
+extern Real VOL2(Real mx, Real mz, Real alpha, Real b);
 extern void plic(void);
 extern void computeXVOF(void);
 extern void computeYVOF(void);
@@ -162,8 +250,37 @@ extern void setOctInt1DZeroAtLevel(Int1D val, int level);
 extern void setOctInt1DZero(Int1D val);
 extern void reMesh(int itNb);
 
-
 // extern Real computeVOF_ellipse(int iCell, int itNb);
 // extern void refineFTT_ellipse(void);
+extern void getCellNgbVOF_6x6(int iOct, Real cc[][6]);
+extern void getChildVOF(int iOct, Real list[4], int prCell);
+extern Real getVOF(int nbCell, int iCell, int dir);
+
+extern void curvature_6x6(Real cc[][6], double kappas[4], Real dx, Real dy);
+extern Real curvature_5x5(Real cc[][6], int ip, int jp, Real dx, Real dy);
+extern void plotCurvatureAtLevel(int ndata, int level);
+extern void plotCurvatureAtLeafCells(int ndata);
+extern void show6x6VofGrid(int iCell);
+extern void plotFTTInterfAtLevel(int ndata, int level);
+extern void plotFTTAtLevel(int ndata, int level);
+extern void flagInterfLeaves(void);
+extern void calcWorksX(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, int invz, Real s1, Real s2);
+extern void calcWorksY(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, int invz, Real s1, Real s2);
+extern void calcWorksXFull(int iCell, Real s1, Real s2);
+extern void calcWorksYFull(int iCell, Real s1, Real s2);
+extern void plotVOF(int ndata);
+extern void plotVOFAtLevel(int ndata, int level);
+extern void setTimeStep(void);
+extern void smooth2ndOrd(Real from[][6], Real to[][4]);
+extern void smoothUnifrom(Real from[][6], Real to[][4]);
+extern void copycc(Real cc[][6], Real ccs[][4]);
+extern Real equation_analytical_curvature(Real x, Real y, Real xc, Real yc);
+
+extern Real kappaBarickALELike(int iCell, Real cc[][6]);
+extern Real kappaBarickALELike_wider(int iCell, Real cc[][6]);
+extern Real kappaMeier(int iCell);
+
+extern Real computeVX(Real x, Real y);
+extern Real computeVY(Real x, Real y);
 
 #endif

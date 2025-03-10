@@ -1,0 +1,1 @@
+plot 'DATA/mesh.000' w l, 'DATA/vof.000' u 1:2:($3) w l lc var
