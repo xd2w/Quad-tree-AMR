@@ -38,6 +38,9 @@ Int1D cellFlag, cellMark;
 Int1D cellType;
 Int2D cellNb;
 Int1D cellHilb;
+Real1D mxCell;
+Real1D mzCell;
+Real1D alphaCell;
 
 /* corner coordinates  of Cells*/
 Real1D xCell;

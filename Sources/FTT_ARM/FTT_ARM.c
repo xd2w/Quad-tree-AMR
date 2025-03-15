@@ -57,17 +57,19 @@ int main(int argc, char *argv[])
     if (itNb % tplot == 0)
     {
       ndata = itNb / tplot;
-      setTimeStep();
-      // global_dt = 0.001953;
+      // setTimeStep();
+      global_dt = 0.001953;
       printf("setTimeStep: completed successfully dt = %f\n", global_dt);
       plotFTT(ndata);
       plotSFC(ndata);
       plotHilbertSFC(ndata);
       plotFTTInterf(ndata);
       plotVOF(ndata);
+      plotCellGradAtIntf(ndata);
+      plotCurvatureAtLeafCells(ndata);
     }
-    plotCurvatureAtLeafCells(ndata);
     plic();
+    // exit(0);
     // printf("plic done succesfully \n");
 
     // exit(0);

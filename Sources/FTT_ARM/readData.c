@@ -47,5 +47,12 @@ void readData(void)
     exit(1);
   }
 
+  // validate data
+  if (minLevel < 1)
+  {
+    printf("minLevel needs to be >2\n");
+    exit(1);
+  }
+
   return;
 }

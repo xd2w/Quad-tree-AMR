@@ -19,11 +19,11 @@ Real kappaBarickALELike(int iCell, Real cc[][6])
     int px[] = {0, 1, 0, 1};
     int py[] = {0, 0, 1, 1};
 
-    // smooth2ndOrd(cc, ccs);
+    smooth2ndOrd(cc, ccs);
     // copycc(cc, ccs);
     // smooth2ndOrd(cc, ccs);
 
-    smoothUnifrom(cc, ccs);
+    // smoothUnifrom(cc, ccs);
     // copycc(cc, ccs);
     // smoothUnifrom(cc, ccs);
 

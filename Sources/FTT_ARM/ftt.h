@@ -126,6 +126,9 @@ extern Int1D cellFlag, cellMark;
 extern Int1D cellType;
 extern Int2D cellNb;
 extern Int1D cellHilb;
+extern Real1D mxCell;
+extern Real1D mzCell;
+extern Real1D alphaCell;
 
 /* corner coordinates of Cells */
 extern Real1D xCell;
@@ -147,13 +150,14 @@ extern Real1D W;
 extern Real1D p;
 extern Real1D dive;
 extern Real1D vof;
+extern Real1D temp_vof;
 extern Real1D work1, work2, work3;
 
 // newly added variables for ellipse case
 
 // coefficient of ellipse Axx + Bxy + Cyy = radius^2 [A, B, C]
 extern Real init_VOF_coefs[3];
-extern Real1D temp_vof;
+
 extern Real CFL;
 extern Real global_dt;
 
@@ -282,5 +286,13 @@ extern Real kappaMeier(int iCell);
 
 extern Real computeVX(Real x, Real y);
 extern Real computeVY(Real x, Real y);
+
+extern void calcPlicPramForAll(void);
+extern Real getSubVOF(int iCell, int iLocal);
+
+extern void splitCell_smart(int iCell);
+
+extern void plotVOFContour(int ndata);
+extern void plotCellGradAtIntf(int ndata);
 
 #endif

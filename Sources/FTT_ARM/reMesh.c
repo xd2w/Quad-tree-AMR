@@ -16,22 +16,30 @@ void reMesh(int itNb)
   setOctInt1DZero(octFlag);
   // flagInterfCells();
   // refineToKappa();
-  // flagInterfLeaves();
-  plotFTT(200);
+  flagInterfLeaves();
+  // plotFTT(200);
+  // plotVOFContour(200);
   // plotFlagFTT(200);
+  // plotFTTInterf(200);
   printf("flagInterfLeavs done successfully \n");
+  // exit(0);
 
-  //  for(level=maxLevel; level>maxLevel-1; level--)
+  // for (level = maxLevel; level > maxLevel - 1; level--)
   for (level = maxLevel; level > minLevel; level--)
   {
-    // refineToKappaAtLevel(level);
+    // refineToKappaAtLevel(level + 1);
     setOctInt1DZeroAtLevel(octFlag, level);
     cell_OctFlagAtLevel(level);
     setCellInt1DZeroAtLevel(cellFlag, level);
     propagateOctFlagAtLevel(level);
     // propagateOctFlagAtLevel(level);
-    splitFlagCellsAtLevel(level - 1);
+    plotFlagFTT(level * 10 + 1);
+    // refineToKappaAtLevel(level);
+    refineToKappaAtLevel(level - 1);
+    // splitFlagCellsAtLevel(level - 1);
+    plotFlagFTT(level * 10 + 2);
     binCollectionAtLevel(level);
+    plotFlagFTT(level * 10 + 3);
     oct_PrCellFlagAtLvel(level);
     printf("before establish NB \n");
     establishNb();
@@ -81,10 +89,9 @@ void refineToKappa(void)
         iLv = octLv[iOct];
         getCellNgbVOF_6x6(iOct, cc);
         kappa = kappaBarickALELike(iCell, cc);
-        if (kappa > 0.7 * (iLv - minLevel - 3))
+        if (log(kappa + 1) > 0.5 * (iLv))
         {
-          splitCell(iCell);
-          cOct = cellChOct[iCell];
+          splitCell_smart(iCell);
 
           // getCellNgbVOF(iCell, ccp);
           // for (i = 0; i < 3; i++)
@@ -97,39 +104,39 @@ void refineToKappa(void)
           // }
           // printf("\n");
 
-          getChildVOF(0, list, iCell);
-          checkSum = 0;
-          for (i = 0; i < cellNumberInOct; i++)
-          {
-            vof[4 * cOct + i] = list[i];
-            checkSum += list[i];
-            for (dir = 0; dir < 4; dir++)
-            {
-              dest = morton_lookup[dir][4 * cOct + i];
-              if (dest < 4)
-              {
-                cellNb[dir][4 * cOct + i] = 4 * cOct + dest;
-              }
-              else
-              {
-                prNbCell = cellNb[dir][iCell];
-                if (octLv[prNbCell / 4] > octLv[iCell / 4])
-                {
-                  // to make later
-                  cellNb[dir][4 * cOct + i] = prNbCell;
-                }
-                cellNb[dir][4 * cOct + i] = prNbCell;
-              }
-            }
-          }
+          // getChildVOF(0, list, iCell);
+          // checkSum = 0;
+          // for (i = 0; i < cellNumberInOct; i++)
+          // {
+          //   vof[4 * cOct + i] = list[i];
+          //   checkSum += list[i];
+          //   for (dir = 0; dir < 4; dir++)
+          //   {
+          //     dest = morton_lookup[dir][4 * cOct + i];
+          //     if (dest < 4)
+          //     {
+          //       cellNb[dir][4 * cOct + i] = 4 * cOct + dest;
+          //     }
+          //     else
+          //     {
+          //       prNbCell = cellNb[dir][iCell];
+          //       if (octLv[prNbCell / 4] > octLv[iCell / 4])
+          //       {
+          //         // to make later
+          //         cellNb[dir][4 * cOct + i] = prNbCell;
+          //       }
+          //       cellNb[dir][4 * cOct + i] = prNbCell;
+          //     }
+          //   }
+          // }
 
-          // printf("sum = %f\n", 0.25 * checkSum);
-          if (fabs(0.25 * checkSum - vof[iCell]) > 1e-4)
-          {
-            printf("*************\n");
-            printf("vof missmatch\n\n");
-            exit(1);
-          }
+          // // printf("sum = %f\n", 0.25 * checkSum);
+          // if (fabs(0.25 * checkSum - vof[iCell]) > 1e-4)
+          // {
+          //   printf("*************\n");
+          //   printf("vof missmatch\n\n");
+          //   exit(1);
+          // }
         }
       }
     }
@@ -141,39 +148,22 @@ void refineToKappaAtLevel(int level)
   int iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
   Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum;
   int currentNumberOfCells = numberOfCells;
+  Real tol = 1e-2;
   for (iCell = 0; iCell < currentNumberOfCells; iCell++)
   {
-    cellFlag[iCell] = 0;
+    // cellFlag[iCell] = 0;
     if (cellChOct[iCell] == 0 && octLv[iCell / 4] == level)
     {
       fraction = vof[iCell];
-      if (fraction > 0.0 && fraction < 1.0)
+      if (fraction > tol && fraction < 1.0 - tol)
       {
         iOct = iCell / cellNumberInOct;
         iLv = octLv[iOct];
         getCellNgbVOF_6x6(iOct, cc);
         kappa = kappaBarickALELike(iCell, cc);
-        if (kappa > 0.7 * (iLv - minLevel - 3))
+        if (log(kappa + 1) > 0.45 * (iLv))
         {
-          splitCell(iCell);
-          cOct = cellChOct[iCell];
-          octFlag[cOct] = 1;
-
-          getChildVOF(0, list, iCell);
-          checkSum = 0;
-          for (i = 0; i < cellNumberInOct; i++)
-          {
-            vof[4 * cOct + i] = list[i];
-            checkSum += list[i];
-          }
-
-          // printf("sum = %f\n", 0.25 * checkSum);
-          if (fabs(0.25 * checkSum - vof[iCell]) > 1e-4)
-          {
-            printf("*************\n");
-            printf("vof missmatch\n\n");
-            exit(1);
-          }
+          splitCell_smart(iCell);
         }
       }
     }

@@ -205,6 +205,12 @@ void refineFTT(void)
     //    printf("split cell %d, numberOfCells %d\n", iCell, numberOfCells);
     //    getchar();
 
+    if (cLv < minLevel)
+    {
+      if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
+        splitCell(iCell);
+    }
+
     iOct = iCell / cellNumberInOct;
     cLv = octLv[iOct];
     if (cLv >= maxLevel)
@@ -224,14 +230,14 @@ void refineFTT(void)
       // split cell
       // printf("kappa : %f\n", equation_analytical_curvature(xCell[iCell] + dx/2, yCell[iCell] + dy/2, xc, yc));
       // if(cellChOct[iCell] == 0 && cellType[iCell] == 0) splitCell(iCell);
-      if (cLv < minLevel + 3)
+      if (cLv < minLevel)
       {
         if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
           splitCell(iCell);
       }
       else
       {
-        // uncomment the following to initialise to curvature
+        // // uncomment the following to initialise to curvature
         // ave_kappa = equation_analytical_curvature(pList[index].x, pList[index].y, xc, yc);
         // printf("kappa : %f %d \n", ave_kappa, index);
         // if (ave_kappa > refine_th * (cLv - minLevel - 3))

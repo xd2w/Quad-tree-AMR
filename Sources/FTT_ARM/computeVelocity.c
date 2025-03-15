@@ -15,14 +15,14 @@
 
 Real computeVX(Real x, Real y)
 {
-    // return 1;
-    return -y;
-    // return -2 * sin(pi * x) * sin(pi * x) * sin(pi * y) * cos(pi * y);
+    return 1;
+    // return -y;
+    // return 2 * sin(pi * x) * sin(pi * x) * sin(pi * y) * cos(pi * y);
 }
 
 Real computeVY(Real x, Real y)
 {
-    // return 1;
-    return x;
-    // return -2 * cos(pi * x) * sin(pi * x) * cos(pi * y) * cos(pi * y);
+    return 1;
+    // return x;
+    // return 2 * cos(pi * x) * sin(pi * x) * cos(pi * y) * cos(pi * y);
 }

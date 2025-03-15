@@ -41,6 +41,10 @@ void initMemory(void)
   /* geometric quantities of cell */
   xCell = dvector(0, maxNumberOfCells);
   yCell = dvector(0, maxNumberOfCells);
+
+  mxCell = dvector(0, maxNumberOfCells);
+  mzCell = dvector(0, maxNumberOfCells);
+  alphaCell = dvector(0, maxNumberOfCells);
 #if (ocTree) /* 3D */
   zCell = dvector(0, maxNumberOfCells);
 #endif
@@ -53,9 +57,9 @@ void initMemory(void)
   V = dvector(0, maxNumberOfCells);
   dive = dvector(0, maxNumberOfCells);
   vof = dvector(0, maxNumberOfCells);
-  work1 = dvector(0, maxNumberOfCells);
-  work2 = dvector(0, maxNumberOfCells);
-  work3 = dvector(0, maxNumberOfCells);
+  // work1 = dvector(0, maxNumberOfCells);
+  // work2 = dvector(0, maxNumberOfCells);
+  // work3 = dvector(0, maxNumberOfCells);
 
   temp_vof = dvector(0, maxNumberOfCells);
 
