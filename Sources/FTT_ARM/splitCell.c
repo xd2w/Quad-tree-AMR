@@ -97,6 +97,7 @@ void splitCell_smart(int iCell)
   int cLv, iOct, chCell, cellTp;
   Real xLeft, yLeft;
   Real dx2, dy2, cellVOF;
+  Real list[4], checkSum, cc[3][3];
 
   /* number of Oct: cell number / 4 */
   iOct = iCell / cellNumberInOct;
@@ -144,7 +145,6 @@ void splitCell_smart(int iCell)
   cellFlag[chCell + 2] = cellFlag[iCell];
   cellFlag[chCell + 3] = cellFlag[iCell];
 
-  Real list[4], checkSum;
   getChildVOF(0, list, iCell);
   checkSum = 0;
 
@@ -157,10 +157,23 @@ void splitCell_smart(int iCell)
   vof[chCell + 3] = list[3];
   checkSum += vof[chCell + 3];
 
+  getCellNgbVOF(chCell, cc);
+  setPLICPramForOne(chCell, cc);
+  getCellNgbVOF(chCell + 1, cc);
+  setPLICPramForOne(chCell + 1, cc);
+  getCellNgbVOF(chCell + 2, cc);
+  setPLICPramForOne(chCell + 2, cc);
+  getCellNgbVOF(chCell + 3, cc);
+  setPLICPramForOne(chCell + 3, cc);
+
   if (fabs(checkSum - 4 * cellVOF) > 1e-5)
   {
     printf("*******************************************\n");
     printf("splitCell.c/splitCell_smart: vof miss-match\n\n");
+    printf("original vof = %f\n", vof[iCell]);
+    printf("split into :\n");
+    printf("\t%f\t%f\n", list[2], list[3]);
+    printf("\t%f\t%f\n", list[0], list[1]);
     exit(1);
   }
 
@@ -176,7 +189,7 @@ void splitCell_smart(int iCell)
   // printf("cell[%d] split\n", iCell);
 
   // establish nb + balance recursively
-  int i, dir, dest, nbChOct, prNbCell;
+  int i, dir, dest, nbChOct, prNbCell, prprNbCell, leftCell, rightCell;
   for (i = 0; i < 4; i++)
   {
     for (dir = 0; dir < 4; dir++)
@@ -216,7 +229,7 @@ void splitCell_smart(int iCell)
           }
           else
           {
-            nbChOct = cellChOct[prNbCell];
+            nbChOct = cellChOct[prNbCell / 4];
             cellNb[dir][chCell + i] = 4 * nbChOct + (dest - 4);
             // printf("neighbour relation error\n");
             // exit(1);
@@ -224,6 +237,36 @@ void splitCell_smart(int iCell)
         }
       }
     }
+    // leftCell = cellNb[0][iCell];
+    // rightCell = cellNb[1][iCell];
+
+    // if (octLv[leftCell / 4] != cLv)
+    // {
+    //   printf("error");
+    //   exit(1);
+    // }
+
+    // if (octLv[rightCell / 4] != cLv)
+    // {
+    //   printf("error\n");
+    //   exit(1);
+    // }
+
+    // prNbCell = cellNb[3][leftCell];
+    // if (octLv[prNbCell / 4] > cLv)
+    //   splitCell_smart(prNbCell);
+
+    // prNbCell = cellNb[2][leftCell];
+    // if (octLv[prNbCell / 4] > cLv)
+    //   splitCell_smart(prNbCell);
+
+    // prNbCell = cellNb[3][rightCell];
+    // if (octLv[prNbCell / 4] > cLv)
+    //   splitCell_smart(prNbCell);
+
+    // prNbCell = cellNb[2][rightCell];
+    // if (octLv[prNbCell / 4] > cLv)
+    //   splitCell_smart(prNbCell);
   }
 
   return;

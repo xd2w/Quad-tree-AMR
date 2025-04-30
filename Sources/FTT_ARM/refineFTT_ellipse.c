@@ -48,8 +48,6 @@ Real equation_analytical_curvature(Real x, Real y, Real xc, Real yc)
   A = radius / (sqrt((pow(a * cos(phi), 2) + b * cos(phi) * sin(phi) + c * pow(sin(phi), 2))) + 1e-50);
   B = radius / (sqrt((pow(a * sin(phi), 2) - b * cos(phi) * sin(phi) + c * pow(cos(phi), 2))) + 1e-50);
 
-  // return (1 / (2 * radius)) * fabs(2 * a * (b * x + 2 * c * y) * (b * x + 2 * c * y) + 2 * c * (2 * a * x + b * y) * (2 * a * x + b * y) - 2 * b * (b * x + 2 * c * y) * (2 * a * x + b * y)) /
-  //        pow((2 * a * x + b * y) * (2 * a * x + b * y) + (2 * c * y + b * x) * (2 * c * y + b * x), 3 / 2);
   return (A * B) / (pow(A * A * sin(theta - phi) * sin(theta - phi) + B * B * cos(theta - phi) * cos(theta - phi), 1.5) + 1e-50);
 }
 
@@ -205,16 +203,16 @@ void refineFTT(void)
     //    printf("split cell %d, numberOfCells %d\n", iCell, numberOfCells);
     //    getchar();
 
+    iOct = iCell / cellNumberInOct;
+    cLv = octLv[iOct];
+    if (cLv >= maxLevel)
+      return;
+
     if (cLv < minLevel)
     {
       if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
         splitCell(iCell);
     }
-
-    iOct = iCell / cellNumberInOct;
-    cLv = octLv[iOct];
-    if (cLv >= maxLevel)
-      return;
 
     dx = dxCell[cLv];
     dy = dyCell[cLv];
@@ -230,21 +228,21 @@ void refineFTT(void)
       // split cell
       // printf("kappa : %f\n", equation_analytical_curvature(xCell[iCell] + dx/2, yCell[iCell] + dy/2, xc, yc));
       // if(cellChOct[iCell] == 0 && cellType[iCell] == 0) splitCell(iCell);
-      if (cLv < minLevel)
+      // if (cLv < minLevel)
+      // {
+      //   if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
+      //     splitCell(iCell);
+      // }
+      // else
       {
-        if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
-          splitCell(iCell);
-      }
-      else
-      {
-        // // uncomment the following to initialise to curvature
-        // ave_kappa = equation_analytical_curvature(pList[index].x, pList[index].y, xc, yc);
+        // uncomment the following to initialise to curvature
+        ave_kappa = equation_analytical_curvature(pList[index].x, pList[index].y, xc, yc);
         // printf("kappa : %f %d \n", ave_kappa, index);
-        // if (ave_kappa > refine_th * (cLv - minLevel - 3))
-        // {
-        //   if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
-        //     splitCell(iCell);
-        // }
+        if (log(ave_kappa + 1) > refine_th * cLv)
+        {
+          if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
+            splitCell(iCell);
+        }
       }
     }
   }

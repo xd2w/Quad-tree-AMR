@@ -27,6 +27,8 @@ Real kappaBarickALELike(int iCell, Real cc[][6])
     // copycc(cc, ccs);
     // smoothUnifrom(cc, ccs);
 
+    // getCellNgbVOF_unifrom(iCell, ccs);
+
     iOct = iCell / cellNumberInOct;
     iLv = octLv[iOct];
     dx = dxCell[iLv];
@@ -68,7 +70,7 @@ Real kappaBarickALELike(int iCell, Real cc[][6])
     nxdx = (nxvert[i + 1][j] + nxvert[i + 1][j + 1] - nxvert[i][j] - nxvert[i][j + 1]) / (2 * dx + 1e-50);
     nydy = (nyvert[i][j + 1] + nyvert[i + 1][j + 1] - nyvert[i][j] - nyvert[i + 1][j]) / (2 * dy + 1e-50);
 
-    return fabs(mag * ((nxcell * nmagdx + nycell * nmagdy) * mag - (nxdx + nydy)));
+    return (mag * ((nxcell * nmagdx + nycell * nmagdy) * mag - (nxdx + nydy)));
     // return fabs((1 / (nmagcell*nmagcell)) * ((nxcell / nmagcell) * nmagdx + (nycell / nmagcell) * nmagdy) - (nxdx + nydy));
 }
 
@@ -231,10 +233,10 @@ Real kappaMeier(int iCell)
     kappa1 += (est1[19] * xi * omega * sigma);
     kappa1 = fabs(kappa1);
 
-    if (kappa1 > 0.4)
+    if (kappa1 / (dx + 1e-50) > 0.4)
     {
         // printf("check 1\n");
-        return kappa1;
+        return kappa1 / (dx + 1e-50);
     }
 
     kappa2 = (est2[0] + est2[1] * xi + est2[2] * omega + est2[3] * sigma);
@@ -247,10 +249,10 @@ Real kappaMeier(int iCell)
     kappa2 += (est2[19] * xi * omega * sigma);
     kappa2 = fabs(kappa2);
 
-    if (kappa2 > 0.1)
+    if (kappa2 / (dx + 1e-50) > 0.1)
     {
         // printf("check 2\n");
-        return kappa2;
+        return kappa2 / (dx + 1e-50);
     }
 
     kappa3 = (est3[0] + est3[1] * xi + est3[2] * omega + est3[3] * sigma);
@@ -264,7 +266,7 @@ Real kappaMeier(int iCell)
     kappa3 = fabs(kappa3);
     // printf("check 3\n");
 
-    return kappa3;
+    return kappa3 / (dx + 1e-50);
 
     // printf("***********************\n");
     // printf("Error kappa est. not working\n\n");
@@ -353,4 +355,50 @@ void copycc(Real cc[][6], Real ccs[][4])
     cc[5][0] = ccs[3][0];
     cc[0][5] = ccs[0][3];
     cc[5][5] = ccs[3][3];
+}
+
+void copyCellReal1D(Real1D from, Real1D to)
+{
+    for (int iCell = 0; iCell < maxNumberOfCells; iCell++)
+    {
+        to[iCell] = from[iCell];
+    }
+}
+
+void smooth1D(void)
+{
+    int iCell, i, j;
+    Real cc[3][3];
+    i = 1;
+    j = 1;
+    for (iCell = 0; iCell < maxNumberOfCells; iCell++)
+    {
+        if (cellChOct[iCell] == 0)
+        {
+            getCellNgbTempVOF(iCell, cc);
+            vof[iCell] = (16. * cc[i][j] +
+                          4. * (cc[i + 1][j] + cc[i - 1][j] + cc[i][j + 1] + cc[i][j - 1]) +
+                          1. * (cc[i + 1][j + 1] + cc[i - 1][j + 1] + cc[i + 1][j + 1] + cc[i + 1][j - 1])) /
+                         36.;
+        }
+    }
+}
+
+void smooth1DUnifrom(void)
+{
+    int iCell, i, j;
+    Real cc[3][3];
+    i = 1;
+    j = 1;
+    for (iCell = 0; iCell < maxNumberOfCells; iCell++)
+    {
+        if (cellChOct[iCell] == 0)
+        {
+            getCellNgbTempVOF(iCell, cc);
+            temp_vof[iCell] = (cc[i][j] +
+                               (cc[i + 1][j] + cc[i - 1][j] + cc[i][j + 1] + cc[i][j - 1]) +
+                               (cc[i + 1][j + 1] + cc[i - 1][j + 1] + cc[i + 1][j + 1] + cc[i + 1][j - 1])) /
+                              9;
+        }
+    }
 }

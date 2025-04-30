@@ -1,0 +1,11061 @@
+
+---------------------------------------------
+Job command: ./FTT_ARM  ftt.par
+---------------------------------------------
+--------------------------------
+Fully Threaded Tree Algorithms for Adaptive Refinement Methods Modified
+--------------------------------
+Max Number Of Octs in FTT: 20000
+Max Number Of Cells in FTT: 80000
+An Oct is composed of 4 cells
+Max Level of FTT: 10
+physical domain: Lx = 1, Ly = 1
+At level  0, cell size 2 2
+At level  1, cell size 1 1
+At level  2, cell size 0.5 0.5
+At level  3, cell size 0.25 0.25
+At level  4, cell size 0.125 0.125
+At level  5, cell size 0.0625 0.0625
+At level  6, cell size 0.03125 0.03125
+At level  7, cell size 0.015625 0.015625
+At level  8, cell size 0.0078125 0.0078125
+At level  9, cell size 0.00390625 0.00390625
+At level  10, cell size 0.00195312 0.00195312
+Statistics on a 2D Fully Threaded Tree DATA Sturcture
+Max Level 10
+Number Of Cells = 820 Number Of Octs = 205 
+Flaged cell number = 145, flaged oct number = 36
+
+Fully Threaded Tree Data Structure: iteration = 0
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 820
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 1
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 756
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 2
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 756
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 3
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 756
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 4
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 748
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 5
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 748
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 6
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 744
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 7
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 740
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 8
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 740
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 9
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 708
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 10
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 712
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 11
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 712
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 12
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 704
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 13
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 708
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 14
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 712
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 15
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 712
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 16
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 712
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 17
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 712
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 18
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 712
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 19
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 708
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 20
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 720
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 21
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 712
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 22
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 724
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 23
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 724
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 24
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 728
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 25
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 732
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 26
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 740
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 27
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 736
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 28
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 744
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 29
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 752
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 30
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 768
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 31
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 804
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 32
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 800
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 33
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 840
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 34
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 844
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 35
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 864
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 36
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 880
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 37
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 888
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 38
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 896
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 39
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 904
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 40
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 920
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 41
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 916
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 42
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 936
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 43
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 956
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 44
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 960
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 45
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 984
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 46
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 980
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 47
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1000
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 48
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1000
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 49
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1044
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 50
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1040
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 51
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1056
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 52
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1064
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 53
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1084
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 54
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1088
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 55
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1112
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 56
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1076
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 57
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1116
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 58
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1136
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 59
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1160
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 60
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1148
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 61
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1228
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 62
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1228
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 63
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1240
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 64
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1240
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 65
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1272
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 66
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1248
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 67
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1272
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 68
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1284
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 69
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1328
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 70
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1336
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 71
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1388
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 72
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1420
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 73
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1460
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 74
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1520
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 75
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1524
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 76
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1504
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 77
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1556
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 78
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1592
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 79
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1608
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 80
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1620
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 81
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1660
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 82
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1616
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 83
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1696
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 84
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1732
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 85
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1764
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 86
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1780
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 87
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1792
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 88
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1804
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 89
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1892
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 90
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1888
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 91
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1936
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 92
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1948
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 93
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1936
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 94
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 1980
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 95
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 2048
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 96
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 2052
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 97
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 2096
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 98
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 2096
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 99
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 2092
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 
+
+Fully Threaded Tree Data Structure: iteration = 100
+setTimeStep: completed successfully dt = 0.001953
+plot ftt mesh: numberOfCells 2140
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+plotting intf
+finished plotting intf
+finished plotting vof
+finished plotting Cell grad at intf
+finished plotting curvature at leaf
+plic before 
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+
+works
+plic done succesfully 
+flagInterfLeavs done successfully 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+before establish NB 
+establish NB done 
+checkNB done 
+ReMesh done successfully 

@@ -171,6 +171,7 @@ void calcWorksX(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
 
 		if (octLv[leftNb / 4] == octLv[iCell / 4] && cellChOct[leftNb] != 0)
 		{ // if neighbour is smaller
+			// printf("\nworks\n");
 			// top
 			mm1 = DMAX(-s1, 0.0);
 			mm2 = 2 * (alpha + mx * mm1 - mz * 0.5);
@@ -196,6 +197,7 @@ void calcWorksX(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
 
 		if (octLv[rightNb / 4] == octLv[iCell / 4] && cellChOct[rightNb] != 0)
 		{ // if neighbour is smaller
+			// printf("\nworks\n");
 			mm1 = DMAX(s2, 0.0);
 			mm2 = 2 * (alpha - mx - mz * 0.5);
 			temp_vof[4 * cellChOct[rightNb] + rtop] += VOL2(mx, mz, mm2, 2 * mm1);
@@ -253,6 +255,7 @@ void calcWorksXFull(int iCell, Real s1, Real s2)
 	// left
 	if ((octLv[leftNb / 4] == octLv[iCell / 4]) && (cellChOct[leftNb] != 0))
 	{
+		// printf("\nworks\n");
 		// 2 instead of 4 because V3 = 0.5 should fill up both
 		temp_vof[4 * cellChOct[leftNb] + ltop] += 2 * V1; // 0 1 <
 		temp_vof[4 * cellChOct[leftNb] + lbot] += 2 * V1; // 2 3 <
@@ -272,6 +275,7 @@ void calcWorksXFull(int iCell, Real s1, Real s2)
 	// right
 	if ((octLv[rightNb / 4] == octLv[iCell / 4]) && (cellChOct[rightNb] != 0))
 	{
+		// printf("\nworks\n");
 		// 2 instead of 4 because V3 = 0.5 should fill up both
 		temp_vof[4 * cellChOct[rightNb] + rtop] += 2 * V3; // > 0 1
 		temp_vof[4 * cellChOct[rightNb] + rbot] += 2 * V3; // > 2 3

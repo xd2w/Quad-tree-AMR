@@ -36,52 +36,34 @@ void setTimeStep(void)
     global_dt = CFL * (DMIN(dxCell[intrinsicMaxLevel + 1], dyCell[intrinsicMaxLevel + 1])) / sqrt(intrinsicMaxU2);
 }
 
-void show6x6VofGrid(int iCell)
+void printcc3(Real cc[3][3])
 {
-    // iCell = 196; // octPrCell[196 / 4];
-    printf("iCell = %d\n", iCell);
-    printf("vof = %g\n", vof[iCell]);
-
-    for (int k = 0; k < 4; k++)
-    {
-        printf("cell neighbour[%d] = %d\n", k, cellNb[k][iCell]);
-        for (int w = 0; w < 4; w++)
-        {
-            printf("Nb[%d]'s neighbour[%d] = %d\n", cellNb[k][iCell], w, cellNb[w][cellNb[k][iCell]]);
-        }
-    }
-
-    for (int k = 0; k < 4; k++)
-    {
-        printf("cell neighbour[%d] oct size = %d\n", k, octLv[cellNb[k][iCell] / 4]);
-    }
-
-    for (int k = 0; k < 4; k++)
-    {
-        printf("Oct neighbour[%d] = %d\n", k, octNb[k][iCell / 4]);
-    }
-
-    Real cc[6][6];
-    getCellNgbVOF_6x6(iCell / 4, cc);
-
+    int n = 3;
     int i, j;
     printf("\n\n");
-    for (j = 0; j < 6; j++)
+    for (j = 0; j < n; j++)
     {
-        for (i = 0; i < 6; i++)
+        for (i = 0; i < n; i++)
         {
-            printf("\t%f", cc[i][5 - j]);
+            printf("\t%f", cc[i][n - 1 - j]);
         }
         printf("\n");
     }
     printf("\n\n");
+}
 
-    double kappas[4];
-    curvature_6x6(cc, kappas, dxCell[octLv[iCell / 4]], dyCell[octLv[iCell / 4]]);
-
-    for (j = 0; j < 4; j++)
+void printcc6(Real cc[6][6])
+{
+    int n = 6;
+    int i, j;
+    printf("\n\n");
+    for (j = 0; j < n; j++)
     {
-        printf("\t%g", kappas[i]);
+        for (i = 0; i < n; i++)
+        {
+            printf("\t%f", cc[i][n - 1 - j]);
+        }
+        printf("\n");
     }
-    printf("\n");
+    printf("\n\n");
 }

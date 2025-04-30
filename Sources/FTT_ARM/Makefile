@@ -4,8 +4,8 @@ BALANCE = balanceFTT.o balanceFTTxP.o balanceFTTxN.o balanceFTTyP.o balanceFTTyN
 
 FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag.o \
 	restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o \
-	seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o plotFTTInterf_curvature.o\
-	plotCellInterf.o plotVOF.c plotCurvature.c plic_curvature.o vol2.o \
+	seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o plotFTTInterf_curvature_top_down.o\
+	plotCellInterf.o plotVOF.c plotCurvature.c plic_curvature_top_down.o vol2.o \
 	octTreeXSwp_ellipse.o octTreeYSwp_ellipse.o reMesh.o miscUtils.o computeVelocity.o computeKappa.o
 
 # ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT.o refineFTT.o bcOctTree.o

@@ -40,6 +40,7 @@ int main(int argc, char *argv[])
   //  plotSFC(0);
   initVOF(0);
   // plotFTTInterf(0);
+  setPLICPramForAll();
 
   // printf("%f %f\n", xCell[100], yCell[100]);
   // printf("left = %d\n", cellNb[1][100]);
@@ -53,28 +54,37 @@ int main(int argc, char *argv[])
   for (itNb = 0; itNb <= tmax; itNb++)
   {
     printf("\nFully Threaded Tree Data Structure: iteration = %d\n", itNb);
+    // setTimeStep();
+    global_dt = 0.001953;
+    printf("setTimeStep: completed successfully dt = %f\n", global_dt);
 
     if (itNb % tplot == 0)
     {
       ndata = itNb / tplot;
-      // setTimeStep();
-      global_dt = 0.001953;
-      printf("setTimeStep: completed successfully dt = %f\n", global_dt);
       plotFTT(ndata);
       plotSFC(ndata);
       plotHilbertSFC(ndata);
+      printf("plotting intf\n");
       plotFTTInterf(ndata);
+      printf("finished plotting intf\n");
       plotVOF(ndata);
+      printf("finished plotting vof\n");
       plotCellGradAtIntf(ndata);
+      printf("finished plotting Cell grad at intf\n");
       plotCurvatureAtLeafCells(ndata);
+      printf("finished plotting curvature at leaf\n");
     }
+    computeVelocityAtLeaves();
+    printf("plic before \n");
     plic();
+    setPLICPramForAll();
     // exit(0);
-    // printf("plic done succesfully \n");
+    printf("plic done succesfully \n");
 
     // exit(0);
 
     reMesh(itNb);
+    setPLICPramForAll();
     printf("ReMesh done successfully \n");
     // fttStatistics();
   }

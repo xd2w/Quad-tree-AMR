@@ -171,6 +171,20 @@ void calcWorksX(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
 
 		if (octLv[leftNb / 4] == octLv[iCell / 4] && cellChOct[leftNb] != 0)
 		{ // if neighbour is smaller
+			printf("\nworks\n");
+
+			// x = xCell[leftNb];
+			// y = yCell[leftNb];
+			// dx = dxCell[leftNb];
+			// dy = dyCell[leftNb];
+
+			// ux1 = (computeVX(x, y) + computeVX(x, y + dy)) * 0.5;
+			// ux2 = (computeVX(x + dx, y) + computeVX(x + dx, y + dy)) * 0.5;
+
+			// // # TODO: do this with u[iCell] to be flexible
+
+			// s1 = (ux1 / dxCell[iLv]) * global_dt;
+
 			// top
 			mm1 = DMAX(-s1, 0.0);
 			mm2 = 2 * (alpha + mx * mm1 - mz * 0.5);
@@ -196,6 +210,19 @@ void calcWorksX(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
 
 		if (octLv[rightNb / 4] == octLv[iCell / 4] && cellChOct[rightNb] != 0)
 		{ // if neighbour is smaller
+			printf("\nworks\n");
+			// x = xCell[rightNb];
+			// y = yCell[rightNb];
+			// dx = dxCell[rightNb];
+			// dy = dyCell[rightNb];
+
+			// ux1 = (computeVX(x, y) + computeVX(x, y + dy)) * 0.5;
+			// ux2 = (computeVX(x + dx, y) + computeVX(x + dx, y + dy)) * 0.5;
+
+			// // # TODO: do this with u[iCell] to be flexible
+
+			// s2 = (ux2 / dxCell[iLv]) * global_dt;
+
 			mm1 = DMAX(s2, 0.0);
 			mm2 = 2 * (alpha - mx - mz * 0.5);
 			temp_vof[4 * cellChOct[rightNb] + rtop] += VOL2(mx, mz, mm2, 2 * mm1);
@@ -253,12 +280,29 @@ void calcWorksXFull(int iCell, Real s1, Real s2)
 	// left
 	if ((octLv[leftNb / 4] == octLv[iCell / 4]) && (cellChOct[leftNb] != 0))
 	{
+		printf("\nworks\n");
+		// if nb is smaller
 		// 2 instead of 4 because V3 = 0.5 should fill up both
+		// x = xCell[leftNb];
+		// y = yCell[leftNb];
+		// dx = dxCell[leftNb];
+		// dy = dyCell[leftNb];
+
+		// ux1 = (computeVX(x, y) + computeVX(x, y + dy)) * 0.5;
+		// ux2 = (computeVX(x + dx, y) + computeVX(x + dx, y + dy)) * 0.5;
+
+		// // # TODO: do this with u[iCell] to be flexible
+
+		// s1 = (ux1 / dxCell[iLv]) * global_dt;
+		// V11 = DMAX(-s1, 0.0);
+		// V12 = DMAX(-s1, 0.0);
+
 		temp_vof[4 * cellChOct[leftNb] + ltop] += 2 * V1; // 0 1 <
 		temp_vof[4 * cellChOct[leftNb] + lbot] += 2 * V1; // 2 3 <
 	}
 	else
 	{
+		// if nb is bigger
 		if (octLv[leftNb / 4] < octLv[iCell / 4])
 		{
 			temp_vof[leftNb] += 0.25 * V1;
@@ -272,12 +316,15 @@ void calcWorksXFull(int iCell, Real s1, Real s2)
 	// right
 	if ((octLv[rightNb / 4] == octLv[iCell / 4]) && (cellChOct[rightNb] != 0))
 	{
+		printf("\nworks\n");
+		// if nb is smaller
 		// 2 instead of 4 because V3 = 0.5 should fill up both
 		temp_vof[4 * cellChOct[rightNb] + rtop] += 2 * V3; // > 0 1
 		temp_vof[4 * cellChOct[rightNb] + rbot] += 2 * V3; // > 2 3
 	}
 	else
 	{
+		// if nb is bigger
 		if (octLv[rightNb / 4] < octLv[iCell / 4])
 		{
 			temp_vof[rightNb] += 0.25 * V3;

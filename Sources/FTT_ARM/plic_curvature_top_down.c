@@ -6,7 +6,7 @@
 
 void plic(void)
 {
-  calcPlicPramForAll();
+  // calcPlicPramForAll();
   // x-sweep
   flagInterfLeaves();
   propagateFlag(0);

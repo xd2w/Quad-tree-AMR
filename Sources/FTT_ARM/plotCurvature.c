@@ -5,38 +5,6 @@
 #include "nrutil.h"
 #include "pfplib.h"
 
-void printcc3(Real cc[3][3])
-{
-    int n = 3;
-    int i, j;
-    printf("\n\n");
-    for (j = 0; j < n; j++)
-    {
-        for (i = 0; i < n; i++)
-        {
-            printf("\t%f", cc[i][n - 1 - j]);
-        }
-        printf("\n");
-    }
-    printf("\n\n");
-}
-
-void printcc6(Real cc[6][6])
-{
-    int n = 6;
-    int i, j;
-    printf("\n\n");
-    for (j = 0; j < n; j++)
-    {
-        for (i = 0; i < n; i++)
-        {
-            printf("\t%f", cc[i][n - 1 - j]);
-        }
-        printf("\n");
-    }
-    printf("\n\n");
-}
-
 void checkSplitVOF(Real cc6[6][6], int iCell)
 {
     int i, j, u, v;
@@ -60,6 +28,7 @@ void checkSplitVOF(Real cc6[6][6], int iCell)
     {
         printf("wrong VOF splitting \n");
         printf("at iCell=%d \n", iCell);
+        printf("(x, y) = (%g, %g)\n", xCell[iCell], yCell[iCell]);
 
         printf("cc6 : \n");
         printcc6(cc6);
@@ -69,7 +38,7 @@ void checkSplitVOF(Real cc6[6][6], int iCell)
 
         printf("ref : \n");
         printcc3(refcc);
-        // exit(1);
+        exit(1);
     }
     // printf("%d fine\n", iCell);
 }
@@ -113,7 +82,7 @@ void plotCurvatureAtLevel(int ndata, int level)
                 for (int k = 0; k < 4; k++)
                 {
                     fraction = vof[iCell + k];
-                    if (fraction > 0.0 && fraction < 1.0)
+                    if (fraction > 0 && fraction < 1.0)
                     {
                         // kappa = curvature_5x5(cc, ip[k], jp[k], dxCell[iLv], dyCell[iLv]);
                         kappa = kappaBarickALELike(iCell, cc);
@@ -153,21 +122,26 @@ void plotCurvatureAtLeafCells(int ndata)
     dfetch("xc", &xc);
     dfetch("yc", &yc);
 
-    for (iCell = 0; iCell < numberOfCells; iCell += 4)
-    {
-        if (cellChOct[iCell] == 0)
-        {
-            // fraction = vof[cellChOct[iCell / 4]];
-            // if (fraction > 0.0 && fraction < 1.0)
-            {
-                iLv = octLv[iCell / 4];
-                getCellNgbVOF_6x6(iCell / 4, cc);
-                // checkSplitVOF(cc, iCell);
+    // copyCellReal1D(vof, temp_vof);
+    // smooth1D();
+    // copyCellReal1D(vof, temp_vof);
+    // smooth1D();
 
-                for (int k = 0; k < 4; k++)
+    for (iCell = 1 << 6; iCell < numberOfCells; iCell += 4)
+    {
+        fraction = vof[octPrCell[iCell / 4]];
+        if (fraction > 0.0 && fraction < 1.0)
+        {
+            iLv = octLv[iCell / 4];
+            getCellNgbVOF_6x6(iCell / 4, cc);
+            // checkSplitVOF(cc, iCell);
+
+            for (int k = 0; k < 4; k++)
+            {
+                if (cellChOct[iCell + k] == 0)
                 {
                     fraction = vof[iCell + k];
-                    if (fraction > 0.0 && fraction < 1.0)
+                    if (fraction > 0 && fraction < 1)
                     {
                         // kappa = curvature_5x5(cc, ip[k], jp[k], dxCell[iLv], dyCell[iLv]);
                         kappa = kappaBarickALELike(iCell + k, cc);
@@ -187,3 +161,21 @@ void plotCurvatureAtLeafCells(int ndata)
     fprintf(fp, "\n");
     fclose(fp);
 }
+
+// void getCellNgbVOF_7x7_uniform(int iCell, Real cc[][5])
+// { // generates 6x6 grid of data from neighbours of octs
+//     int botleft = cellNb[2][cellNb[0][iCell]];
+//     int origin = cellNb[2][cellNb[0][botleft]];
+//     int origin = cellNb[2][cellNb[0][origin]];
+//     int cell = origin;
+//     for (int j = 0; j < 7; j++)
+//     {
+//         cell = origin;
+//         for (int i = 0; i < 7; i++)
+//         {
+//             cc[i][j] = vof[cell];
+//             cell = cellNb[1][cell]; // cell moved ->
+//         }
+//         origin = cellNb[3][origin]; // start moved up
+//     }
+// }

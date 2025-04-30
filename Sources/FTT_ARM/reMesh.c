@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "ftt.h"
 #include <math.h>
+#include "pfplib.h"
 
 extern void splitFlagCellsAtLevel(int level);
 extern void oct_PrCellFlagAtLvel(int level);
@@ -75,8 +76,9 @@ void reMesh(int itNb)
 void refineToKappa(void)
 {
   int iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
-  Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum;
+  Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum, refine_th;
   int currentNumberOfCells = numberOfCells;
+  dfetch("refine_threshold", &refine_th);
   for (iCell = 0; iCell < currentNumberOfCells; iCell++)
   {
     cellFlag[iCell] = 0;
@@ -89,7 +91,7 @@ void refineToKappa(void)
         iLv = octLv[iOct];
         getCellNgbVOF_6x6(iOct, cc);
         kappa = kappaBarickALELike(iCell, cc);
-        if (log(kappa + 1) > 0.5 * (iLv))
+        if (log(kappa + 1) > refine_th * (iLv))
         {
           splitCell_smart(iCell);
 
@@ -148,7 +150,8 @@ void refineToKappaAtLevel(int level)
   int iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
   Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum;
   int currentNumberOfCells = numberOfCells;
-  Real tol = 1e-2;
+  Real tol = 1e-2, refine_th;
+  dfetch("refine_threshold", &refine_th);
   for (iCell = 0; iCell < currentNumberOfCells; iCell++)
   {
     // cellFlag[iCell] = 0;
@@ -159,9 +162,10 @@ void refineToKappaAtLevel(int level)
       {
         iOct = iCell / cellNumberInOct;
         iLv = octLv[iOct];
+        cellFlag[iCell] = 1;
         getCellNgbVOF_6x6(iOct, cc);
         kappa = kappaBarickALELike(iCell, cc);
-        if (log(kappa + 1) > 0.45 * (iLv))
+        if (log(kappa + 1) > refine_th * (iLv))
         {
           splitCell_smart(iCell);
         }

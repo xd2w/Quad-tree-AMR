@@ -10,7 +10,7 @@ void plotCellGrad(int iCell, FILE *fpGd)
 {
 	int i, j, invx, invz, iLv;
 	Real mx, mz, alpha, s1, s2, mm1, mm2, V1, V2;
-	Real cc[3][3], cc6[6][6];
+	Real cc[3][3], cc6[6][6], cc4[4][4];
 
 	getCellNgbVOF(iCell, cc);
 	i = 1;
@@ -34,8 +34,23 @@ void plotCellGrad(int iCell, FILE *fpGd)
 	mz = 0.5 * (mm1 - mm2) / dy;
 
 	getCellNgbVOF_6x6(iCell / 4, cc6);
-	mm2 = kappaBarickALELike(iCell, cc6);
-	// mm2 = kappaBarickALELike_wider(iCell, cc6);
+	smoothUnifrom(cc6, cc4);
+
+	int px[] = {1, 2, 1, 2};
+	int pz[] = {1, 1, 2, 2};
+
+	i = px[iCell % 4];
+	j = pz[iCell % 4];
+
+	if (0 < cc4[i][j] && cc4[i][j] < 1)
+	{
+		mm2 = kappaBarickALELike(iCell, cc6);
+		// mm2 = kappaBarickALELike_wider(iCell, cc6);
+	}
+	else
+	{
+		mm2 = 0;
+	}
 
 	fprintf(fpGd, "%g %g ", x + .5 * dx, y + .5 * dy);
 	fprintf(fpGd, "%g %g %g\n", mx, mz, mm2);
@@ -217,13 +232,13 @@ void plotCellGradAtIntf(int ndata)
 	{
 		if (cellChOct[iCell] == 0)
 		{
-			if (0 < vof[iCell] && vof[iCell] < 1)
-			{
-				// plotCellGrad(iCell, fp);
-				// plotCellGrad_4x4(iCell, fp);
-				// plotCellGradSmoothed(iCell, fp);
-				plotCellGradSmoothed_4x4(iCell, fp);
-			}
+			// if (0 < vof[iCell] && vof[iCell] < 1)
+			// {
+			plotCellGrad(iCell, fp);
+			// plotCellGrad_4x4(iCell, fp);
+			// plotCellGradSmoothed(iCell, fp);
+			// plotCellGradSmoothed_4x4(iCell, fp);
+			// }
 		}
 	}
 }

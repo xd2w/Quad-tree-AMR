@@ -29,8 +29,8 @@ static int hilbert_production[4][4] =
         3, 3, 1, 2  // C -> CCAB
 };
 
-// [direction][myposition]
-// if >4 its outside the Oct (subtract 4 to get index)
+// [direction][iCell % 4]
+// if >3 its outside the Oct (subtract 4 to get index on outside neighbour)
 static int morton_lookup[4][4] =
     {
         5, 0, 7, 2,
@@ -139,9 +139,11 @@ extern Real1D zCell;
 
 /* physical quantities */
 // velocity at cell corners
-extern Real1D u;
-extern Real1D v;
-extern Real1D w;
+extern Real2D u;
+extern Real2D v;
+#if (ocTree) /* 3D */
+extern Real2D w;
+#endif
 // velocity flux at cell faces
 extern Real1D U;
 extern Real1D V;
@@ -286,13 +288,24 @@ extern Real kappaMeier(int iCell);
 
 extern Real computeVX(Real x, Real y);
 extern Real computeVY(Real x, Real y);
+extern void computeVelocityAtLeaves(void);
 
-extern void calcPlicPramForAll(void);
+extern void setPLICPramForAll(void);
+extern void setPLICPramForOne(int iCell, Real cc[][3]);
 extern Real getSubVOF(int iCell, int iLocal);
 
 extern void splitCell_smart(int iCell);
 
 extern void plotVOFContour(int ndata);
 extern void plotCellGradAtIntf(int ndata);
+
+extern void printcc3(Real cc[3][3]);
+extern void printcc6(Real cc[6][6]);
+
+extern void getCellNgbTempVOF(int iCell, Real cc[][3]);
+extern void copyCellReal1D(Real1D from, Real1D to);
+
+extern void getCellNgbVOF_unifrom(int iCell, Real cc[][3]);
+extern void smooth1D(void);
 
 #endif

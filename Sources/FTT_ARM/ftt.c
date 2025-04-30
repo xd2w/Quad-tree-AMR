@@ -36,7 +36,7 @@ Int2D octNb;
 Int1D cellChOct;
 Int1D cellFlag, cellMark;
 Int1D cellType;
-Int2D cellNb;
+Int2D cellNb; // 0=W  1=E  2=S  3=N
 Int1D cellHilb;
 Real1D mxCell;
 Real1D mzCell;
