@@ -50,6 +50,38 @@ void octTreeYSwp(int iCell)
   s1 = (uy1 / dyCell[iLv]) * global_dt;
   s2 = (uy2 / dyCell[iLv]) * global_dt;
 
+  int botNb = cellNb[2][iCell];
+  int topNb = cellNb[3][iCell];
+  if (botNb == 0 || topNb == 0)
+  {
+    printf("***************************************\n");
+    printf("Error in calcWorksX: invalid neighbours\n\n");
+    exit(1);
+  }
+
+  Real ux11, ux12, ux21, ux22;
+  Real s11, s12, s21, s22;
+
+  ux11 = (computeVY(x, y) + computeVY(x + 0.5 * dx, y)) * 0.5;
+  ux12 = (computeVY(x + 0.5 * dx, y) + computeVY(x + dx, y)) * 0.5;
+  ux21 = (computeVY(x, y + dy) + computeVY(x + 0.5 * dx, y + dy)) * 0.5;
+  ux22 = (computeVY(x + 0.5 * dx, y + dy) + computeVY(x + dx, y + dy)) * 0.5;
+
+  s11 = (ux11 / dyCell[iLv]) * global_dt;
+  s12 = (ux12 / dyCell[iLv]) * global_dt;
+  s21 = (ux21 / dyCell[iLv]) * global_dt;
+  s22 = (ux22 / dyCell[iLv]) * global_dt;
+
+  if (octLv[botNb / 4] == octLv[iCell / 4] && cellChOct[botNb] != 0)
+  {
+    s1 = 0.5 * (s11 + s12);
+  }
+
+  if (octLv[topNb / 4] == octLv[iCell / 4] && cellChOct[topNb] != 0)
+  {
+    s2 = 0.5 * (s21 + s22);
+  }
+
   if (cc[i][j] == 0.0)
   {
     return;
@@ -102,7 +134,7 @@ void octTreeYSwp(int iCell)
     else
       alpha = mm1 + 1.0 - sqrt(2.0 * (1.0 - cc[i][j]) * mm1);
 
-    /* the new equation of the interface after advection */
+    // /* the new equation of the interface after advection */
     mz = mz / (1.0 - s1 + s2);
     alpha = alpha + mz * s1;
 
@@ -116,8 +148,55 @@ void octTreeYSwp(int iCell)
 void calcWorksY(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, int invz, Real s1, Real s2)
 {
   int botNb, topNb, temp;
-  Real V1, V3, mm1, mm2;
+  Real V1, V2, V3, mm1, mm2, vol;
   int ltop, lbot, rtop, rbot;
+
+  // -----------
+
+  Real s11, s12, s21, s22;
+  Real ux11, ux12, ux21, ux22;
+  Real x, y, dx, dy;
+  Real calpha, cmz;
+
+  int iLv = octLv[iCell / 4];
+
+  x = xCell[iCell];
+  y = yCell[iCell];
+  dx = dxCell[iLv];
+  dy = dyCell[iLv];
+
+  ux11 = (computeVY(x, y) + computeVY(x + 0.5 * dx, y)) * 0.5;
+  ux12 = (computeVY(x + 0.5 * dx, y) + computeVY(x + dx, y)) * 0.5;
+  ux21 = (computeVY(x, y + dy) + computeVY(x + 0.5 * dx, y + dy)) * 0.5;
+  ux22 = (computeVY(x + 0.5 * dx, y + dy) + computeVY(x + dx, y + dy)) * 0.5;
+
+  s11 = (ux11 / dyCell[iLv]) * global_dt;
+  s12 = (ux12 / dyCell[iLv]) * global_dt;
+  s21 = (ux21 / dyCell[iLv]) * global_dt;
+  s22 = (ux22 / dyCell[iLv]) * global_dt;
+
+  if (invz)
+  {
+    mm1 = -s11;
+    s11 = -s21;
+    s21 = mm1;
+    mm1 = -s12;
+    s12 = -s22;
+    s22 = mm1;
+  }
+
+  if (invx)
+  {
+    mm1 = s11;
+    s11 = s12;
+    s12 = mm1;
+    mm1 = s21;
+    s21 = s22;
+    s22 = mm1;
+  }
+
+  // s11 = s12 = s1;
+  // s21 = s22 = s2;
 
   // 2   3
   // 0   1
@@ -166,18 +245,42 @@ void calcWorksY(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
   {
     mm1 = 1.0 - DMAX(s1, 0.0) + DMIN(s2, 0.0);
     mm2 = alpha - mz * DMAX(s1, 0.0);
-    temp_vof[iCell] += VOL2(mz, mx, mm2, mm1);
+    V2 = VOL2(mz, mx, mm2, mm1);
+
+    mm1 = DMAX(-s1, 0.0);
+    mm2 = alpha + mx * mm1;
+    V1 = VOL2(mx, mz, mm2, mm1);
+
+    mm1 = DMAX(s2, 0.0);
+    mm2 = alpha - mx;
+    V3 = VOL2(mx, mz, mm2, mm1);
+
+    temp_vof[iCell] += V2;
+    // V2 = vofVal;
 
     if (octLv[botNb / 4] == octLv[iCell / 4] && cellChOct[botNb] != 0)
     { // if neighbour is smaller
+
+      // calpha = alpha + mz * s1;
+      // cmz = mz * (1.0 - s1 + s2);
+
       // top
-      mm1 = DMAX(-s1, 0.0);
+      mm1 = DMAX(-s12, 0.0);
       mm2 = 2 * (alpha + mz * mm1 - mx * 0.5);
-      temp_vof[4 * cellChOct[botNb] + rbot] += VOL2(mz, mx, mm2, 2 * mm1);
+      vol = VOL2(mz, mx, mm2, 2 * mm1);
+      temp_vof[4 * cellChOct[botNb] + rbot] += vol;
+      V1 -= 0.25 * vol;
       // bottom
-      mm1 = DMAX(-s1, 0.0);
+      mm1 = DMAX(-s11, 0.0);
       mm2 = 2 * (alpha + mz * mm1);
-      temp_vof[4 * cellChOct[botNb] + lbot] += VOL2(mz, mx, mm2, 2 * mm1);
+      vol = VOL2(mz, mx, mm2, 2 * mm1);
+      temp_vof[4 * cellChOct[botNb] + lbot] += vol;
+      V1 -= 0.25 * vol;
+
+      // correction to V2
+      // temp_vof[iCell] += V1;
+
+      // s1 = 0.5 * (s11 + s12);
     }
     else
     {
@@ -185,23 +288,36 @@ void calcWorksY(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
       mm2 = alpha + mz * mm1;
       if (octLv[botNb / 4] < octLv[iCell / 4])
       {
-        temp_vof[botNb] += 0.25 * VOL2(mz, mx, mm2, mm1);
+        vol = VOL2(mz, mx, mm2, mm1);
+        temp_vof[botNb] += 0.25 * vol;
+        // V2 -= vol;
       }
       else
       {
-        temp_vof[botNb] += VOL2(mz, mx, mm2, mm1);
+        vol = VOL2(mz, mx, mm2, mm1);
+        temp_vof[botNb] += vol;
+        // V2 -= vol;
       }
     }
 
     if (octLv[topNb / 4] == octLv[iCell / 4] && cellChOct[topNb] != 0)
     { // if neighbour is smaller
-      mm1 = DMAX(s2, 0.0);
+      mm1 = DMAX(s22, 0.0);
       mm2 = 2 * (alpha - mz - mx * 0.5);
-      temp_vof[4 * cellChOct[topNb] + rtop] += VOL2(mz, mx, mm2, 2 * mm1);
+      vol = VOL2(mz, mx, mm2, 2 * mm1);
+      temp_vof[4 * cellChOct[topNb] + rtop] += vol;
+      V3 -= 0.25 * vol;
 
-      mm1 = DMAX(s2, 0.0);
+      mm1 = DMAX(s21, 0.0);
       mm2 = 2 * (alpha - mz);
-      temp_vof[4 * cellChOct[topNb] + ltop] += VOL2(mz, mx, mm2, 2 * mm1);
+      vol = VOL2(mz, mx, mm2, 2 * mm1);
+      temp_vof[4 * cellChOct[topNb] + ltop] += vol;
+      V3 -= 0.25 * vol;
+
+      // correction to V2
+      // temp_vof[iCell] += V3;
+
+      // s2 = 0.5 * (s21 + s22);
     }
     else
     {
@@ -209,13 +325,26 @@ void calcWorksY(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
       mm2 = (alpha - mz);
       if (octLv[topNb / 4] < octLv[iCell / 4])
       {
-        temp_vof[topNb] += 0.25 * VOL2(mz, mx, mm2, mm1);
+        vol = VOL2(mz, mx, mm2, mm1);
+        temp_vof[topNb] += 0.25 * vol;
+        V2 -= vol;
       }
       else
       {
-        temp_vof[topNb] += VOL2(mz, mx, mm2, mm1);
+        vol = VOL2(mz, mx, mm2, mm1);
+        temp_vof[topNb] += vol;
+        V2 -= vol;
       }
     }
+    // if (V2 < 0)
+    // {
+    //   printf("\nV2 <0\n");
+    //   printf("V2 = %f\n", V2);
+    //   // exit(1);
+    //   V2 = 0;
+    // }
+
+    // temp_vof[iCell] += V2
 
     return;
   }
@@ -224,8 +353,34 @@ void calcWorksY(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
 void calcWorksYFull(int iCell, Real s1, Real s2)
 {
   int botNb, topNb, temp;
-  Real V1, V3, mm1, mm2;
+  Real V1, V2, V3, mm1, mm2;
   int ltop, lbot, rtop, rbot;
+
+  // -----------
+
+  Real s11, s12, s21, s22;
+  Real ux11, ux12, ux21, ux22;
+  Real x, y, dx, dy;
+
+  int iLv = octLv[iCell / 4];
+
+  x = xCell[iCell];
+  y = yCell[iCell];
+  dx = dxCell[iLv];
+  dy = dyCell[iLv];
+
+  ux11 = (computeVY(x, y) + computeVY(x + 0.5 * dx, y)) * 0.5;
+  ux12 = (computeVY(x + 0.5 * dx, y) + computeVY(x + dx, y)) * 0.5;
+  ux21 = (computeVY(x, y + dy) + computeVY(x + 0.5 * dx, y + dy)) * 0.5;
+  ux22 = (computeVY(x + 0.5 * dx, y + dy) + computeVY(x + dx, y + dy)) * 0.5;
+
+  s11 = (ux11 / dyCell[iLv]) * global_dt;
+  s12 = (ux12 / dyCell[iLv]) * global_dt;
+  s21 = (ux21 / dyCell[iLv]) * global_dt;
+  s22 = (ux22 / dyCell[iLv]) * global_dt;
+
+  // s11 = s12 = s1;
+  // s21 = s22 = s2;
 
   // 2   3
   // 0   1
@@ -242,6 +397,7 @@ void calcWorksYFull(int iCell, Real s1, Real s2)
 
   V1 = DMAX(-s1, 0.0);
   temp_vof[iCell] += 1.0 - DMAX(s1, 0.0) + DMIN(s2, 0.0);
+  // V2 = 1;
   V3 = DMAX(s2, 0.0);
 
   botNb = cellNb[2][iCell];
@@ -258,8 +414,12 @@ void calcWorksYFull(int iCell, Real s1, Real s2)
   {
     // 2 instead of 4 because V3 = 0.5 should fill up both
     // TODO calculate this separately with different u
-    temp_vof[4 * cellChOct[botNb] + rbot] += 2 * V1;
-    temp_vof[4 * cellChOct[botNb] + lbot] += 2 * V1;
+    temp_vof[4 * cellChOct[botNb] + rbot] += 2 * DMAX(-s12, 0.0);
+    temp_vof[4 * cellChOct[botNb] + lbot] += 2 * DMAX(-s11, 0.0);
+    temp_vof[iCell] += 0.5 * ((fmax(s1, 0.0)) - (fmax(s11, 0.0)));
+    temp_vof[iCell] += 0.5 * ((fmax(s1, 0.0)) - (fmax(s12, 0.0)));
+    // V2 -= 0.5 * DMAX(-s11, 0.0);
+    // V2 -= 0.5 * DMAX(-s12, 0.0);
   }
   else
   {
@@ -271,6 +431,7 @@ void calcWorksYFull(int iCell, Real s1, Real s2)
     {
       temp_vof[botNb] += V1;
     }
+    // V2 -= V1;
   }
 
   // right
@@ -278,8 +439,12 @@ void calcWorksYFull(int iCell, Real s1, Real s2)
   {
     // 2 instead of 4 because V3 = 0.5 should fill up both
     // TODO calculate this separately with different u
-    temp_vof[4 * cellChOct[topNb] + rtop] += 2 * V3;
-    temp_vof[4 * cellChOct[topNb] + ltop] += 2 * V3;
+    temp_vof[4 * cellChOct[topNb] + rtop] += 2 * DMAX(s22, 0.0);
+    temp_vof[4 * cellChOct[topNb] + ltop] += 2 * DMAX(s21, 0.0);
+    temp_vof[iCell] -= 0.5 * (fmin(s2, 0.0) - fmin(s21, 0.0));
+    temp_vof[iCell] -= 0.5 * (fmin(s2, 0.0) - fmin(s22, 0.0));
+    // V2 -= 0.5 * DMAX(s21, 0.0);
+    // V2 -= 0.5 * DMAX(s22, 0.0);
   }
   else
   {
@@ -291,5 +456,7 @@ void calcWorksYFull(int iCell, Real s1, Real s2)
     {
       temp_vof[topNb] += V3;
     }
+    // V2 -= V3;
   }
+  // temp_vof[iCell] += V2;
 }

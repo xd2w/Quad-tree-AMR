@@ -33,7 +33,7 @@ void setTimeStep(void)
         printf("Error in miscUtils.c: setTimeStep: invalid ux and uy\n\n");
         exit(1);
     }
-    global_dt = CFL * (DMIN(dxCell[intrinsicMaxLevel + 1], dyCell[intrinsicMaxLevel + 1])) / sqrt(intrinsicMaxU2);
+    global_dt = CFL * 0.5 * (DMIN(dxCell[intrinsicMaxLevel], dyCell[intrinsicMaxLevel])) / sqrt(intrinsicMaxU2);
 }
 
 void printcc3(Real cc[3][3])

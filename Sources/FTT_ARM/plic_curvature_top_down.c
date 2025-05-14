@@ -30,7 +30,7 @@ void plic(void)
 void computeXVOF(void)
 {
   int iCell, leftNgb, rightNgb, leftLv, rightLv, myLv;
-  Real fraction, MinVof = 1.0e-16, MaxVof = 1.0 - MinVof;
+  Real fraction, MinVof = 1.0e-10, MaxVof = 1.0 - MinVof;
   Real flux1, flux2, flux3;
 
   /* compute vof1, vof2, vof3 on flaged cells */

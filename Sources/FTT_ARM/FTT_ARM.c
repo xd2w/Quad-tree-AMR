@@ -54,9 +54,9 @@ int main(int argc, char *argv[])
   for (itNb = 0; itNb <= tmax; itNb++)
   {
     printf("\nFully Threaded Tree Data Structure: iteration = %d\n", itNb);
-    // setTimeStep();
-    global_dt = 0.001953;
-    printf("setTimeStep: completed successfully dt = %f\n", global_dt);
+    setTimeStep();
+    // global_dt = 0.001953;
+    printf("setTimeStep: completed successfully dt = %g\n", global_dt);
 
     if (itNb % tplot == 0)
     {
