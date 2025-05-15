@@ -54,5 +54,10 @@ void readData(void)
     exit(1);
   }
 
+  if (ifetch("nThPoints", &nThPoints) != 1)
+  {
+    nThPoints = 1000;
+  }
+
   return;
 }

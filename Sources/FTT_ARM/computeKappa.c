@@ -19,11 +19,11 @@ Real kappaBarickALELike(int iCell, Real cc[][6])
     int px[] = {0, 1, 0, 1};
     int py[] = {0, 0, 1, 1};
 
-    smooth2ndOrd(cc, ccs);
+    // smooth2ndOrd(cc, ccs);
     // copycc(cc, ccs);
     // smooth2ndOrd(cc, ccs);
 
-    // smoothUnifrom(cc, ccs);
+    smoothUnifrom(cc, ccs);
     // copycc(cc, ccs);
     // smoothUnifrom(cc, ccs);
 
@@ -70,7 +70,7 @@ Real kappaBarickALELike(int iCell, Real cc[][6])
     nxdx = (nxvert[i + 1][j] + nxvert[i + 1][j + 1] - nxvert[i][j] - nxvert[i][j + 1]) / (2 * dx + 1e-50);
     nydy = (nyvert[i][j + 1] + nyvert[i + 1][j + 1] - nyvert[i][j] - nyvert[i + 1][j]) / (2 * dy + 1e-50);
 
-    return (mag * ((nxcell * nmagdx + nycell * nmagdy) * mag - (nxdx + nydy)));
+    return fabs(mag * ((nxcell * nmagdx + nycell * nmagdy) * mag - (nxdx + nydy)));
     // return fabs((1 / (nmagcell*nmagcell)) * ((nxcell / nmagcell) * nmagdx + (nycell / nmagcell) * nmagdy) - (nxdx + nydy));
 }
 
@@ -270,6 +270,117 @@ Real kappaMeier(int iCell)
 
     // printf("***********************\n");
     // printf("Error kappa est. not working\n\n");
+}
+
+Real kappaHF(int iCell, Real cc[][6])
+{
+    int i, iOct, iLocal, iLv;
+    Real mx, mz, hx, hxx, delta, dx, dy, kappa;
+    mx = mxCell[iCell];
+    mz = mzCell[iCell];
+    iOct = iCell / 4;
+    iLocal = iCell % 4;
+    iLv = octLv[iOct];
+
+    dx = dxCell[iLv];
+    dy = dyCell[iLv];
+
+    Real h[3] = {0, 0, 0};
+
+    if (fabs(mx) < fabs(mz))
+    { // vertical
+        for (i = 0; i < 6; i++)
+        {
+            // 1 or 3   % 2 = 1
+            // 0 or 2   % 2 = 0
+            h[0] += cc[1 + (iLocal % 2)][i];
+            h[1] += cc[2 + (iLocal % 2)][i];
+            h[2] += cc[3 + (iLocal % 2)][i];
+        }
+        delta = dx;
+    }
+    else
+    { // horizontal
+        for (i = 0; i < 6; i++)
+        {
+            // 2 or 3   / 2 = 1
+            // 0 or 1   / 2 = 0
+            h[0] += cc[i][1 + (iLocal / 2)];
+            h[1] += cc[i][2 + (iLocal / 2)];
+            h[2] += cc[i][3 + (iLocal / 2)];
+        }
+        delta = dy;
+    }
+    hx = (h[2] - h[0]) / 2;
+    hxx = (h[2] - 2 * h[1] + h[0]);
+
+    kappa = fabs(hxx / (pow(1 + hx * hx, 1.5))) / (delta + 1e-50);
+
+    // printcc6(cc);
+
+    // printf("\nh[0] = %f, h[1] = %f, h[2] = %f, d = %f\n", h[0], h[1], h[2], delta);
+    // printf("mx = %f, mz = %f\n", mx, mz);
+    // printf("hx = %f, hxx = %f\n", hx, hxx);
+    // printf("kappa = %f\n", kappa);
+
+    return kappa;
+}
+
+Real kappaHF3x3(int iCell, Real cc[][6])
+{
+    int i, iOct, iLocal, iLv;
+    Real mx, mz, hx, hxx, delta, dx, dy, kappa, ccs[3][3];
+    mx = mxCell[iCell];
+    mz = mzCell[iCell];
+    iOct = iCell / 4;
+    iLocal = iCell % 4;
+    iLv = octLv[iOct];
+
+    dx = dxCell[iLv];
+    dy = dyCell[iLv];
+
+    getCellNgbVOF(iCell, ccs);
+
+    Real h[3] = {0, 0, 0};
+
+    if (fabs(mx) < fabs(mz))
+    { // vertical
+        for (i = 0; i < 3; i++)
+        {
+            // 1 or 3   % 2 = 1
+            // 0 or 2   % 2 = 0
+            h[0] += ccs[0][i];
+            h[1] += ccs[1][i];
+            h[2] += ccs[2][i];
+        }
+        delta = dx;
+    }
+    else
+    { // horizontal
+        for (i = 0; i < 3; i++)
+        {
+            // 2 or 3   / 2 = 1
+            // 0 or 1   / 2 = 0
+            h[0] += ccs[i][0];
+            h[1] += ccs[i][1];
+            h[2] += ccs[i][2];
+        }
+        delta = dy;
+    }
+
+    hx = (h[2] - h[0]) / (2 * delta);
+    hxx = (h[2] - 2 * h[1] + h[0]) / (delta * delta);
+
+    kappa = fabs(hxx / (pow(1 + hx * hx, 1.5) + 1e-50));
+
+    printcc3(ccs);
+
+    printf("\nh[0] = %f, h[1] = %f, h[2] = %f, d = %f\n", h[0], h[1], h[2], delta);
+    printf("mx = %f, mz = %f\n", mx, mz);
+    printf("hx = %f, hxx = %f\n", hx, hxx);
+    printf("kappa = %f\n", kappa);
+
+    return kappa;
 }
 
 void smooth2ndOrd8(Real from[][6], Real to[][4])

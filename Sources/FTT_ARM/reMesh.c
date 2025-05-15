@@ -33,14 +33,14 @@ void reMesh(int itNb)
     cell_OctFlagAtLevel(level);
     setCellInt1DZeroAtLevel(cellFlag, level);
     propagateOctFlagAtLevel(level);
-    // propagateOctFlagAtLevel(level);
-    plotFlagFTT(level * 10 + 1);
+    propagateOctFlagAtLevel(level);
+    // plotFlagFTT(level * 10 + 1);
     // refineToKappaAtLevel(level);
     refineToKappaAtLevel(level - 1);
     // splitFlagCellsAtLevel(level - 1);
-    plotFlagFTT(level * 10 + 2);
+    // plotFlagFTT(level * 10 + 2);
     binCollectionAtLevel(level);
-    plotFlagFTT(level * 10 + 3);
+    // plotFlagFTT(level * 10 + 3);
     oct_PrCellFlagAtLvel(level);
     printf("before establish NB \n");
     establishNb();
@@ -93,6 +93,7 @@ void refineToKappa(void)
         kappa = kappaBarickALELike(iCell, cc);
         if (log(kappa + 1) > refine_th * (iLv))
         {
+          balanceCellsAround(iCell);
           splitCell_smart(iCell);
 
           // getCellNgbVOF(iCell, ccp);
@@ -163,13 +164,134 @@ void refineToKappaAtLevel(int level)
         iOct = iCell / cellNumberInOct;
         iLv = octLv[iOct];
         cellFlag[iCell] = 1;
+
         getCellNgbVOF_6x6(iOct, cc);
         kappa = kappaBarickALELike(iCell, cc);
         if (log(kappa + 1) > refine_th * (iLv))
         {
+          balanceCellsAround(iCell);
           splitCell_smart(iCell);
         }
       }
     }
   }
 }
+
+void balanceCell(int iCell, int iLv)
+{
+  if (octLv[iCell / 4] < iLv && cellChOct[iCell] == 0)
+  {
+    splitCell_smart(iCell);
+    // splitCell(iCell);
+  }
+}
+
+void balanceCellsAround(int iCell)
+{
+  int ngbOctCell, prCell;
+  Real list[4];
+  int iLv;
+
+  prCell = iCell;
+  iLv = octLv[iCell / 4];
+
+  // west cell
+  ngbOctCell = cellNb[0][prCell];
+  balanceCell(ngbOctCell, iLv);
+  // south-west cell
+  balanceCell(cellNb[2][ngbOctCell], iLv);
+  // north-west cell
+  balanceCell(cellNb[3][ngbOctCell], iLv);
+
+  // east cell
+  ngbOctCell = cellNb[1][prCell];
+  balanceCell(ngbOctCell, iLv);
+  // south-east cell
+  balanceCell(cellNb[2][ngbOctCell], iLv);
+  // north-east cell
+  balanceCell(cellNb[3][ngbOctCell], iLv);
+
+  // south cell
+  balanceCell(cellNb[2][prCell], iLv);
+
+  // north cell
+  balanceCell(cellNb[3][prCell], iLv);
+}
+
+// void _balanceCellsAround(int iOct)
+// { // generates 6x6 grid of data from neighbours of octs
+//   int ngbOct, ngbOctCell, southOct, southOctCell, northOct, northOctCell, prCell;
+//   Real list[4];
+//   int iLv;
+
+//   prCell = octPrCell[iOct];
+//   iLv = octLv[iOct];
+
+//   // west cell
+//   ngbOctCell = cellNb[0][prCell];
+//   balanceCell(ngbOctCell, iLv);
+
+//   if (octLv[ngbOctCell / 4] == iLv - 1)
+//   {
+//     if (morton_lookup[2][ngbOctCell % 4] > 3)
+//     {
+//       // south-west cell
+//       southOctCell = cellNb[2][ngbOctCell];
+//       balanceCell(southOctCell, iLv);
+//     }
+//     if (morton_lookup[3][ngbOctCell % 4] > 3)
+//     {
+//       // south-west cell
+//       northOctCell = cellNb[3][ngbOctCell];
+//       balanceCell(southOctCell, iLv);
+//     }
+//   }
+//   else
+//   {
+//     // south-west cell
+//     southOctCell = cellNb[2][ngbOctCell];
+//     balanceCell(southOctCell, iLv);
+
+//     // north-west cell
+//     northOctCell = cellNb[3][ngbOctCell];
+//     balanceCell(northOctCell, iLv);
+//   }
+
+//   // east cell
+//   ngbOctCell = cellNb[1][prCell];
+//   balanceCell(ngbOctCell, iLv);
+
+//   if (octLv[ngbOctCell / 4] == iLv - 1)
+//   {
+//     if (morton_lookup[2][ngbOctCell % 4] > 3)
+//     {
+//       // south-east cell
+//       southOctCell = cellNb[2][ngbOctCell];
+//       balanceCell(southOctCell, iLv);
+//     }
+//     if (morton_lookup[3][ngbOctCell % 4] > 3)
+//     {
+//       // south-east cell
+//       northOctCell = cellNb[3][ngbOctCell];
+//       balanceCell(southOctCell, iLv);
+//     }
+//   }
+//   else
+//   {
+//     // south-east cell
+//     southOctCell = cellNb[2][ngbOctCell];
+//     balanceCell(southOctCell, iLv);
+
+//     // north-east cell
+//     northOctCell = cellNb[3][ngbOctCell];
+//     balanceCell(northOctCell, iLv);
+//   }
+
+//   // south cell
+//   ngbOctCell = cellNb[2][prCell];
+//   balanceCell(ngbOctCell, iLv);
+
+//   // north cell
+//   ngbOctCell = cellNb[3][prCell];
+//   balanceCell(ngbOctCell, iLv);
+// }

@@ -17,14 +17,30 @@ Real computeVX(Real x, Real y)
 {
     // return x;
     // return 0.5 * y;
-    return -2 * sin(pi * x) * sin(pi * x) * sin(pi * y) * cos(pi * y);
+    if (t_total < 2)
+    {
+        return -2 * sin(pi * x) * sin(pi * x) * sin(pi * (y + 0.5)) * cos(pi * (y + 0.5));
+    }
+    if (t_total < 4)
+    {
+        return 2 * sin(pi * x) * sin(pi * x) * sin(pi * (y + 0.5)) * cos(pi * (y + 0.5));
+    }
+    return 0;
 }
 
 Real computeVY(Real x, Real y)
 {
     // return 0;
     // return 0.25 * x;
-    return -2 * cos(pi * x) * sin(pi * x) * cos(pi * y) * cos(pi * y);
+    if (t_total < 2)
+    {
+        return -2 * cos(pi * x) * sin(pi * x) * cos(pi * (y + 0.5)) * cos(pi * (y + 0.5));
+    }
+    if (t_total < 4)
+    {
+        return 2 * cos(pi * x) * sin(pi * x) * cos(pi * (y + .5)) * cos(pi * (y + .5));
+    }
+    return 0;
 }
 
 void computeVelocityAtLeaves(void)

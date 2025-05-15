@@ -62,6 +62,9 @@ void initMemory(void)
   // work3 = dvector(0, maxNumberOfCells);
   temp_vof = dvector(0, maxNumberOfCells);
 
+  xThPoints = dvector(0, nThPoints);
+  yThPoints = dvector(0, nThPoints);
+
 #if (ocTree) /* 3D */
   w = dmatrix(0, nbNumberOfOct - 1, 0, maxNumberOfCells);
   // W = dvector(0, maxNumberOfCells);

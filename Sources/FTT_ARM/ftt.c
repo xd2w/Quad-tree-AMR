@@ -69,3 +69,9 @@ Real init_VOF_coefs[3];
 Real1D temp_vof;
 Real CFL;
 Real global_dt;
+Real t_total;
+
+// for thoretical lines
+int nThPoints;
+Real1D xThPoints;
+Real1D yThPoints;

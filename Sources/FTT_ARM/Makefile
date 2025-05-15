@@ -5,7 +5,7 @@ BALANCE = balanceFTT.o balanceFTTxP.o balanceFTTxN.o balanceFTTyP.o balanceFTTyN
 FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag.o \
 	restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o \
 	seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o plotFTTInterf_curvature_top_down.o\
-	plotCellInterf.o plotVOF.c plotCurvature.c plic_curvature_top_down.o vol2.o \
+	plotCellInterf.o plotVOF.o plotCurvature.o plic_curvature_top_down.o vol2.o \
 	octTreeXSwp_ellipse.o octTreeYSwp_ellipse.o reMesh.o miscUtils.o computeVelocity.o computeKappa.o
 
 # ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT.o refineFTT.o bcOctTree.o
@@ -14,7 +14,7 @@ FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctF
 ICBC = initialize.o initVOF.o computeVOF_ellipse.o markVOF.o initFTT_Yung.o refineFTT_ellipse.o bcOctTree_Yung.o
 
 IO  = readData.o plotFTTOct.o plotFTT.o plotSFC.o printFTTCell.o fGrad.o drawNgbCells.o \
-	drawChCells.o drawPrCells.o saveFTT.o readFTT.o initMemory.o computeCoord.o
+	drawChCells.o drawPrCells.o saveFTT.o readFTT.o initMemory.o computeCoord.o plotThIntf.o
 
 OBJECTS = $(FTT_ARM) $(ICBC) $(IO)
 CFLAGS= -O2  -I$(HOME)/include

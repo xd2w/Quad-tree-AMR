@@ -26,8 +26,9 @@ void checkSplitVOF(Real cc6[6][6], int iCell)
 
     if (flag)
     {
-        printf("wrong VOF splitting \n");
-        printf("at iCell=%d \n", iCell);
+        printf("Wrong VOF splitting at iCell=%d \n", iCell);
+        printf("child cell = %d\n", cellChOct[iCell / 4]);
+        printf("parent oct = %d\n", octPrCell[iCell]);
         printf("(x, y) = (%g, %g)\n", xCell[iCell], yCell[iCell]);
 
         printf("cc6 : \n");
@@ -85,7 +86,8 @@ void plotCurvatureAtLevel(int ndata, int level)
                     if (fraction > 0 && fraction < 1.0)
                     {
                         // kappa = curvature_5x5(cc, ip[k], jp[k], dxCell[iLv], dyCell[iLv]);
-                        kappa = kappaBarickALELike(iCell, cc);
+                        kappa = kappaBarickALELike(iCell + k, cc);
+                        // kappa = kappaHF(iCell + k, cc);
                         theta = atan2(yCell[iCell + k] - yc, xCell[iCell + k] - xc);
                         fprintf(fp, "%f %f \n", theta, kappa);
                     }
@@ -127,8 +129,13 @@ void plotCurvatureAtLeafCells(int ndata)
     // copyCellReal1D(vof, temp_vof);
     // smooth1D();
 
-    for (iCell = 1 << 6; iCell < numberOfCells; iCell += 4)
+    for (iCell = 1; iCell < numberOfCells; iCell++)
     {
+        // if (cellChOct[iCell] != 0)
+        // {
+        //     return;
+        // }
+
         fraction = vof[octPrCell[iCell / 4]];
         if (fraction > 0.0 && fraction < 1.0)
         {
@@ -144,7 +151,8 @@ void plotCurvatureAtLeafCells(int ndata)
                     if (fraction > 0 && fraction < 1)
                     {
                         // kappa = curvature_5x5(cc, ip[k], jp[k], dxCell[iLv], dyCell[iLv]);
-                        kappa = kappaBarickALELike(iCell + k, cc);
+                        // kappa = kappaBarickALELike(iCell + k, cc);
+                        kappa = kappaHF(iCell + k, cc);
                         // kappa = kappaBarickALELike_wider(iCell + k, cc) / 10;
                         // printf("kappa = %g\n", kappa);
                         // exit(0);

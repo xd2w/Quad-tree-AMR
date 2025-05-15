@@ -196,11 +196,11 @@ void splitCell_smart(int iCell)
     {
       dest = morton_lookup[dir][i];
       if (dest < 4)
-      {
+      { // siblings
         cellNb[dir][chCell + i] = chCell + dest;
       }
       else
-      {
+      { // outer neighbours
         prNbCell = cellNb[dir][iCell];
 
         if (octLv[prNbCell / 4] == octLv[iCell / 4])

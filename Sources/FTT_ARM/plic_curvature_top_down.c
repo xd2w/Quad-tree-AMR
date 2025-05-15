@@ -30,7 +30,7 @@ void plic(void)
 void computeXVOF(void)
 {
   int iCell, leftNgb, rightNgb, leftLv, rightLv, myLv;
-  Real fraction, MinVof = 1.0e-10, MaxVof = 1.0 - MinVof;
+  Real fraction, MinVof = 1.0e-16, MaxVof = 1.0 - MinVof;
   Real flux1, flux2, flux3;
 
   /* compute vof1, vof2, vof3 on flaged cells */
@@ -142,6 +142,68 @@ void propagateFlag(int dir)
   for (iCell = 0; iCell < numberOfCells; iCell++)
   {
     if (cellMark[iCell])
+    {
+      if (dir == 0)
+      {
+        ngbCell = cellNb[0][iCell];
+        if (cellChOct[ngbCell] == 0)
+        {
+          cellFlag[ngbCell] = 1;
+        }
+        else
+        {
+          cellFlag[4 * cellChOct[ngbCell] + 1] = 1;
+          cellFlag[4 * cellChOct[ngbCell] + 3] = 1;
+        }
+
+        ngbCell = cellNb[1][iCell];
+        if (cellChOct[ngbCell] == 0)
+        {
+          cellFlag[ngbCell] = 1;
+        }
+        else
+        {
+          cellFlag[4 * cellChOct[ngbCell] + 0] = 1;
+          cellFlag[4 * cellChOct[ngbCell] + 2] = 1;
+        }
+      }
+      else
+      {
+        ngbCell = cellNb[2][iCell];
+        if (cellChOct[ngbCell] == 0)
+        {
+          cellFlag[ngbCell] = 1;
+        }
+        else
+        {
+          cellFlag[4 * cellChOct[ngbCell] + 2] = 1;
+          cellFlag[4 * cellChOct[ngbCell] + 3] = 1;
+        }
+
+        ngbCell = cellNb[3][iCell];
+        if (cellChOct[ngbCell] == 0)
+        {
+          cellFlag[ngbCell] = 1;
+        }
+        else
+        {
+          cellFlag[4 * cellChOct[ngbCell] + 0] = 1;
+          cellFlag[4 * cellChOct[ngbCell] + 1] = 1;
+        }
+      }
+    }
+  }
+}
+
+/* propagate flag in direction dir */
+void propagateFlagAtLevel(int dir, int level)
+{
+  int iCell, ngbCell;
+
+  copyCellInt1D(cellFlag, cellMark);
+  for (iCell = 0; iCell < numberOfCells; iCell++)
+  {
+    if (cellMark[iCell] && octLv[iCell / 4] == level)
     {
       if (dir == 0)
       {

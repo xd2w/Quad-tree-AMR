@@ -162,6 +162,12 @@ extern Real init_VOF_coefs[3];
 
 extern Real CFL;
 extern Real global_dt;
+extern Real t_total;
+
+// for thoretical lines
+extern int nThPoints;
+extern Real1D xThPoints;
+extern Real1D yThPoints;
 
 extern void initFTT(void);
 extern void initMemory(void);
@@ -248,6 +254,7 @@ extern void copyCellInt1D(Int1D from, Int1D to);
 extern void copyOctInt1D(Int1D from, Int1D to);
 extern void flagInterfCells(void);
 extern void propagateFlag(int dir);
+extern void propagateFlagAtLevel(int dir, int level);
 extern void propagateOctFlag(void);
 extern void propagateOctFlagAtLevel(int level);
 extern void setCellInt1DZero(Int1D val);
@@ -255,6 +262,7 @@ extern void setCellInt1DZeroAtLevel(Int1D val, int level);
 extern void setOctInt1DZeroAtLevel(Int1D val, int level);
 extern void setOctInt1DZero(Int1D val);
 extern void reMesh(int itNb);
+extern void balanceCellsAround(int iCell);
 
 // extern Real computeVOF_ellipse(int iCell, int itNb);
 // extern void refineFTT_ellipse(void);
@@ -287,6 +295,7 @@ extern Real equation_analytical_curvature(Real x, Real y, Real xc, Real yc);
 extern Real kappaBarickALELike(int iCell, Real cc[][6]);
 extern Real kappaBarickALELike_wider(int iCell, Real cc[][6]);
 extern Real kappaMeier(int iCell);
+extern Real kappaHF(int iCell, Real cc[][6]);
 
 extern Real computeVX(Real x, Real y);
 extern Real computeVY(Real x, Real y);
@@ -309,5 +318,9 @@ extern void copyCellReal1D(Real1D from, Real1D to);
 
 extern void getCellNgbVOF_unifrom(int iCell, Real cc[][3]);
 extern void smooth1D(void);
+
+extern void initTheoreticalInterf(void);
+extern void plotTheoreticalInterf(int ndata);
+extern void advTheoreticalInterf(void);
 
 #endif
