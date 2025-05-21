@@ -56,7 +56,7 @@ void plotFTT(int ndata)
     if (cellChOct[iCell] == 0)
     {
       plotFTTCell(iCell, fp);
-      // plotCellGrad_4x4(iCell, fpGrad);
+      plotCellGrad_4x4(iCell, fpGrad);
       // plotCellGradSmoothed_4x4(iCell, fpGrad);
     }
     //    if(cellChOct[iCell]==0 && vof[iCell]>0.99999) plotFlagCell(iCell, fp);

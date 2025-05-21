@@ -18,7 +18,6 @@ void reMesh(int itNb)
   // flagInterfCells();
   // refineToKappa();
   flagInterfLeaves();
-  // printf("flagInterfLeavs done successfully \n");
   // // exit(0);
 
   // for (level = maxLevel; level > maxLevel - 1; level--)
@@ -64,11 +63,11 @@ void reMesh(int itNb)
 
 void refineToKappa(void)
 {
-  int iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
+  int h, iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
   Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum, refine_th;
   int currentNumberOfCells = numberOfCells;
   dfetch("refine_threshold", &refine_th);
-  for (iCell = 0; iCell < currentNumberOfCells; iCell++)
+  for (iCell = cellHilb[h]; h < numberOfCells; h++)
   {
     cellFlag[iCell] = 0;
     if (cellChOct[iCell] == 0)
@@ -135,23 +134,12 @@ void refineToKappa(void)
   }
 }
 
-void balanceCell(int iCell, int iLv)
-{
-  if (octLv[iCell / 4] < iLv && cellChOct[iCell] == 0)
-  {
-    splitCell_smart(iCell);
-    // splitCell(iCell);
-  }
-}
-
 void refineToKappaAtLevel(int level)
 {
-  int iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
+  int h, iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
   Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum;
   int currentNumberOfCells = numberOfCells;
   Real tol = 1e-2, refine_th;
-  int chCell, ngbOctCell;
-
   dfetch("refine_threshold", &refine_th);
   for (iCell = 0; iCell < currentNumberOfCells; iCell++)
   {
@@ -167,38 +155,22 @@ void refineToKappaAtLevel(int level)
 
         getCellNgbVOF_6x6(iOct, cc);
         kappa = kappaBarickALELike(iCell, cc);
-        // kappa = kappaHF(iCell, cc);
         if (log(kappa) > refine_th * (iLv))
         {
           balanceCellsAround(iCell);
           splitCell_smart(iCell);
-
-          // chCell = 4 * cellChOct[iCell];
-
-          // // west cell
-          // ngbOctCell = cellNb[0][iCell];
-          // balanceCell(ngbOctCell, iLv + 1);
-          // // south-west cell
-          // balanceCell(cellNb[2][ngbOctCell], iLv + 1);
-          // // north-west cell
-          // balanceCell(cellNb[3][ngbOctCell], iLv + 1);
-
-          // // east cell
-          // ngbOctCell = cellNb[1][iCell];
-          // balanceCell(ngbOctCell, iLv + 1);
-          // // south-east cell
-          // balanceCell(cellNb[2][ngbOctCell], iLv + 1);
-          // // north-east cell
-          // balanceCell(cellNb[3][ngbOctCell], iLv + 1);
-
-          // // south cell
-          // balanceCell(cellNb[2][iCell], iLv + 1);
-
-          // // north cell
-          // balanceCell(cellNb[3][iCell], iLv + 1);
         }
       }
     }
+  }
+}
+
+void balanceCell(int iCell, int iLv)
+{
+  if (octLv[iCell / 4] < iLv && cellChOct[iCell] == 0)
+  {
+    splitCell_smart(iCell);
+    // splitCell(iCell);
   }
 }
 

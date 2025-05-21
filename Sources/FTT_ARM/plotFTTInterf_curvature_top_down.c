@@ -7,7 +7,7 @@
 
 void plotFTTInterf(int ndata)
 {
-   int iCell, i, i1, i2, i3;
+   int h, iCell, i, i1, i2, i3;
    Real fraction;
    char fname[] = "DATA/intf.000";
    FILE *finterf;
@@ -26,6 +26,7 @@ void plotFTTInterf(int ndata)
    //  iCell = 339;
    //  plotCellInterf(iCell, finterf);
    for (iCell = 0; iCell < numberOfCells; iCell++)
+   // for (iCell = cellHilb[h]; h < numberOfCells; h++)
    {
       if (cellChOct[iCell] == 0)
       {

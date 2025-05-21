@@ -1,7 +1,7 @@
-tmax=3200
-tplot=32
+tmax=22000
+tplot=220
 minLevel=3
-maxLevel=9
+maxLevel=12
 maxNumberOfOcts=20000
 Lx=1.0
 Ly=1.0
@@ -15,6 +15,6 @@ iBalance=1
 ellipse_A=1
 ellipse_B=0
 ellipse_C=1
-refine_threshold=0.30
+refine_threshold=0.3
 cfl=0.7
 

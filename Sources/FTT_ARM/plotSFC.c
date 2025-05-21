@@ -9,19 +9,21 @@ void plotSFC(int ndata)
   char fsfcv[] = "DATA/sfcv.000";
   FILE *fsfc;
   i = ndata;
-  i1 = i % 10; i /= 10;
-  i2 = i % 10; i /= 10;
+  i1 = i % 10;
+  i /= 10;
+  i2 = i % 10;
+  i /= 10;
   i3 = i % 10;
-  fsfcv[10] ='0'+i3;
-  fsfcv[11] ='0'+i2;
-  fsfcv[12] ='0'+i1;
+  fsfcv[10] = '0' + i3;
+  fsfcv[11] = '0' + i2;
+  fsfcv[12] = '0' + i1;
 
-  fsfc =  fopen(fsfcv, "w");
-  for(iCell = 0; iCell < cellNumberInOct; iCell++)
+  fsfc = fopen(fsfcv, "w");
+  for (iCell = 0; iCell < cellNumberInOct; iCell++)
   {
     plotFTTCellSFC(iCell, fsfc);
   }
-  fclose(fsfc); 
+  fclose(fsfc);
 
   return;
 }
@@ -31,30 +33,31 @@ void plotFTTCellSFC(int iCell, FILE *fsfc)
   int iOct, cLv;
   Real xLeft, yLeft, xRight, yRight;
 
-// do not draw if cell is not a leaf
-//  if(cellFlag[iCell]) return;
+  // do not draw if cell is not a leaf
+  //  if(cellFlag[iCell]) return;
 
-  iOct = iCell/cellNumberInOct;
+  iOct = iCell / cellNumberInOct;
   cLv = octLv[iOct];
-  //printf("iCell %d iOct %d cLv %d\n", iCell, iOct, cLv);
-  xLeft = xCell[iCell]; yLeft = yCell[iCell];
- 
-  Real xx= xLeft+.5*dxCell[cLv];
-  Real yy= yLeft+.5*dyCell[cLv];
+  // printf("iCell %d iOct %d cLv %d\n", iCell, iOct, cLv);
+  xLeft = xCell[iCell];
+  yLeft = yCell[iCell];
+
+  Real xx = xLeft + .5 * dxCell[cLv];
+  Real yy = yLeft + .5 * dyCell[cLv];
 
   /* only plot on leaves of the tree */
   iOct = cellChOct[iCell];
-  if(iOct==0)
+  if (iOct == 0)
   {
-    fprintf(fsfc,"%g %g\n", xx, yy);
+    fprintf(fsfc, "%g %g\n", xx, yy);
   }
   else
   {
-     iCell = iOct*cellNumberInOct; 
-     plotFTTCellSFC(iCell, fsfc);
-     plotFTTCellSFC(iCell+1, fsfc);
-     plotFTTCellSFC(iCell+2, fsfc);
-     plotFTTCellSFC(iCell+3, fsfc);
+    iCell = iOct * cellNumberInOct;
+    plotFTTCellSFC(iCell, fsfc);
+    plotFTTCellSFC(iCell + 1, fsfc);
+    plotFTTCellSFC(iCell + 2, fsfc);
+    plotFTTCellSFC(iCell + 3, fsfc);
   }
   return;
 }
@@ -64,66 +67,150 @@ void plotHilbertSFC(int ndata)
   char hilbv[] = "DATA/hilb.000";
   FILE *fhil;
   i = ndata;
-  i1 = i % 10; i /= 10;
-  i2 = i % 10; i /= 10;
+  i1 = i % 10;
+  i /= 10;
+  i2 = i % 10;
+  i /= 10;
   i3 = i % 10;
-  hilbv[10] ='0'+i3;
-  hilbv[11] ='0'+i2;
-  hilbv[12] ='0'+i1;
+  hilbv[10] = '0' + i3;
+  hilbv[11] = '0' + i2;
+  hilbv[12] = '0' + i1;
 
-  fhil =  fopen(hilbv, "w");
+  fhil = fopen(hilbv, "w");
 
   iOct = 0;
-  iCell = iOct*cellNumberInOct;
+  iCell = iOct * cellNumberInOct;
   int hType = 0;
-  for(int cell = 0; cell < cellNumberInOct; cell++)
+  for (int cell = 0; cell < cellNumberInOct; cell++)
   {
     int ic = hilbert_map[hType][cell];
-    cellHilb[iCell+cell] = hilbert_production[hType][cell];
-   // printf("prod %d\n", hilbert_production[0][ic]);
-    plotFTTCellHilbert(iCell+ic, fhil);
+    cellHilb[iCell + cell] = hilbert_production[hType][cell];
+    // printf("prod %d\n", hilbert_production[0][ic]);
+    plotFTTCellHilbert(iCell + ic, fhil);
   }
 
-  fclose(fhil); 
+  fclose(fhil);
 
   return;
 }
-
-
 
 void plotFTTCellHilbert(int iCell, FILE *fsfc)
 {
   int iOct, cLv;
   Real xLeft, yLeft, xRight, yRight;
 
-// do not draw if cell is not a leaf
-//  if(cellFlag[iCell]) return;
+  // do not draw if cell is not a leaf
+  //  if(cellFlag[iCell]) return;
 
   int hType = cellHilb[iCell];
-  iOct = iCell/cellNumberInOct;
+  iOct = iCell / cellNumberInOct;
   cLv = octLv[iOct];
-  if(iOct == 4)
+  if (iOct == 4)
     printf("iCell %d iOct %d cLv %d hType %d\n", iCell, iOct, cLv, hType);
-  xLeft = xCell[iCell]; yLeft = yCell[iCell];
- 
-  Real xx= xLeft+.5*dxCell[cLv];
-  Real yy= yLeft+.5*dyCell[cLv];
+  xLeft = xCell[iCell];
+  yLeft = yCell[iCell];
+
+  Real xx = xLeft + .5 * dxCell[cLv];
+  Real yy = yLeft + .5 * dyCell[cLv];
 
   /* only plot on leaves of the tree */
   iOct = cellChOct[iCell];
-  if(iOct==0)
+  if (iOct == 0)
   {
-    fprintf(fsfc,"%g %g\n", xx, yy);
+    fprintf(fsfc, "%g %g\n", xx, yy);
   }
   else
   {
-     iCell = iOct*cellNumberInOct; 
-     for(int cell = 0; cell < cellNumberInOct; cell++)
-     {
-       int ic = hilbert_map[hType][cell];
-       cellHilb[iCell+ic] = hilbert_production[hType][ic];
-       plotFTTCellHilbert(iCell+ic, fsfc);
-     }
+    iCell = iOct * cellNumberInOct;
+    for (int cell = 0; cell < cellNumberInOct; cell++)
+    {
+      int ic = hilbert_map[hType][cell];
+      cellHilb[iCell + ic] = hilbert_production[hType][ic];
+      plotFTTCellHilbert(iCell + ic, fsfc);
+    }
   }
   return;
+}
+
+int _cHilb(int iCell, int index, int hType)
+{ // recursive method of hilbert curve production
+  int i, ic, iOct, n;
+  if (cellChOct[iCell] == 0)
+  {
+    return 1;
+  }
+  else
+  {
+    iOct = cellChOct[iCell];
+    n = index;
+    for (i = 0; i < 4; i++)
+    {
+      ic = hilbert_map[hType][i];
+      cellMark[4 * iOct + ic] += n;
+      n += _cHilb(4 * iOct + ic, n, hilbert_production[hType][i]);
+    }
+  }
+}
+
+void _cHilbParallel(void)
+{ // dynamic programming method of hilbert curve production
+  // paralaisable easily but inefficent
+  int i, ic, iOct, n, temp;
+
+  for (i = 0; i < numberOfCells; i++)
+  {
+    cellMark[i] = 0;
+    if (cellChOct[i] == 0)
+      cellMark[i] = 1;
+  }
+
+  for (int level = maxLevel; level >= 0; level--)
+  {
+    for (iOct = 0; iOct < numberOfOcts; iOct++)
+    {
+      if (octLv[iOct] == level)
+      {
+        n = 0;
+        for (i = 0; i < cellNumberInOct; i++)
+        {
+          n += cellMark[4 * iOct + i];
+        }
+        cellMark[octPrCell[iOct]] = n;
+      }
+    }
+  }
+
+  cellHilb[0] = 0;
+  cellMark[0] = 0;
+
+  for (int level = 0; level < maxLevel; level++)
+  {
+    for (iOct = 0; iOct < numberOfOcts; iOct++)
+    {
+      if (octLv[iOct] == level)
+      {
+        n = cellMark[octPrCell[iOct]];
+        for (i = 0; i < cellNumberInOct; i++)
+        {
+          ic = hilbert_map[cellHilb[octPrCell[iOct]]][i];
+          cellHilb[4 * iOct + ic] = hilbert_production[cellHilb[octPrCell[iOct]]][i];
+          temp = cellMark[4 * iOct + ic];
+          cellMark[4 * iOct + ic] += n;
+          n += temp;
+        }
+      }
+    }
+  }
+}
+
+void constructHilbertIndex(void)
+{
+  int iCell, iOct, i, ic, level;
+  // _cHilbParallel();
+  setCellInt1DZero(cellMark);
+  _cHilb(0, 0, 0);
+  for (iCell = 0; iCell < numberOfCells; iCell++)
+  {
+    cellHilb[cellMark[iCell]] = iCell;
+  }
 }

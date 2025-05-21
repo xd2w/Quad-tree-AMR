@@ -53,33 +53,30 @@ int main(int argc, char *argv[])
     // global_dt = 0.001953;
     printf("setTimeStep: completed successfully dt = %g\n", global_dt);
 
+    // constructHilbertIndex();
+    printf("constructHilbertIndex: completed successfully \n");
+
     if (itNb % tplot == 0)
     {
       ndata = itNb / tplot;
       plotFTT(ndata);
       // plotSFC(ndata);
       // plotHilbertSFC(ndata);
-      // printf("plotting intf\n");
       plotFTTInterf(ndata);
-      // printf("finished plotting intf\n");
-      plotVOF(ndata);
-      // printf("finished plotting vof\n");
+      // plotVOF(ndata);
+      printf("finished plotting vof\n");
       // plotCellGradAtIntf(ndata);
-      // printf("finished plotting Cell grad at intf\n");
       plotCurvatureAtLeafCells(ndata);
-      // printf("finished plotting curvature at leaf\n");
       plotTheoreticalInterf(ndata);
     }
     // computeVelocityAtLeaves();
-    // printf("plic before \n");
+    // setPLICPramForAll();
     plic();
     setPLICPramForAll();
-    // printf("plic done succesfully \n");
-    advTheoreticalInterf();
+    // advTheoreticalInterf();
 
     reMesh(itNb);
     setPLICPramForAll();
-    // printf("ReMesh done successfully \n");
     // fttStatistics();
     t_total += global_dt;
     printf("t_total = %g\n", t_total);

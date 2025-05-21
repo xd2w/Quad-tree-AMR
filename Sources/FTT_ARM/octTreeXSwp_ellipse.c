@@ -337,6 +337,9 @@ void calcWorksX(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
 			mm2 = alpha + mx * mm1;
 			if (octLv[leftNb / 4] < octLv[iCell / 4])
 			{
+				// splitCell_smart(leftNb);
+				// calcWorksX(iCell, vof[iCell], alpha, mx, mz, invx, invz, s1, s2);
+				// return;
 				vol = VOL2(mx, mz, mm2, mm1);
 				temp_vof[leftNb] += 0.25 * vol;
 				V2 -= vol;
@@ -372,6 +375,9 @@ void calcWorksX(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
 			mm2 = (alpha - mx);
 			if (octLv[rightNb / 4] < octLv[iCell / 4])
 			{
+				// splitCell_smart(rightNb);
+				// calcWorksX(iCell, vof[iCell], alpha, mx, mz, invx, invz, s1, s2);
+				// return;
 				vol = VOL2(mx, mz, mm2, mm1);
 				temp_vof[rightNb] += 0.25 * vol;
 				V2 -= vol;

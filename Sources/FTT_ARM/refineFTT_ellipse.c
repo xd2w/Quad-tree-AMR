@@ -237,7 +237,6 @@ void refineFTT(void)
       {
         // uncomment the following to initialise to curvature
         ave_kappa = equation_analytical_curvature(pList[index].x, pList[index].y, xc, yc);
-        // printf("kappa : %f %d \n", ave_kappa, index);
         if (log(ave_kappa + 1) > refine_th * cLv)
         {
           if (cellChOct[iCell] == 0 && cellType[iCell] == 0)

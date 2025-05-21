@@ -323,4 +323,6 @@ extern void initTheoreticalInterf(void);
 extern void plotTheoreticalInterf(int ndata);
 extern void advTheoreticalInterf(void);
 
+extern void constructHilbertIndex(void);
+
 #endif
