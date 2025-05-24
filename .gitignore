@@ -5,3 +5,4 @@ bin/
 **/*.[0-9]+
 ../../.gitignore
 **/DATA
+**/.DS_store

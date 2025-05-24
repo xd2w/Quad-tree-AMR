@@ -8,6 +8,7 @@ extern void splitFlagCellsAtLevel(int level);
 extern void oct_PrCellFlagAtLvel(int level);
 extern void refineToKappa(void);
 extern void refineToKappaAtLevel(int level);
+extern void cleanToKappaAtLevel(int level);
 
 void reMesh(int itNb)
 {
@@ -24,14 +25,15 @@ void reMesh(int itNb)
   // for (level = maxLevel; level > maxLevel - 1; level--)
   for (level = maxLevel; level > minLevel; level--)
   {
+    // cleanToKappaAtLevel(level);
     setOctInt1DZeroAtLevel(octFlag, level);
     cell_OctFlagAtLevel(level);
     setCellInt1DZeroAtLevel(cellFlag, level);
     propagateOctFlagAtLevel(level);
     propagateOctFlagAtLevel(level);
     // refineToKappaAtLevel(level);
-    refineToKappaAtLevel(level - 1);
-    // splitFlagCellsAtLevel(level - 1);
+    // refineToKappaAtLevel(level - 1);
+    splitFlagCellsAtLevel(level - 1);
     binCollectionAtLevel(level);
     oct_PrCellFlagAtLvel(level);
     establishNb();
@@ -168,7 +170,8 @@ void refineToKappaAtLevel(int level)
         getCellNgbVOF_6x6(iOct, cc);
         kappa = kappaBarickALELike(iCell, cc);
         // kappa = kappaHF(iCell, cc);
-        if (log(kappa) > refine_th * (iLv))
+        // if (-log(kappa) < log(8 * dxCell[iLv]))
+        if (log(kappa + 1) > refine_th * (iLv))
         {
           balanceCellsAround(iCell);
           splitCell_smart(iCell);
@@ -196,6 +199,39 @@ void refineToKappaAtLevel(int level)
 
           // // north cell
           // balanceCell(cellNb[3][iCell], iLv + 1);
+        }
+      }
+    }
+  }
+}
+
+void cleanToKappaAtLevel(int level)
+{
+  int iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
+  Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum;
+  int currentNumberOfCells = numberOfCells;
+  Real tol = 1e-2, refine_th;
+  int chCell, ngbOctCell;
+
+  dfetch("refine_threshold", &refine_th);
+  for (iCell = 0; iCell < currentNumberOfCells; iCell++)
+  {
+    if (cellChOct[iCell] == 0 && octLv[iCell / 4] == level && cellFlag[iCell] == 1)
+    {
+      fraction = vof[iCell];
+      if (fraction > tol && fraction < 1.0 - tol)
+      {
+        iOct = iCell / cellNumberInOct;
+        iLv = octLv[iOct];
+        cellFlag[iCell] = 1;
+
+        getCellNgbVOF_6x6(iOct, cc);
+        kappa = kappaBarickALELike(iCell, cc);
+        // kappa = kappaHF(iCell, cc);
+        // if (-log(kappa) > -log(8 * dxCell[iLv - 1]))
+        if (log(kappa) < refine_th * (iLv - 2))
+        {
+          cellFlag[iCell] = 0;
         }
       }
     }

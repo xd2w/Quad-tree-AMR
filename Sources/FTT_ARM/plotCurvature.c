@@ -129,7 +129,7 @@ void plotCurvatureAtLeafCells(int ndata)
     // copyCellReal1D(vof, temp_vof);
     // smooth1D();
 
-    for (iCell = 1; iCell < numberOfCells; iCell++)
+    for (iCell = 4; iCell < numberOfCells; iCell++)
     {
         // if (cellChOct[iCell] != 0)
         // {

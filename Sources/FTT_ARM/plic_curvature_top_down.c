@@ -3,6 +3,7 @@
 #include <math.h>
 #include "ftt.h"
 #include "nrutil.h"
+#include "pfplib.h"
 
 void plic(void)
 {
@@ -127,6 +128,30 @@ void flagInterfLeaves(void)
       fraction = vof[iCell];
       if (fraction > 0.0 && fraction < 1.0)
       {
+        cellFlag[iCell] = 1;
+      }
+    }
+  }
+}
+
+void flagInterfLeaveToKappa(void)
+{
+  int iCell, iOct, iLv;
+  Real fraction, cc[6][6];
+  Real kappa, refine_th;
+
+  refine_th = 0.3;
+  dfetch("refine_threshold", &refine_th);
+
+  for (iCell = 0; iCell < numberOfCells; iCell++)
+  {
+    cellFlag[iCell] = 0;
+    if (cellChOct[iCell] == 0)
+    {
+      fraction = vof[iCell];
+      if (fraction > 0.0 && fraction < 1.0)
+      {
+
         cellFlag[iCell] = 1;
       }
     }

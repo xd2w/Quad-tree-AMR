@@ -34,6 +34,7 @@ void setTimeStep(void)
         exit(1);
     }
     global_dt = CFL * 0.5 * (DMIN(dxCell[intrinsicMaxLevel], dyCell[intrinsicMaxLevel])) / sqrt(intrinsicMaxU2);
+    printf("current Max Level = %d\n", intrinsicMaxLevel);
 }
 
 void printcc3(Real cc[3][3])

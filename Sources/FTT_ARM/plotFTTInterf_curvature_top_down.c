@@ -129,7 +129,7 @@ void getCellNgbVOF(int iCell, Real cc[][3])
 
    int i, j;
    int iOct, prCell, prNbCell, iLocal;
-   int nbs[2];
+   int nbs[2] = {0, 0};
    Real refcc[3][3];
 
    // local morton index of the cell
