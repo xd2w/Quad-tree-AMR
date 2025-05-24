@@ -16,9 +16,9 @@ void reMesh(int itNb)
 
   setCellInt1DZero(cellFlag);
   setOctInt1DZero(octFlag);
-  // flagInterfCells();
+  flagInterfCells();
   // refineToKappa();
-  flagInterfLeaves();
+  // flagInterfLeaves();
   // printf("flagInterfLeavs done successfully \n");
   // // exit(0);
 

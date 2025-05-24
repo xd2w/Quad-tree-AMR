@@ -227,21 +227,22 @@ void refineFTT(void)
     {
       // split cell
       // printf("kappa : %f\n", equation_analytical_curvature(xCell[iCell] + dx/2, yCell[iCell] + dy/2, xc, yc));
-      // if(cellChOct[iCell] == 0 && cellType[iCell] == 0) splitCell(iCell);
+      if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
+        splitCell(iCell);
       // if (cLv < minLevel)
       // {
-      //   if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
-      //     splitCell(iCell);
+      // if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
+      //   splitCell(iCell);
       // }
       // else
       {
         // uncomment the following to initialise to curvature
-        ave_kappa = equation_analytical_curvature(pList[index].x, pList[index].y, xc, yc);
-        if (log(ave_kappa + 1) > refine_th * cLv)
-        {
-          if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
-            splitCell(iCell);
-        }
+        // ave_kappa = equation_analytical_curvature(pList[index].x, pList[index].y, xc, yc);
+        // if (log(ave_kappa + 1) > refine_th * cLv)
+        // {
+        //   if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
+        //     splitCell(iCell);
+        // }
       }
     }
   }

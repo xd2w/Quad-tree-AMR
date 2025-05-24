@@ -1,7 +1,7 @@
-tmax=1
-tplot=120
+tmax=24000
+tplot=240
 minLevel=3
-maxLevel=9
+maxLevel=12
 maxNumberOfOcts=20000
 Lx=1.0
 Ly=1.0
