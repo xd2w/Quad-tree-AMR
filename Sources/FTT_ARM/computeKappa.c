@@ -316,15 +316,15 @@ Real kappaHF(int iCell, Real cc[][6])
 
     kappa = fabs(hxx / (pow(1 + hx * hx, 1.5))) / (delta + 1e-50);
 
-    if (h[0] * h[1] * h[2] == 0)
-    {
-        kappa = 1e2;
-    }
+    // if (h[0] * h[1] * h[2] == 0)
+    // {
+    //     kappa = 1e2;
+    // }
 
-    if ((h[0] - 6) * (h[1] - 6) * (h[2] - 6) == 0)
-    {
-        kappa = 1e2;
-    }
+    // if ((h[0] - 6) * (h[1] - 6) * (h[2] - 6) == 0)
+    // {
+    //     kappa = 1e2;
+    // }
 
     // printcc6(cc);
 

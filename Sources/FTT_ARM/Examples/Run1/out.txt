@@ -33,5 +33,5 @@ t_total = 0.0109375
 Fully Threaded Tree Data Structure: iteration = 1
 current Max Level = 7
 setTimeStep: completed successfully dt = 0.00546875
-cell 1160 type 0 south neighbour is 219
-!error in cell 1160 neighbourhood: ngbLv = 6 iLv = 8
+cell 852 type 0 south neighbour is 405
+!error in cell 852 neighbourhood: ngbLv = 6 iLv = 8

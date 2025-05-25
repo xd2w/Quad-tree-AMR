@@ -107,7 +107,7 @@ static double est3[20] = {
     -3.048371 * 1e-7,
 };
 
-extern int maxLevel, minLevel, maxNumberOfOcts, maxNumberOfCells;
+extern int maxLevel, minLevel, minIntfLevel, maxNumberOfOcts, maxNumberOfCells;
 extern int levelNumber, numberOfOcts, numberOfCells; // actual number
 
 /* cell size at different level */

@@ -492,7 +492,7 @@ void setPLICPramForAll(void)
 {
    int iCell, level;
    Real cc[3][3];
-   level = minLevel;
+   level = minIntfLevel;
    for (iCell = 1; iCell < maxNumberOfCells; iCell++)
    {
       if (octLv[iCell / 4] == level)

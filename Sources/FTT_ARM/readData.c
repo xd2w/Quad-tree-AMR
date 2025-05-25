@@ -16,6 +16,10 @@ void readData(void)
     printf("missing ftt minLevel\n");
     exit(1);
   }
+  if (ifetch("minIntfLevel", &minIntfLevel) != 1)
+  {
+    minIntfLevel = minLevel;
+  }
   if (ifetch("maxNumberOfOcts", &maxNumberOfOcts) != 1)
   {
     printf("missing ftt maxNumberOfOcts\n");

@@ -128,7 +128,7 @@ int main(int argc, char *argv[])
       // plotVOF(ndata);
       // printf("finished plotting vof\n");
       plotCellGradAtIntf(ndata);
-      // plotCurvatureAtLeafCells(ndata);
+      plotCurvatureAtLeafCells(ndata);
       plotTheoreticalInterf(ndata);
       // fttStatistics();
     }

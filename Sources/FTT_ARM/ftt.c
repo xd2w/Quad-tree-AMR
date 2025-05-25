@@ -19,7 +19,7 @@
 #define cellNumberInOct 4
 #define nbNumberOfOct 4
 #endif
-int maxLevel, minLevel, maxNumberOfOcts, maxNumberOfCells;
+int maxLevel, minLevel, minIntfLevel, maxNumberOfOcts, maxNumberOfCells;
 int levelNumber, numberOfOcts, numberOfCells; // actual number
 
 /* cell size at different level */
