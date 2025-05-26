@@ -30,9 +30,13 @@ void plic(void)
 }
 void computeXVOF(void)
 {
-  int iCell, leftNgb, rightNgb, leftLv, rightLv, myLv;
-  Real fraction, MinVof = 1.0e-16, MaxVof = 1.0 - MinVof;
+  int iCell, myLv, minLv;
+  Real fraction, tol = 1.0e-16, loc_tol;
   Real flux1, flux2, flux3;
+
+  // if (minLevel == minIntfLevel)
+  //   minLv = maxLevel;
+  loc_tol = tol;
 
   /* compute vof1, vof2, vof3 on flaged cells */
   for (iCell = 0; iCell < numberOfCells; iCell++)
@@ -48,10 +52,13 @@ void computeXVOF(void)
   {
     if (cellMark[iCell])
     {
+      // myLv = octLv[iCell / 4];
+      // loc_tol = (tol * pow(2, (myLv - minLv))) ? (myLv - minLv) > 0 : tol;
+
       fraction = temp_vof[iCell];
-      if (fraction > MaxVof)
+      if (fraction > 1 - loc_tol)
         fraction = 1.0;
-      if (fraction < MinVof)
+      if (fraction < loc_tol)
         fraction = 0.0;
       vof[iCell] = fraction;
     }
@@ -60,8 +67,12 @@ void computeXVOF(void)
 }
 void computeYVOF(void)
 {
-  int iCell, leftNgb, rightNgb;
-  Real fraction, MinVof = 1.0e-16, MaxVof = 1.0 - MinVof;
+  int iCell, minLv, myLv;
+  Real fraction, tol = 1.0e-16, loc_tol;
+
+  // if (minLevel == minIntfLevel)
+  //   minLv = maxLevel;
+  loc_tol = tol;
 
   /* compute vof1, vof2, vof3 on flaged cells */
   for (iCell = 0; iCell < numberOfCells; iCell++)
@@ -77,10 +88,13 @@ void computeYVOF(void)
   {
     if (cellMark[iCell])
     {
+      // myLv = octLv[iCell / 4];
+      // loc_tol = (tol * pow(2, (myLv - minLv))) ? (myLv - minLv) > 0 : tol;
+
       fraction = temp_vof[iCell];
-      if (fraction > MaxVof)
+      if (fraction > 1 - loc_tol)
         fraction = 1.0;
-      if (fraction < MinVof)
+      if (fraction < loc_tol)
         fraction = 0.0;
       vof[iCell] = fraction;
     }

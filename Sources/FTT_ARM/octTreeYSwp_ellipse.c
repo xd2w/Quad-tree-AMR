@@ -280,7 +280,7 @@ void calcWorksY(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
       // correction to V2
       // temp_vof[iCell] += V1;
 
-      // s1 = 0.5 * (s11 + s12);
+      // cs1 = 0.5 * (s11 + s12);
     }
     else
     {
@@ -358,7 +358,7 @@ void calcWorksYFull(int iCell, Real s1, Real s2)
 
   // -----------
 
-  Real s11, s12, s21, s22;
+  Real s11, s12, s21, s22, cs1, cs2;
   Real ux11, ux12, ux21, ux22;
   Real x, y, dx, dy;
 
@@ -396,8 +396,10 @@ void calcWorksYFull(int iCell, Real s1, Real s2)
   rbot = 3;
 
   V1 = DMAX(-s1, 0.0);
-  temp_vof[iCell] += 1.0 - DMAX(s1, 0.0) + DMIN(s2, 0.0);
+  // temp_vof[iCell] += 1.0 - DMAX(s1, 0.0) + DMIN(s2, 0.0);
   // V2 = 1;
+  cs1 = s1;
+  cs2 = s2;
   V3 = DMAX(s2, 0.0);
 
   botNb = cellNb[2][iCell];
@@ -416,10 +418,11 @@ void calcWorksYFull(int iCell, Real s1, Real s2)
     // TODO calculate this separately with different u
     temp_vof[4 * cellChOct[botNb] + rbot] += 2 * DMAX(-s12, 0.0);
     temp_vof[4 * cellChOct[botNb] + lbot] += 2 * DMAX(-s11, 0.0);
-    temp_vof[iCell] += 0.5 * ((fmax(s1, 0.0)) - (fmax(s11, 0.0)));
-    temp_vof[iCell] += 0.5 * ((fmax(s1, 0.0)) - (fmax(s12, 0.0)));
+    // temp_vof[iCell] += 0.5 * ((fmax(s1, 0.0)) - (fmax(s11, 0.0)));
+    // temp_vof[iCell] += 0.5 * ((fmax(s1, 0.0)) - (fmax(s12, 0.0)));
     // V2 -= 0.5 * DMAX(-s11, 0.0);
     // V2 -= 0.5 * DMAX(-s12, 0.0);
+    cs1 = 0.5 * (s11 + s12);
   }
   else
   {
@@ -441,10 +444,11 @@ void calcWorksYFull(int iCell, Real s1, Real s2)
     // TODO calculate this separately with different u
     temp_vof[4 * cellChOct[topNb] + rtop] += 2 * DMAX(s22, 0.0);
     temp_vof[4 * cellChOct[topNb] + ltop] += 2 * DMAX(s21, 0.0);
-    temp_vof[iCell] -= 0.5 * (fmin(s2, 0.0) - fmin(s21, 0.0));
-    temp_vof[iCell] -= 0.5 * (fmin(s2, 0.0) - fmin(s22, 0.0));
+    // temp_vof[iCell] -= 0.5 * (fmin(s2, 0.0) - fmin(s21, 0.0));
+    // temp_vof[iCell] -= 0.5 * (fmin(s2, 0.0) - fmin(s22, 0.0));
     // V2 -= 0.5 * DMAX(s21, 0.0);
     // V2 -= 0.5 * DMAX(s22, 0.0);
+    cs2 = 0.5 * (s21 + s22);
   }
   else
   {
@@ -459,4 +463,5 @@ void calcWorksYFull(int iCell, Real s1, Real s2)
     // V2 -= V3;
   }
   // temp_vof[iCell] += V2;
+  temp_vof[iCell] += 1.0 - DMAX(cs1, 0.0) + DMIN(cs2, 0.0);
 }

@@ -40,7 +40,7 @@ run: FTT_ARM
 	cd Examples && ./FTT_ARM ftt.par
 
 plot : FTT_ARM
-	cd Examples/DATA && gnuplot ../plot_DATA.plt
+	cd Examples/DATA && gnuplot ~/include/plot_DATA.plt
 
 
 tousb:

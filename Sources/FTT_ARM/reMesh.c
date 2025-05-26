@@ -12,7 +12,7 @@ extern void cleanToKappaAtLevel(int level);
 
 void reMesh(int itNb)
 {
-  int level, minIntfLevel;
+  int level;
 
   setCellInt1DZero(cellFlag);
   setOctInt1DZero(octFlag);
@@ -32,13 +32,15 @@ void reMesh(int itNb)
     propagateOctFlagAtLevel(level);
     // propagateOctFlagAtLevel(level);
     // refineToKappaAtLevel(level);
-    if (level >= 8)
+    if (level >= minIntfLevel)
     {
       propagateOctFlagAtLevel(level);
       refineToKappaAtLevel(level - 1);
     }
     else
+    {
       splitFlagCellsAtLevel(level - 1);
+    }
     binCollectionAtLevel(level);
     oct_PrCellFlagAtLvel(level);
     establishNb();
@@ -156,7 +158,7 @@ void refineToKappaAtLevel(int level)
   int iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
   Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum;
   int currentNumberOfCells = numberOfCells;
-  Real tol = 1e-2, refine_th;
+  Real tol = 1e-16, refine_th;
   int chCell, ngbOctCell;
 
   dfetch("refine_threshold", &refine_th);

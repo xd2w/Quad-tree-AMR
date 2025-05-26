@@ -22,7 +22,7 @@ def total_computation(dir):
     print(f"{dir} \t: {np.sum(cells):.3g}")
 
 
-def cell_evolution(dir):
+def cell_evolution(dir, label=None):
     data = np.loadtxt(f"../{dir}/DATA/runtime.data", delimiter=",", skiprows=4)
     # print(data.shape)
     iteration = data[:, 0]
@@ -30,8 +30,16 @@ def cell_evolution(dir):
     dts = data[:, 2]
     cells = data[:, 3]
 
+    if label is None:
+        label = dir.replace("_", " ")
+
+    i = np.argmin(dts)
+    dts[i] = (dts[i - 10] + dts[i + 10]) * 0.5
+    dts[i + 1] = (dts[i - 10] + dts[i + 10]) * 0.5
+
     # plt.plot(runtime, cells * iteration[-1] / 4, label=dir)
-    plt.plot(runtime, cells / dts, label=dir)
+    plt.plot(runtime, cells / dts, label=label)
+    # plt.plot(runtime, dts)
 
     # np.trapezoid(iterations, cells, initial=0)
     print(f"{dir} \t: {np.sum(cells):.3g}")
@@ -274,11 +282,33 @@ if __name__ == "__main__":
     cell_evolution("Lv8_Uniform")
     cell_evolution("Lv9_Uniform")
     cell_evolution("Lv10_Uniform")
+    cell_evolution("Lv11_3", label="Lv11 Kappa")
 
-    cell_evolution("Lv9_3")
-    cell_evolution("Lv10_3")
-    cell_evolution("Lv11_3")
+    plt.legend()
+    plt.show()
+
+    cell_evolution("Lv9_3", label="Lv9 Kappa")
+    cell_evolution("Lv10_3", label="Lv10 Kappa")
+    cell_evolution("Lv11_3", label="Lv11 Kappa")
     # cell_evolution("Lv12_3")
 
     plt.legend()
     plt.show()
+
+    # cell_evolution("Lv7_Uniform")
+    # cell_evolution("Lv8_Uniform")
+    # cell_evolution("Lv9_3", label="Lv9 Kappa")
+    # cell_evolution("Lv10_3", label="Lv10 Kappa")
+    # cell_evolution("Lv9_Uniform")
+    # plt.legend()
+    # plt.show()
+
+    # cell_evolution("Lv9_Uniform")
+    # cell_evolution("Lv10_Uniform")
+    # cell_evolution("Lv9_3", label="Lv9 Kappa")
+    # cell_evolution("Lv10_3", label="Lv10 Kappa")
+    # cell_evolution("Lv11_3", label="Lv11 Kappa")
+    # cell_evolution("Lv12_3")
+
+    # plt.legend()
+    # plt.show()

@@ -1,9 +1,9 @@
-tmax=6000
-tplot=60
+tmax=25000
+tplot=250
 minLevel=3
-minIntfLevel=7
-maxLevel=10
-maxNumberOfOcts=20000
+minIntfLevel=9
+maxLevel=12
+maxNumberOfOcts=40000
 Lx=1.0
 Ly=1.0
 xPoint=.2

@@ -316,9 +316,9 @@ void calcWorksX(int iCell, Real vofVal, Real alpha, Real mx, Real mz, int invx, 
 			}
 		}
 
-		V2 = DMAX(V2, 0.0);
-		mm1 = 1.0 - DMAX(s1, 0.0) + DMIN(s2, 0.0);
-		mm2 = alpha - mx * DMAX(s1, 0.0);
+		// V2 = DMAX(V2, 0.0);
+		// mm1 = 1.0 - DMAX(s1, 0.0) + DMIN(s2, 0.0);
+		// mm2 = alpha - mx * DMAX(s1, 0.0);
 		// if (fabs(VOL2(mx, mz, mm2, mm1) - V2) > 1e-10)
 		// {
 		// 	printf("\nlarge variation in streaming VOF\n");
@@ -337,11 +337,9 @@ void calcWorksXFull(int iCell, Real s1, Real s2)
 	Real V1, V2, V3, mm1, mm2;
 	int ltop, lbot, rtop, rbot;
 
-	Real calpha, cmx, cs1, cs2;
-
 	// -----------
 
-	Real s11, s12, s21, s22;
+	Real s11, s12, s21, s22, cs1, cs2;
 	Real ux11, ux12, ux21, ux22;
 	Real x, y, dx, dy;
 
@@ -373,8 +371,10 @@ void calcWorksXFull(int iCell, Real s1, Real s2)
 	rbot = 0;
 
 	V1 = DMAX(-s1, 0.0);
-	temp_vof[iCell] += 1.0 - DMAX(s1, 0.0) + DMIN(s2, 0.0);
+	// temp_vof[iCell] += 1.0 - DMAX(s1, 0.0) + DMIN(s2, 0.0);
 	// V2 = 1;
+	cs1 = s1;
+	cs2 = s2;
 	V3 = DMAX(s2, 0.0);
 
 	leftNb = cellNb[0][iCell];
@@ -393,8 +393,9 @@ void calcWorksXFull(int iCell, Real s1, Real s2)
 		// 2 instead of 4 because V3 = 0.5 should fill up both
 		temp_vof[4 * cellChOct[leftNb] + ltop] += 2 * DMAX(-s12, 0.0); // 0 1 <
 		temp_vof[4 * cellChOct[leftNb] + lbot] += 2 * DMAX(-s11, 0.0); // 2 3 <
-		temp_vof[iCell] += 0.5 * ((fmax(s1, 0.0)) - (fmax(s11, 0.0)));
-		temp_vof[iCell] += 0.5 * ((fmax(s1, 0.0)) - (fmax(s12, 0.0)));
+		// temp_vof[iCell] += 0.5 * ((fmax(s1, 0.0)) - (fmax(s11, 0.0)));
+		// temp_vof[iCell] += 0.5 * ((fmax(s1, 0.0)) - (fmax(s12, 0.0)));
+		cs1 = 0.5 * (s11 + s12);
 	}
 	else
 	{
@@ -417,10 +418,11 @@ void calcWorksXFull(int iCell, Real s1, Real s2)
 		// 2 instead of 4 because V3 = 0.5 should fill up both
 		temp_vof[4 * cellChOct[rightNb] + rtop] += 2 * DMAX(s22, 0.0); // > 0 1
 		temp_vof[4 * cellChOct[rightNb] + rbot] += 2 * DMAX(s21, 0.0); // > 2 3
-		temp_vof[iCell] -= 0.5 * (fmin(s2, 0.0) - fmin(s21, 0.0));
-		temp_vof[iCell] -= 0.5 * (fmin(s2, 0.0) - fmin(s22, 0.0));
+		// temp_vof[iCell] -= 0.5 * (fmin(s2, 0.0) - fmin(s21, 0.0));
+		// temp_vof[iCell] -= 0.5 * (fmin(s2, 0.0) - fmin(s22, 0.0));
 		// V2 -= 0.5 * DMAX(s21, 0.0);
 		// V2 -= 0.5 * DMAX(s22, 0.0);
+		cs2 = 0.5 * (s21 + s22);
 	}
 	else
 	{
@@ -442,6 +444,7 @@ void calcWorksXFull(int iCell, Real s1, Real s2)
 	// 	// exit(1);
 	// }
 	// temp_vof[iCell] += V2;
+	temp_vof[iCell] += 1.0 - DMAX(cs1, 0.0) + DMIN(cs2, 0.0);
 }
 
 void octTreeXSwp_6x6(int iCell)
