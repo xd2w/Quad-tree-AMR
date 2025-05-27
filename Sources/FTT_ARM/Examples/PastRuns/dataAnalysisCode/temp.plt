@@ -1,9 +1,2 @@
-
-        set xrange [0:1]
-        #set yrange [-0.5:0.5]
-        set yrange [0:1]
-
-        set size ratio -1
-
-        p '../Lv9_3/DATA/intf.200' w l, '../Lv10_3/DATA/intf.200' w l, '../Lv11_3/DATA/intf.200' w l, '../Lv12_3/DATA/intf.200' w l, '../Lv12_3/DATA/thintf.200' w l, 
-pause 10
+p '../CSF/DATA/fgrd.000' u 1:2:($3/($5+1e-50)*1e-3):($4/($5+1e-50)*1e-3) w vector
+pause 1

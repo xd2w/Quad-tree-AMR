@@ -32,7 +32,7 @@ void reMesh(int itNb)
     propagateOctFlagAtLevel(level);
     // propagateOctFlagAtLevel(level);
     // refineToKappaAtLevel(level);
-    if (level >= minIntfLevel)
+    if (level > minIntfLevel)
     {
       propagateOctFlagAtLevel(level);
       refineToKappaAtLevel(level - 1);
@@ -158,7 +158,7 @@ void refineToKappaAtLevel(int level)
   int iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
   Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum;
   int currentNumberOfCells = numberOfCells;
-  Real tol = 1e-16, refine_th;
+  Real tol = 0, refine_th;
   int chCell, ngbOctCell;
 
   dfetch("refine_threshold", &refine_th);
@@ -175,16 +175,28 @@ void refineToKappaAtLevel(int level)
         cellFlag[iCell] = 1;
 
         getCellNgbVOF_6x6(iOct, cc);
-        kappa = kappaBarickALELike(iCell, cc);
-        // kappa = kappaHF(iCell, cc);
+
+        if (kappaMode == 1)
+        {
+          kappa = kappaHF(iCell, cc);
+        }
+        else if (kappaMode == 2)
+        {
+          kappa = kappaMeier(iCell);
+        }
+        else
+        {
+          kappa = kappaBarickALELike(iCell, cc);
+        }
+
         // if (-log(kappa) < log(8 * dxCell[iLv]))
         if (log(kappa + 1) > refine_th * (iLv))
         {
           balanceCellsAround(iCell);
-          splitCell_smart(iCell);
+          // splitCell_smart(iCell);
+          splitCell(iCell);
 
           // chCell = 4 * cellChOct[iCell];
-
           // // west cell
           // ngbOctCell = cellNb[0][iCell];
           // balanceCell(ngbOctCell, iLv + 1);
@@ -238,8 +250,19 @@ void cleanToKappaAtLevel(int level)
         cellFlag[iCell] = 1;
 
         getCellNgbVOF_6x6(iOct, cc);
-        kappa = kappaBarickALELike(iCell, cc);
-        // kappa = kappaHF(iCell, cc);
+        if (kappaMode == 1)
+        {
+          kappa = kappaHF(iCell, cc);
+        }
+        else if (kappaMode == 2)
+        {
+          kappa = kappaMeier(iCell);
+        }
+        else
+        {
+          kappa = kappaBarickALELike(iCell, cc);
+        }
+
         // if (-log(kappa) > -log(8 * dxCell[iLv - 1]))
         if (log(kappa) < refine_th * (iLv - 2))
         {

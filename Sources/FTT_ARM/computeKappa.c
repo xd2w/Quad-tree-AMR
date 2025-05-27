@@ -314,7 +314,7 @@ Real kappaHF(int iCell, Real cc[][6])
     hx = (h[2] - h[0]) / 2;
     hxx = (h[2] - 2 * h[1] + h[0]);
 
-    kappa = fabs(hxx / (pow(1 + hx * hx, 1.5))) / (delta + 1e-50);
+    kappa = fabs(hxx / (pow(1 + hx * hx, 1.5) + 1e-50)) / (delta + 1e-50);
 
     // if (h[0] * h[1] * h[2] == 0)
     // {

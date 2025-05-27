@@ -152,7 +152,18 @@ void plotCurvatureAtLeafCells(int ndata)
                     {
                         // kappa = curvature_5x5(cc, ip[k], jp[k], dxCell[iLv], dyCell[iLv]);
                         // kappa = kappaBarickALELike(iCell + k, cc);
-                        kappa = kappaHF(iCell + k, cc);
+                        if (kappaMode == 1)
+                        {
+                            kappa = kappaHF(iCell + k, cc);
+                        }
+                        else if (kappaMode == 2)
+                        {
+                            kappa = kappaMeier(iCell + k);
+                        }
+                        else
+                        {
+                            kappa = kappaBarickALELike(iCell + k, cc);
+                        }
                         // kappa = kappaBarickALELike_wider(iCell + k, cc) / 10;
                         // printf("kappa = %g\n", kappa);
                         // exit(0);

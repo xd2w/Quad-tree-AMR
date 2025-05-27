@@ -70,6 +70,7 @@ Real1D temp_vof;
 Real CFL;
 Real global_dt;
 Real t_total;
+int kappaMode; // 0 - Barick, 1 - HF, 2 - Meier
 
 // for thoretical lines
 int nThPoints;

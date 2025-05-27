@@ -505,7 +505,7 @@ void setPLICPramForAll(void)
       }
    }
    // printf("start iCell = %d\n", (1 << (2 * minLevel)));
-   for (level = minLevel + 1; level < maxLevel; level++)
+   for (level = minIntfLevel + 1; level < maxLevel; level++)
    {
       for (iCell = 1; iCell < maxNumberOfCells; iCell++)
       {

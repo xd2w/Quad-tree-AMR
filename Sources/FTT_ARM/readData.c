@@ -63,5 +63,10 @@ void readData(void)
     nThPoints = 1000;
   }
 
+  if (ifetch("kappaMode", &kappaMode) != 1)
+  {
+    kappaMode = 0;
+  }
+
   return;
 }

@@ -163,6 +163,7 @@ extern Real init_VOF_coefs[3];
 extern Real CFL;
 extern Real global_dt;
 extern Real t_total;
+extern int kappaMode; // 0 - Barick, 1 - HF, 2 - Meier
 
 // for thoretical lines
 extern int nThPoints;

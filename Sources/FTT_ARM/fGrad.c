@@ -44,8 +44,20 @@ void plotCellGrad(int iCell, FILE *fpGd)
 
 	if (0 < cc4[i][j] && cc4[i][j] < 1)
 	{
+		if (kappaMode == 1)
+		{
+			mm2 = kappaHF(iCell, cc);
+		}
+		else if (kappaMode == 2)
+		{
+			mm2 = kappaMeier(iCell);
+		}
+		else
+		{
+			mm2 = kappaBarickALELike(iCell, cc);
+		}
 		// mm2 = kappaBarickALELike(iCell, cc6);
-		mm2 = kappaHF(iCell, cc6);
+		// mm2 = kappaHF(iCell, cc6);
 		// mm2 = kappaBarickALELike_wider(iCell, cc6);
 	}
 	else

@@ -1,0 +1,2127 @@
+
+---------------------------------------------
+Job command: ./FTT_ARM  ftt.par
+---------------------------------------------
+--------------------------------
+Fully Threaded Tree Algorithms for Adaptive Refinement Methods Modified
+--------------------------------
+Max Number Of Octs in FTT: 20000
+Max Number Of Cells in FTT: 80000
+An Oct is composed of 4 cells
+Max Level of FTT: 7
+physical domain: Lx = 1, Ly = 1
+At level  0, cell size 2 2
+At level  1, cell size 1 1
+At level  2, cell size 0.5 0.5
+At level  3, cell size 0.25 0.25
+At level  4, cell size 0.125 0.125
+At level  5, cell size 0.0625 0.0625
+At level  6, cell size 0.03125 0.03125
+At level  7, cell size 0.015625 0.015625
+
+Fully Threaded Tree Data Structure: iteration = 0
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1172
+t_total = 0.00546875
+
+Fully Threaded Tree Data Structure: iteration = 1
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.0109375
+
+Fully Threaded Tree Data Structure: iteration = 2
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.0164062
+
+Fully Threaded Tree Data Structure: iteration = 3
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.021875
+
+Fully Threaded Tree Data Structure: iteration = 4
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1320
+t_total = 0.0273437
+
+Fully Threaded Tree Data Structure: iteration = 5
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.0328125
+
+Fully Threaded Tree Data Structure: iteration = 6
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.0382812
+
+Fully Threaded Tree Data Structure: iteration = 7
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.04375
+
+Fully Threaded Tree Data Structure: iteration = 8
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1292
+t_total = 0.0492187
+
+Fully Threaded Tree Data Structure: iteration = 9
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.0546875
+
+Fully Threaded Tree Data Structure: iteration = 10
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.0601562
+
+Fully Threaded Tree Data Structure: iteration = 11
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.065625
+
+Fully Threaded Tree Data Structure: iteration = 12
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1244
+t_total = 0.0710937
+
+Fully Threaded Tree Data Structure: iteration = 13
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.0765625
+
+Fully Threaded Tree Data Structure: iteration = 14
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.0820312
+
+Fully Threaded Tree Data Structure: iteration = 15
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.0875
+
+Fully Threaded Tree Data Structure: iteration = 16
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1208
+t_total = 0.0929687
+
+Fully Threaded Tree Data Structure: iteration = 17
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.0984375
+
+Fully Threaded Tree Data Structure: iteration = 18
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.103906
+
+Fully Threaded Tree Data Structure: iteration = 19
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.109375
+
+Fully Threaded Tree Data Structure: iteration = 20
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1116
+t_total = 0.114844
+
+Fully Threaded Tree Data Structure: iteration = 21
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.120312
+
+Fully Threaded Tree Data Structure: iteration = 22
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.125781
+
+Fully Threaded Tree Data Structure: iteration = 23
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.13125
+
+Fully Threaded Tree Data Structure: iteration = 24
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1088
+t_total = 0.136719
+
+Fully Threaded Tree Data Structure: iteration = 25
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.142187
+
+Fully Threaded Tree Data Structure: iteration = 26
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.147656
+
+Fully Threaded Tree Data Structure: iteration = 27
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.153125
+
+Fully Threaded Tree Data Structure: iteration = 28
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1012
+t_total = 0.158594
+
+Fully Threaded Tree Data Structure: iteration = 29
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.164062
+
+Fully Threaded Tree Data Structure: iteration = 30
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.169531
+
+Fully Threaded Tree Data Structure: iteration = 31
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.175
+
+Fully Threaded Tree Data Structure: iteration = 32
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1012
+t_total = 0.180469
+
+Fully Threaded Tree Data Structure: iteration = 33
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.185937
+
+Fully Threaded Tree Data Structure: iteration = 34
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.191406
+
+Fully Threaded Tree Data Structure: iteration = 35
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.196875
+
+Fully Threaded Tree Data Structure: iteration = 36
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1000
+t_total = 0.202344
+
+Fully Threaded Tree Data Structure: iteration = 37
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.207812
+
+Fully Threaded Tree Data Structure: iteration = 38
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.213281
+
+Fully Threaded Tree Data Structure: iteration = 39
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.21875
+
+Fully Threaded Tree Data Structure: iteration = 40
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 988
+t_total = 0.224219
+
+Fully Threaded Tree Data Structure: iteration = 41
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.229687
+
+Fully Threaded Tree Data Structure: iteration = 42
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.235156
+
+Fully Threaded Tree Data Structure: iteration = 43
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.240625
+
+Fully Threaded Tree Data Structure: iteration = 44
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1020
+t_total = 0.246094
+
+Fully Threaded Tree Data Structure: iteration = 45
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.251562
+
+Fully Threaded Tree Data Structure: iteration = 46
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.257031
+
+Fully Threaded Tree Data Structure: iteration = 47
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.2625
+
+Fully Threaded Tree Data Structure: iteration = 48
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1000
+t_total = 0.267969
+
+Fully Threaded Tree Data Structure: iteration = 49
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.273437
+
+Fully Threaded Tree Data Structure: iteration = 50
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.278906
+
+Fully Threaded Tree Data Structure: iteration = 51
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.284375
+
+Fully Threaded Tree Data Structure: iteration = 52
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1060
+t_total = 0.289844
+
+Fully Threaded Tree Data Structure: iteration = 53
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.295312
+
+Fully Threaded Tree Data Structure: iteration = 54
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.300781
+
+Fully Threaded Tree Data Structure: iteration = 55
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.30625
+
+Fully Threaded Tree Data Structure: iteration = 56
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1112
+t_total = 0.311719
+
+Fully Threaded Tree Data Structure: iteration = 57
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.317187
+
+Fully Threaded Tree Data Structure: iteration = 58
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.322656
+
+Fully Threaded Tree Data Structure: iteration = 59
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.328125
+
+Fully Threaded Tree Data Structure: iteration = 60
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1084
+t_total = 0.333594
+
+Fully Threaded Tree Data Structure: iteration = 61
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.339062
+
+Fully Threaded Tree Data Structure: iteration = 62
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.344531
+
+Fully Threaded Tree Data Structure: iteration = 63
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.35
+
+Fully Threaded Tree Data Structure: iteration = 64
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1060
+t_total = 0.355469
+
+Fully Threaded Tree Data Structure: iteration = 65
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.360937
+
+Fully Threaded Tree Data Structure: iteration = 66
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.366406
+
+Fully Threaded Tree Data Structure: iteration = 67
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.371875
+
+Fully Threaded Tree Data Structure: iteration = 68
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1080
+t_total = 0.377344
+
+Fully Threaded Tree Data Structure: iteration = 69
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.382812
+
+Fully Threaded Tree Data Structure: iteration = 70
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.388281
+
+Fully Threaded Tree Data Structure: iteration = 71
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.39375
+
+Fully Threaded Tree Data Structure: iteration = 72
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1084
+t_total = 0.399219
+
+Fully Threaded Tree Data Structure: iteration = 73
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.404687
+
+Fully Threaded Tree Data Structure: iteration = 74
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.410156
+
+Fully Threaded Tree Data Structure: iteration = 75
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.415625
+
+Fully Threaded Tree Data Structure: iteration = 76
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1088
+t_total = 0.421094
+
+Fully Threaded Tree Data Structure: iteration = 77
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.426562
+
+Fully Threaded Tree Data Structure: iteration = 78
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.432031
+
+Fully Threaded Tree Data Structure: iteration = 79
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.4375
+
+Fully Threaded Tree Data Structure: iteration = 80
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1084
+t_total = 0.442969
+
+Fully Threaded Tree Data Structure: iteration = 81
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.448437
+
+Fully Threaded Tree Data Structure: iteration = 82
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.453906
+
+Fully Threaded Tree Data Structure: iteration = 83
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.459375
+
+Fully Threaded Tree Data Structure: iteration = 84
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1060
+t_total = 0.464844
+
+Fully Threaded Tree Data Structure: iteration = 85
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.470312
+
+Fully Threaded Tree Data Structure: iteration = 86
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.475781
+
+Fully Threaded Tree Data Structure: iteration = 87
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.48125
+
+Fully Threaded Tree Data Structure: iteration = 88
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1076
+t_total = 0.486719
+
+Fully Threaded Tree Data Structure: iteration = 89
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.492187
+
+Fully Threaded Tree Data Structure: iteration = 90
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.497656
+
+Fully Threaded Tree Data Structure: iteration = 91
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.503125
+
+Fully Threaded Tree Data Structure: iteration = 92
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1076
+t_total = 0.508594
+
+Fully Threaded Tree Data Structure: iteration = 93
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.514062
+
+Fully Threaded Tree Data Structure: iteration = 94
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.519531
+
+Fully Threaded Tree Data Structure: iteration = 95
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.525
+
+Fully Threaded Tree Data Structure: iteration = 96
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1096
+t_total = 0.530469
+
+Fully Threaded Tree Data Structure: iteration = 97
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.535937
+
+Fully Threaded Tree Data Structure: iteration = 98
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.541406
+
+Fully Threaded Tree Data Structure: iteration = 99
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.546875
+
+Fully Threaded Tree Data Structure: iteration = 100
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1084
+t_total = 0.552344
+
+Fully Threaded Tree Data Structure: iteration = 101
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.557812
+
+Fully Threaded Tree Data Structure: iteration = 102
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.563281
+
+Fully Threaded Tree Data Structure: iteration = 103
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.56875
+
+Fully Threaded Tree Data Structure: iteration = 104
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1092
+t_total = 0.574219
+
+Fully Threaded Tree Data Structure: iteration = 105
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.579687
+
+Fully Threaded Tree Data Structure: iteration = 106
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.585156
+
+Fully Threaded Tree Data Structure: iteration = 107
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.590625
+
+Fully Threaded Tree Data Structure: iteration = 108
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1080
+t_total = 0.596094
+
+Fully Threaded Tree Data Structure: iteration = 109
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.601562
+
+Fully Threaded Tree Data Structure: iteration = 110
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.607031
+
+Fully Threaded Tree Data Structure: iteration = 111
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.6125
+
+Fully Threaded Tree Data Structure: iteration = 112
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1060
+t_total = 0.617969
+
+Fully Threaded Tree Data Structure: iteration = 113
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.623437
+
+Fully Threaded Tree Data Structure: iteration = 114
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.628906
+
+Fully Threaded Tree Data Structure: iteration = 115
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.634375
+
+Fully Threaded Tree Data Structure: iteration = 116
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1072
+t_total = 0.639844
+
+Fully Threaded Tree Data Structure: iteration = 117
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.645312
+
+Fully Threaded Tree Data Structure: iteration = 118
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.650781
+
+Fully Threaded Tree Data Structure: iteration = 119
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.65625
+
+Fully Threaded Tree Data Structure: iteration = 120
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1096
+t_total = 0.661719
+
+Fully Threaded Tree Data Structure: iteration = 121
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.667187
+
+Fully Threaded Tree Data Structure: iteration = 122
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.672656
+
+Fully Threaded Tree Data Structure: iteration = 123
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.678125
+
+Fully Threaded Tree Data Structure: iteration = 124
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1100
+t_total = 0.683594
+
+Fully Threaded Tree Data Structure: iteration = 125
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.689062
+
+Fully Threaded Tree Data Structure: iteration = 126
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.694531
+
+Fully Threaded Tree Data Structure: iteration = 127
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.7
+
+Fully Threaded Tree Data Structure: iteration = 128
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1160
+t_total = 0.705469
+
+Fully Threaded Tree Data Structure: iteration = 129
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.710937
+
+Fully Threaded Tree Data Structure: iteration = 130
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.716406
+
+Fully Threaded Tree Data Structure: iteration = 131
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.721875
+
+Fully Threaded Tree Data Structure: iteration = 132
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1244
+t_total = 0.727344
+
+Fully Threaded Tree Data Structure: iteration = 133
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.732812
+
+Fully Threaded Tree Data Structure: iteration = 134
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.738281
+
+Fully Threaded Tree Data Structure: iteration = 135
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.74375
+
+Fully Threaded Tree Data Structure: iteration = 136
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1276
+t_total = 0.749219
+
+Fully Threaded Tree Data Structure: iteration = 137
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.754687
+
+Fully Threaded Tree Data Structure: iteration = 138
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.760156
+
+Fully Threaded Tree Data Structure: iteration = 139
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.765625
+
+Fully Threaded Tree Data Structure: iteration = 140
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1324
+t_total = 0.771094
+
+Fully Threaded Tree Data Structure: iteration = 141
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.776562
+
+Fully Threaded Tree Data Structure: iteration = 142
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.782031
+
+Fully Threaded Tree Data Structure: iteration = 143
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.7875
+
+Fully Threaded Tree Data Structure: iteration = 144
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1328
+t_total = 0.792969
+
+Fully Threaded Tree Data Structure: iteration = 145
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.798437
+
+Fully Threaded Tree Data Structure: iteration = 146
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.803906
+
+Fully Threaded Tree Data Structure: iteration = 147
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.809375
+
+Fully Threaded Tree Data Structure: iteration = 148
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1304
+t_total = 0.814844
+
+Fully Threaded Tree Data Structure: iteration = 149
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.820312
+
+Fully Threaded Tree Data Structure: iteration = 150
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.825781
+
+Fully Threaded Tree Data Structure: iteration = 151
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.83125
+
+Fully Threaded Tree Data Structure: iteration = 152
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1324
+t_total = 0.836719
+
+Fully Threaded Tree Data Structure: iteration = 153
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.842187
+
+Fully Threaded Tree Data Structure: iteration = 154
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.847656
+
+Fully Threaded Tree Data Structure: iteration = 155
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.853125
+
+Fully Threaded Tree Data Structure: iteration = 156
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1344
+t_total = 0.858594
+
+Fully Threaded Tree Data Structure: iteration = 157
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.864062
+
+Fully Threaded Tree Data Structure: iteration = 158
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.869531
+
+Fully Threaded Tree Data Structure: iteration = 159
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.875
+
+Fully Threaded Tree Data Structure: iteration = 160
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1336
+t_total = 0.880469
+
+Fully Threaded Tree Data Structure: iteration = 161
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.885937
+
+Fully Threaded Tree Data Structure: iteration = 162
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.891406
+
+Fully Threaded Tree Data Structure: iteration = 163
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.896875
+
+Fully Threaded Tree Data Structure: iteration = 164
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1364
+t_total = 0.902344
+
+Fully Threaded Tree Data Structure: iteration = 165
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.907812
+
+Fully Threaded Tree Data Structure: iteration = 166
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.913281
+
+Fully Threaded Tree Data Structure: iteration = 167
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.91875
+
+Fully Threaded Tree Data Structure: iteration = 168
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1344
+t_total = 0.924219
+
+Fully Threaded Tree Data Structure: iteration = 169
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.929687
+
+Fully Threaded Tree Data Structure: iteration = 170
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.935156
+
+Fully Threaded Tree Data Structure: iteration = 171
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.940625
+
+Fully Threaded Tree Data Structure: iteration = 172
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1340
+t_total = 0.946094
+
+Fully Threaded Tree Data Structure: iteration = 173
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.951562
+
+Fully Threaded Tree Data Structure: iteration = 174
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.957031
+
+Fully Threaded Tree Data Structure: iteration = 175
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.9625
+
+Fully Threaded Tree Data Structure: iteration = 176
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1324
+t_total = 0.967969
+
+Fully Threaded Tree Data Structure: iteration = 177
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.973437
+
+Fully Threaded Tree Data Structure: iteration = 178
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.978906
+
+Fully Threaded Tree Data Structure: iteration = 179
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.984375
+
+Fully Threaded Tree Data Structure: iteration = 180
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1344
+t_total = 0.989844
+
+Fully Threaded Tree Data Structure: iteration = 181
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 0.995312
+
+Fully Threaded Tree Data Structure: iteration = 182
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.00078
+
+Fully Threaded Tree Data Structure: iteration = 183
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.00625
+
+Fully Threaded Tree Data Structure: iteration = 184
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1348
+t_total = 1.01172
+
+Fully Threaded Tree Data Structure: iteration = 185
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.01719
+
+Fully Threaded Tree Data Structure: iteration = 186
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.02266
+
+Fully Threaded Tree Data Structure: iteration = 187
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.02812
+
+Fully Threaded Tree Data Structure: iteration = 188
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1340
+t_total = 1.03359
+
+Fully Threaded Tree Data Structure: iteration = 189
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.03906
+
+Fully Threaded Tree Data Structure: iteration = 190
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.04453
+
+Fully Threaded Tree Data Structure: iteration = 191
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.05
+
+Fully Threaded Tree Data Structure: iteration = 192
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1380
+t_total = 1.05547
+
+Fully Threaded Tree Data Structure: iteration = 193
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.06094
+
+Fully Threaded Tree Data Structure: iteration = 194
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.06641
+
+Fully Threaded Tree Data Structure: iteration = 195
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.07187
+
+Fully Threaded Tree Data Structure: iteration = 196
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1380
+t_total = 1.07734
+
+Fully Threaded Tree Data Structure: iteration = 197
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.08281
+
+Fully Threaded Tree Data Structure: iteration = 198
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.08828
+
+Fully Threaded Tree Data Structure: iteration = 199
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.09375
+
+Fully Threaded Tree Data Structure: iteration = 200
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1412
+t_total = 1.09922
+
+Fully Threaded Tree Data Structure: iteration = 201
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.10469
+
+Fully Threaded Tree Data Structure: iteration = 202
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.11016
+
+Fully Threaded Tree Data Structure: iteration = 203
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.11562
+
+Fully Threaded Tree Data Structure: iteration = 204
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1380
+t_total = 1.12109
+
+Fully Threaded Tree Data Structure: iteration = 205
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.12656
+
+Fully Threaded Tree Data Structure: iteration = 206
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.13203
+
+Fully Threaded Tree Data Structure: iteration = 207
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.1375
+
+Fully Threaded Tree Data Structure: iteration = 208
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1380
+t_total = 1.14297
+
+Fully Threaded Tree Data Structure: iteration = 209
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.14844
+
+Fully Threaded Tree Data Structure: iteration = 210
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.15391
+
+Fully Threaded Tree Data Structure: iteration = 211
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.15937
+
+Fully Threaded Tree Data Structure: iteration = 212
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1384
+t_total = 1.16484
+
+Fully Threaded Tree Data Structure: iteration = 213
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.17031
+
+Fully Threaded Tree Data Structure: iteration = 214
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.17578
+
+Fully Threaded Tree Data Structure: iteration = 215
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.18125
+
+Fully Threaded Tree Data Structure: iteration = 216
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1376
+t_total = 1.18672
+
+Fully Threaded Tree Data Structure: iteration = 217
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.19219
+
+Fully Threaded Tree Data Structure: iteration = 218
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.19766
+
+Fully Threaded Tree Data Structure: iteration = 219
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.20312
+
+Fully Threaded Tree Data Structure: iteration = 220
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1392
+t_total = 1.20859
+
+Fully Threaded Tree Data Structure: iteration = 221
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.21406
+
+Fully Threaded Tree Data Structure: iteration = 222
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.21953
+
+Fully Threaded Tree Data Structure: iteration = 223
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.225
+
+Fully Threaded Tree Data Structure: iteration = 224
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1384
+t_total = 1.23047
+
+Fully Threaded Tree Data Structure: iteration = 225
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.23594
+
+Fully Threaded Tree Data Structure: iteration = 226
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.24141
+
+Fully Threaded Tree Data Structure: iteration = 227
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.24687
+
+Fully Threaded Tree Data Structure: iteration = 228
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1396
+t_total = 1.25234
+
+Fully Threaded Tree Data Structure: iteration = 229
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.25781
+
+Fully Threaded Tree Data Structure: iteration = 230
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.26328
+
+Fully Threaded Tree Data Structure: iteration = 231
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.26875
+
+Fully Threaded Tree Data Structure: iteration = 232
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1416
+t_total = 1.27422
+
+Fully Threaded Tree Data Structure: iteration = 233
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.27969
+
+Fully Threaded Tree Data Structure: iteration = 234
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.28516
+
+Fully Threaded Tree Data Structure: iteration = 235
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.29062
+
+Fully Threaded Tree Data Structure: iteration = 236
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1412
+t_total = 1.29609
+
+Fully Threaded Tree Data Structure: iteration = 237
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.30156
+
+Fully Threaded Tree Data Structure: iteration = 238
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.30703
+
+Fully Threaded Tree Data Structure: iteration = 239
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.3125
+
+Fully Threaded Tree Data Structure: iteration = 240
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1412
+t_total = 1.31797
+
+Fully Threaded Tree Data Structure: iteration = 241
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.32344
+
+Fully Threaded Tree Data Structure: iteration = 242
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.32891
+
+Fully Threaded Tree Data Structure: iteration = 243
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.33437
+
+Fully Threaded Tree Data Structure: iteration = 244
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1412
+t_total = 1.33984
+
+Fully Threaded Tree Data Structure: iteration = 245
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.34531
+
+Fully Threaded Tree Data Structure: iteration = 246
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.35078
+
+Fully Threaded Tree Data Structure: iteration = 247
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.35625
+
+Fully Threaded Tree Data Structure: iteration = 248
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1412
+t_total = 1.36172
+
+Fully Threaded Tree Data Structure: iteration = 249
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.36719
+
+Fully Threaded Tree Data Structure: iteration = 250
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.37266
+
+Fully Threaded Tree Data Structure: iteration = 251
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.37812
+
+Fully Threaded Tree Data Structure: iteration = 252
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1404
+t_total = 1.38359
+
+Fully Threaded Tree Data Structure: iteration = 253
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.38906
+
+Fully Threaded Tree Data Structure: iteration = 254
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.39453
+
+Fully Threaded Tree Data Structure: iteration = 255
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.4
+
+Fully Threaded Tree Data Structure: iteration = 256
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1388
+t_total = 1.40547
+
+Fully Threaded Tree Data Structure: iteration = 257
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.41094
+
+Fully Threaded Tree Data Structure: iteration = 258
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.41641
+
+Fully Threaded Tree Data Structure: iteration = 259
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.42187
+
+Fully Threaded Tree Data Structure: iteration = 260
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1432
+t_total = 1.42734
+
+Fully Threaded Tree Data Structure: iteration = 261
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.43281
+
+Fully Threaded Tree Data Structure: iteration = 262
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.43828
+
+Fully Threaded Tree Data Structure: iteration = 263
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.44375
+
+Fully Threaded Tree Data Structure: iteration = 264
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1468
+t_total = 1.44922
+
+Fully Threaded Tree Data Structure: iteration = 265
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.45469
+
+Fully Threaded Tree Data Structure: iteration = 266
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.46016
+
+Fully Threaded Tree Data Structure: iteration = 267
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.46562
+
+Fully Threaded Tree Data Structure: iteration = 268
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1496
+t_total = 1.47109
+
+Fully Threaded Tree Data Structure: iteration = 269
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.47656
+
+Fully Threaded Tree Data Structure: iteration = 270
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.48203
+
+Fully Threaded Tree Data Structure: iteration = 271
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.4875
+
+Fully Threaded Tree Data Structure: iteration = 272
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1500
+t_total = 1.49297
+
+Fully Threaded Tree Data Structure: iteration = 273
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.49844
+
+Fully Threaded Tree Data Structure: iteration = 274
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.50391
+
+Fully Threaded Tree Data Structure: iteration = 275
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.50937
+
+Fully Threaded Tree Data Structure: iteration = 276
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1512
+t_total = 1.51484
+
+Fully Threaded Tree Data Structure: iteration = 277
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.52031
+
+Fully Threaded Tree Data Structure: iteration = 278
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.52578
+
+Fully Threaded Tree Data Structure: iteration = 279
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.53125
+
+Fully Threaded Tree Data Structure: iteration = 280
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1480
+t_total = 1.53672
+
+Fully Threaded Tree Data Structure: iteration = 281
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.54219
+
+Fully Threaded Tree Data Structure: iteration = 282
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.54766
+
+Fully Threaded Tree Data Structure: iteration = 283
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.55312
+
+Fully Threaded Tree Data Structure: iteration = 284
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1496
+t_total = 1.55859
+
+Fully Threaded Tree Data Structure: iteration = 285
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.56406
+
+Fully Threaded Tree Data Structure: iteration = 286
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.56953
+
+Fully Threaded Tree Data Structure: iteration = 287
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.575
+
+Fully Threaded Tree Data Structure: iteration = 288
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1488
+t_total = 1.58047
+
+Fully Threaded Tree Data Structure: iteration = 289
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.58594
+
+Fully Threaded Tree Data Structure: iteration = 290
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.59141
+
+Fully Threaded Tree Data Structure: iteration = 291
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.59687
+
+Fully Threaded Tree Data Structure: iteration = 292
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1544
+t_total = 1.60234
+
+Fully Threaded Tree Data Structure: iteration = 293
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.60781
+
+Fully Threaded Tree Data Structure: iteration = 294
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.61328
+
+Fully Threaded Tree Data Structure: iteration = 295
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.61875
+
+Fully Threaded Tree Data Structure: iteration = 296
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1540
+t_total = 1.62422
+
+Fully Threaded Tree Data Structure: iteration = 297
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.62969
+
+Fully Threaded Tree Data Structure: iteration = 298
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.63516
+
+Fully Threaded Tree Data Structure: iteration = 299
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.64062
+
+Fully Threaded Tree Data Structure: iteration = 300
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1572
+t_total = 1.64609
+
+Fully Threaded Tree Data Structure: iteration = 301
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.65156
+
+Fully Threaded Tree Data Structure: iteration = 302
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.65703
+
+Fully Threaded Tree Data Structure: iteration = 303
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.6625
+
+Fully Threaded Tree Data Structure: iteration = 304
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1572
+t_total = 1.66797
+
+Fully Threaded Tree Data Structure: iteration = 305
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.67344
+
+Fully Threaded Tree Data Structure: iteration = 306
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.67891
+
+Fully Threaded Tree Data Structure: iteration = 307
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.68437
+
+Fully Threaded Tree Data Structure: iteration = 308
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1568
+t_total = 1.68984
+
+Fully Threaded Tree Data Structure: iteration = 309
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.69531
+
+Fully Threaded Tree Data Structure: iteration = 310
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.70078
+
+Fully Threaded Tree Data Structure: iteration = 311
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.70625
+
+Fully Threaded Tree Data Structure: iteration = 312
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1572
+t_total = 1.71172
+
+Fully Threaded Tree Data Structure: iteration = 313
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.71719
+
+Fully Threaded Tree Data Structure: iteration = 314
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.72266
+
+Fully Threaded Tree Data Structure: iteration = 315
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.72812
+
+Fully Threaded Tree Data Structure: iteration = 316
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1636
+t_total = 1.73359
+
+Fully Threaded Tree Data Structure: iteration = 317
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.73906
+
+Fully Threaded Tree Data Structure: iteration = 318
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.74453
+
+Fully Threaded Tree Data Structure: iteration = 319
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.75
+
+Fully Threaded Tree Data Structure: iteration = 320
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1632
+t_total = 1.75547
+
+Fully Threaded Tree Data Structure: iteration = 321
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.76094
+
+Fully Threaded Tree Data Structure: iteration = 322
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.76641
+
+Fully Threaded Tree Data Structure: iteration = 323
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.77187
+
+Fully Threaded Tree Data Structure: iteration = 324
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1640
+t_total = 1.77734
+
+Fully Threaded Tree Data Structure: iteration = 325
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.78281
+
+Fully Threaded Tree Data Structure: iteration = 326
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.78828
+
+Fully Threaded Tree Data Structure: iteration = 327
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.79375
+
+Fully Threaded Tree Data Structure: iteration = 328
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1624
+t_total = 1.79922
+
+Fully Threaded Tree Data Structure: iteration = 329
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.80469
+
+Fully Threaded Tree Data Structure: iteration = 330
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.81016
+
+Fully Threaded Tree Data Structure: iteration = 331
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.81562
+
+Fully Threaded Tree Data Structure: iteration = 332
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1640
+t_total = 1.82109
+
+Fully Threaded Tree Data Structure: iteration = 333
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.82656
+
+Fully Threaded Tree Data Structure: iteration = 334
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.83203
+
+Fully Threaded Tree Data Structure: iteration = 335
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.8375
+
+Fully Threaded Tree Data Structure: iteration = 336
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1636
+t_total = 1.84297
+
+Fully Threaded Tree Data Structure: iteration = 337
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.84844
+
+Fully Threaded Tree Data Structure: iteration = 338
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.85391
+
+Fully Threaded Tree Data Structure: iteration = 339
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.85937
+
+Fully Threaded Tree Data Structure: iteration = 340
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1648
+t_total = 1.86484
+
+Fully Threaded Tree Data Structure: iteration = 341
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.87031
+
+Fully Threaded Tree Data Structure: iteration = 342
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.87578
+
+Fully Threaded Tree Data Structure: iteration = 343
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.88125
+
+Fully Threaded Tree Data Structure: iteration = 344
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1640
+t_total = 1.88672
+
+Fully Threaded Tree Data Structure: iteration = 345
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.89219
+
+Fully Threaded Tree Data Structure: iteration = 346
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.89766
+
+Fully Threaded Tree Data Structure: iteration = 347
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.90312
+
+Fully Threaded Tree Data Structure: iteration = 348
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1644
+t_total = 1.90859
+
+Fully Threaded Tree Data Structure: iteration = 349
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.91406
+
+Fully Threaded Tree Data Structure: iteration = 350
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.91953
+
+Fully Threaded Tree Data Structure: iteration = 351
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.925
+
+Fully Threaded Tree Data Structure: iteration = 352
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1644
+t_total = 1.93047
+
+Fully Threaded Tree Data Structure: iteration = 353
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.93594
+
+Fully Threaded Tree Data Structure: iteration = 354
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.94141
+
+Fully Threaded Tree Data Structure: iteration = 355
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.94687
+
+Fully Threaded Tree Data Structure: iteration = 356
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1644
+t_total = 1.95234
+
+Fully Threaded Tree Data Structure: iteration = 357
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.95781
+
+Fully Threaded Tree Data Structure: iteration = 358
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.96328
+
+Fully Threaded Tree Data Structure: iteration = 359
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.96875
+
+Fully Threaded Tree Data Structure: iteration = 360
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1680
+t_total = 1.97422
+
+Fully Threaded Tree Data Structure: iteration = 361
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.97969
+
+Fully Threaded Tree Data Structure: iteration = 362
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.98516
+
+Fully Threaded Tree Data Structure: iteration = 363
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 1.99062
+
+Fully Threaded Tree Data Structure: iteration = 364
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1660
+t_total = 1.99609
+
+Fully Threaded Tree Data Structure: iteration = 365
+current Max Level = 7
+t_total = 2
+plot ftt mesh: numberOfCells 1692
+iCell 16 iOct 4 cLv 1 hType 1
+iCell 18 iOct 4 cLv 1 hType 0
+iCell 19 iOct 4 cLv 1 hType 0
+iCell 17 iOct 4 cLv 1 hType 2
+setTimeStep: completed successfully dt = 0.00390628
+t_total = 2.00391
+
+Fully Threaded Tree Data Structure: iteration = 367
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.00938
+
+Fully Threaded Tree Data Structure: iteration = 368
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1684
+t_total = 2.01484
+
+Fully Threaded Tree Data Structure: iteration = 369
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.02031
+
+Fully Threaded Tree Data Structure: iteration = 370
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.02578
+
+Fully Threaded Tree Data Structure: iteration = 371
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.03125
+
+Fully Threaded Tree Data Structure: iteration = 372
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1696
+t_total = 2.03672
+
+Fully Threaded Tree Data Structure: iteration = 373
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.04219
+
+Fully Threaded Tree Data Structure: iteration = 374
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.04766
+
+Fully Threaded Tree Data Structure: iteration = 375
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.05313
+
+Fully Threaded Tree Data Structure: iteration = 376
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1696
+t_total = 2.05859
+
+Fully Threaded Tree Data Structure: iteration = 377
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.06406
+
+Fully Threaded Tree Data Structure: iteration = 378
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.06953
+
+Fully Threaded Tree Data Structure: iteration = 379
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.075
+
+Fully Threaded Tree Data Structure: iteration = 380
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1704
+t_total = 2.08047
+
+Fully Threaded Tree Data Structure: iteration = 381
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.08594
+
+Fully Threaded Tree Data Structure: iteration = 382
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.09141
+
+Fully Threaded Tree Data Structure: iteration = 383
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.09688
+
+Fully Threaded Tree Data Structure: iteration = 384
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1696
+t_total = 2.10234
+
+Fully Threaded Tree Data Structure: iteration = 385
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.10781
+
+Fully Threaded Tree Data Structure: iteration = 386
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.11328
+
+Fully Threaded Tree Data Structure: iteration = 387
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.11875
+
+Fully Threaded Tree Data Structure: iteration = 388
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1704
+t_total = 2.12422
+
+Fully Threaded Tree Data Structure: iteration = 389
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.12969
+
+Fully Threaded Tree Data Structure: iteration = 390
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.13516
+
+Fully Threaded Tree Data Structure: iteration = 391
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.14063
+
+Fully Threaded Tree Data Structure: iteration = 392
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1704
+t_total = 2.14609
+
+Fully Threaded Tree Data Structure: iteration = 393
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.15156
+
+Fully Threaded Tree Data Structure: iteration = 394
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.15703
+
+Fully Threaded Tree Data Structure: iteration = 395
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.1625
+
+Fully Threaded Tree Data Structure: iteration = 396
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1708
+t_total = 2.16797
+
+Fully Threaded Tree Data Structure: iteration = 397
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.17344
+
+Fully Threaded Tree Data Structure: iteration = 398
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.17891
+
+Fully Threaded Tree Data Structure: iteration = 399
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+t_total = 2.18438
+
+Fully Threaded Tree Data Structure: iteration = 400
+current Max Level = 7
+setTimeStep: completed successfully dt = 0.00546875
+plot ftt mesh: numberOfCells 1704
+t_total = 2.18984
