@@ -102,6 +102,69 @@ void plotCurvatureAtLevel(int ndata, int level)
 void plotCurvatureAtLeafCells(int ndata)
 {
     Real fraction, kappa, theta, th_kappa;
+    Real tol = 1e-16;
+
+    Real cc[6][6], cc3[3][3];
+
+    int ip[] = {0, 1, 0, 1};
+    int jp[] = {0, 0, 1, 1};
+
+    int iLv, iCell;
+    char fname[] = "DATA/kappa.000";
+
+    fname[13] = '0' + ndata % 10;
+    fname[12] = '0' + (ndata / 10) % 10;
+    fname[11] = '0' + (ndata / 100) % 10;
+
+    FILE *fp = fopen(fname, "w");
+
+    Real xc, yc;
+    xc = 0.5;
+    yc = 0.5;
+
+    dfetch("xc", &xc);
+    dfetch("yc", &yc);
+
+    // copyCellReal1D(vof, temp_vof);
+    // smooth1D();
+    // copyCellReal1D(vof, temp_vof);
+    // smooth1D();
+
+    for (iCell = 1; iCell < numberOfCells; iCell++)
+    {
+        if (cellChOct[iCell] == 0)
+        {
+            fraction = vof[iCell];
+            if (fraction > tol && fraction < 1 - tol)
+            {
+                getCellNgbVOF_6x6(iCell / 4, cc);
+                // checkSplitVOF(cc, iCell);
+                if (kappaMode == 1)
+                {
+                    kappa = kappaHF(iCell, cc);
+                }
+                else if (kappaMode == 2)
+                {
+                    kappa = kappaMeier(iCell);
+                }
+                else
+                {
+                    kappa = kappaBarickALELike(iCell, cc);
+                }
+
+                theta = atan2(yCell[iCell] - yc, xCell[iCell] - xc + 1e-50);
+                th_kappa = equation_analytical_curvature(xCell[iCell], yCell[iCell], xc, yc);
+                fprintf(fp, "%f %f %f \n", theta, kappa, th_kappa);
+            }
+        }
+    }
+    fprintf(fp, "\n");
+    fclose(fp);
+}
+
+void _plotCurvatureAtLeafCells(int ndata)
+{
+    Real fraction, kappa, theta, th_kappa;
 
     Real cc[6][6], cc3[3][3];
 
@@ -180,21 +243,3 @@ void plotCurvatureAtLeafCells(int ndata)
     fprintf(fp, "\n");
     fclose(fp);
 }
-
-// void getCellNgbVOF_7x7_uniform(int iCell, Real cc[][5])
-// { // generates 6x6 grid of data from neighbours of octs
-//     int botleft = cellNb[2][cellNb[0][iCell]];
-//     int origin = cellNb[2][cellNb[0][botleft]];
-//     int origin = cellNb[2][cellNb[0][origin]];
-//     int cell = origin;
-//     for (int j = 0; j < 7; j++)
-//     {
-//         cell = origin;
-//         for (int i = 0; i < 7; i++)
-//         {
-//             cc[i][j] = vof[cell];
-//             cell = cellNb[1][cell]; // cell moved ->
-//         }
-//         origin = cellNb[3][origin]; // start moved up
-//     }
-// }

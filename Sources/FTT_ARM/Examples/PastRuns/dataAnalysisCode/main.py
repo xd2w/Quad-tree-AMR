@@ -267,6 +267,21 @@ def plot_all_400_kappa():
     plt.savefig("Figs/kappa_400_all.eps")
 
 
+def plot_all_400_kappa():
+    color = iter(["r", "g", "b", "c", "m", "y"])
+    plot_400("Lv8_3", color=color, label="Kappa 8")
+    plot_400("Lv9_3", color=color, label="Kappa 9")
+    plot_400("Lv10_3", color=color, label="Kappa 10")
+    plot_400("Lv11_3", color=color, label="Kappa 11")
+    # plot_400("Lv12_3", color=color, label="Kappa 12")
+    plot_circle(0.5, 0.75, 0.2, color="k", linestyle="--", label="Target Circle")
+    plt.axis("equal")
+    # plt.box()
+    plt.legend()
+    # plt.show()
+    plt.savefig("Figs/kappa_400_all.eps")
+
+
 def plot_all_200_uni():
     color = iter(["r", "g", "b", "c", "m", "y"])
     plot_th200("Lv12_3", color="k", label="Target")
@@ -363,10 +378,10 @@ if __name__ == "__main__":
     # # plt.box()
     # plot_step_drop(10)
 
-    plot_all_200_uni()
-    plt.cla()
-    plot_all_200_kappa()
-    plt.cla()
+    # plot_all_200_uni()
+    # plt.cla()
+    # plot_all_200_kappa()
+    # plt.cla()
 
     # cell_evolution("Lv7_Uniform")
     # cell_evolution("Lv8_Uniform")

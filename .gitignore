@@ -6,3 +6,5 @@ bin/
 ../../.gitignore
 **/DATA
 **/.DS_store
+
+Sources/FTT_ARM/Examples/PastRuns

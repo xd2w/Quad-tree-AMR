@@ -233,10 +233,10 @@ Real kappaMeier(int iCell)
     kappa1 += (est1[19] * xi * omega * sigma);
     kappa1 = fabs(kappa1);
 
-    if (kappa1 / (dx + 1e-50) > 0.4)
+    if (kappa1 > 0.4)
     {
         // printf("check 1\n");
-        return kappa1 / (dx + 1e-50);
+        return kappa1;
     }
 
     kappa2 = (est2[0] + est2[1] * xi + est2[2] * omega + est2[3] * sigma);
@@ -249,10 +249,10 @@ Real kappaMeier(int iCell)
     kappa2 += (est2[19] * xi * omega * sigma);
     kappa2 = fabs(kappa2);
 
-    if (kappa2 / (dx + 1e-50) > 0.1)
+    if (kappa2 > 0.1)
     {
         // printf("check 2\n");
-        return kappa2 / (dx + 1e-50);
+        return kappa2;
     }
 
     kappa3 = (est3[0] + est3[1] * xi + est3[2] * omega + est3[3] * sigma);
@@ -266,7 +266,7 @@ Real kappaMeier(int iCell)
     kappa3 = fabs(kappa3);
     // printf("check 3\n");
 
-    return kappa3 / (dx + 1e-50);
+    return kappa3;
 
     // printf("***********************\n");
     // printf("Error kappa est. not working\n\n");
@@ -275,7 +275,7 @@ Real kappaMeier(int iCell)
 Real kappaHF(int iCell, Real cc[][6])
 {
     int i, iOct, iLocal, iLv;
-    Real mx, mz, hx, hxx, delta, dx, dy, kappa;
+    Real mx, mz, hx, hxx, delta, dx, dy, kappa1, kappa2, kappa;
     mx = mxCell[iCell];
     mz = mzCell[iCell];
     iOct = iCell / 4;
@@ -288,7 +288,7 @@ Real kappaHF(int iCell, Real cc[][6])
     Real h[3] = {0, 0, 0};
 
     if (fabs(mx) < fabs(mz))
-    { // vertical
+    { // add up vertically
         for (i = 0; i < 6; i++)
         {
             // 1 or 3   % 2 = 1
@@ -298,9 +298,13 @@ Real kappaHF(int iCell, Real cc[][6])
             h[2] += cc[3 + (iLocal % 2)][i];
         }
         delta = dx;
+        // hx = (h[2] - h[0]) / 2;
+        // hxx = (h[2] - 2 * h[1] + h[0]);
+
+        // kappa1 = fabs(hxx / (pow(1 + hx * hx, 1.5) + 1e-50)) / (delta + 1e-50);
     }
     else
-    { // horizontal
+    { // add up horizontally
         for (i = 0; i < 6; i++)
         {
             // 2 or 3   / 2 = 1
@@ -316,14 +320,28 @@ Real kappaHF(int iCell, Real cc[][6])
 
     kappa = fabs(hxx / (pow(1 + hx * hx, 1.5) + 1e-50)) / (delta + 1e-50);
 
-    // if (h[0] * h[1] * h[2] == 0)
+    // kappa = DMIN(kappa1, kappa2);
+
+    // if (h[0] == 0 || h[1] == 0 || h[2] == 0)
     // {
-    //     kappa = 1e2;
+    //     kappa = -1;
+    //     printf("0\n");
+    //     printf("VOF = %f\n", vof[iCell]);
+    //     printf("mx = %f, mz = %f \n", mx, mz);
+    //     printf("h0 = %f, h1 = %f, h2 = %f", h[0], h[1], h[2]);
+    //     printcc6(cc);
+    //     exit(1);
     // }
 
-    // if ((h[0] - 6) * (h[1] - 6) * (h[2] - 6) == 0)
+    // if (h[0] == 6 || h[1] == 6 || h[2] == 6)
     // {
-    //     kappa = 1e2;
+    //     kappa = -1;
+    //     printf("6\n");
+    //     printf("VOF = %f\n", vof[iCell]);
+    //     printf("mx = %f, mz = %f \n", mx, mz);
+    //     printf("h0 = %f, h1 = %f, h2 = %f", h[0], h[1], h[2]);
+    //     printcc6(cc);
+    //     exit(1);
     // }
 
     // printcc6(cc);

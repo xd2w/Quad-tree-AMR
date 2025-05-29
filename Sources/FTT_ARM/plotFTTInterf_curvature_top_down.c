@@ -26,7 +26,7 @@ void plotFTTInterf(int ndata)
    //  iCell = 339;
    //  plotCellInterf(iCell, finterf);
    for (iCell = 0; iCell < numberOfCells; iCell++)
-   // for (iCell = cellHilb[h]; h < numberOfCells; h++)
+   // for (iCell = cellHilb[h = 0]; h < numberOfCells; iCell = cellHilb[++h])
    {
       if (cellChOct[iCell] == 0)
       {
@@ -505,7 +505,7 @@ void setPLICPramForAll(void)
       }
    }
    // printf("start iCell = %d\n", (1 << (2 * minLevel)));
-   for (level = minIntfLevel + 1; level < maxLevel; level++)
+   for (level = minIntfLevel + 1; level <= maxLevel; level++)
    {
       for (iCell = 1; iCell < maxNumberOfCells; iCell++)
       {

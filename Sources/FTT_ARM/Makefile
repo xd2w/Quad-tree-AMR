@@ -8,11 +8,11 @@ FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctF
 	plotCellInterf.o plotVOF.o plotCurvature.o plic_curvature_top_down.o vol2.o \
 	octTreeXSwp_ellipse.o octTreeYSwp_ellipse.o reMesh.o miscUtils.o computeVelocity.o computeKappa.o
 
-# FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag_HILB.o \
+# FTT_ARM = FTT_ARM.o ftt.o $(BALANCE) box.o splitCell.o fttStatistics.o cell_OctFlag.o \
 # 	restrFlag.o restrField.o flagOct.o binCollection.o binCollectionAtLevel.o garbageCollection.o \
 # 	seekCell.o checkOctTree.o establishNb.o checkNb.o octPropagation.o plotFTTInterf_curvature_top_down.o\
 # 	plotCellInterf.o plotVOF.o plotCurvature.o plic_curvature_top_down_HILB.o vol2.o \
-# 	octTreeXSwp_ellipse.o octTreeYSwp_ellipse.o reMesh_HILB.o miscUtils.o computeVelocity.o computeKappa.o
+# 	octTreeXSwp_ellipse.o octTreeYSwp_ellipse.o reMesh.o miscUtils.o computeVelocity.o computeKappa.o
 
 # ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT.o refineFTT.o bcOctTree.o
 # ICBC = initialize.o initVOF.o computeVOF.o markVOF.o initFTT_Yung.o refineFTT_Yung.o bcOctTree_Yung.o
@@ -24,7 +24,7 @@ IO  = readData.o plotFTTOct.o plotFTT.o plotSFC.o printFTTCell.o fGrad.o drawNgb
 
 OBJECTS = $(FTT_ARM) $(ICBC) $(IO)
 CFLAGS= -O2  -I$(HOME)/include
-CFLAGS= -g  -I$(HOME)/include
+# CFLAGS= -g  -I$(HOME)/include
 # LIB= alloc.o   ffetch.o   ifetch.o   nrutil.o  redin.o dfetch.o  getpars.o  isapipe.o  pfplib.o  sfetch.o
 CLIB=  -L$(HOME)/lib -lpfp
 # CLIB=  -L -lpfp

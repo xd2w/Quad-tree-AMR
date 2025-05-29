@@ -132,7 +132,7 @@ void plotFTTCellHilbert(int iCell, FILE *fsfc)
   return;
 }
 
-int _cHilb(int iCell, int index, int hType)
+int _cHilbup(int iCell, int index, int hType)
 { // recursive method of hilbert curve production
   int i, ic, iOct, n;
   if (cellChOct[iCell] == 0)
@@ -147,10 +147,51 @@ int _cHilb(int iCell, int index, int hType)
     {
       ic = hilbert_map[hType][i];
       cellMark[4 * iOct + ic] += n;
-      n += _cHilb(4 * iOct + ic, n, hilbert_production[hType][i]);
+      n += _cHilbup(4 * iOct + ic, n, hilbert_production[hType][i]);
+    }
+    // cellMark[iCell] = n;
+    // return n;
+  }
+}
+
+int _cHilbdown(int iCell, int hType)
+{ // recursive method of hilbert curve production
+  int i, ic, iOct, n;
+  if (cellChOct[iCell] == 0)
+  {
+    return 1;
+  }
+  else
+  {
+    iOct = cellChOct[iCell];
+    n = cellMark[iCell];
+    for (i = 0; i < 4; i++)
+    {
+      ic = hilbert_map[hType][i];
+      cellMark[4 * iOct + ic] += n;
     }
   }
 }
+
+// int _cHilb2(int iCell, int **index, int hType)
+// { // recursive method of hilbert curve production
+//   int i, ic, iOct, n;
+//   if (cellChOct[iCell] == 0)
+//   {
+//     return cellMark[iCell] = index++;
+//   }
+//   else
+//   {
+//     iOct = octPrCell[iCell];
+//     n = index;
+//     for (i = 0; i < 4; i++)
+//     {
+//       ic = hilbert_map[hType][i];
+//       cellMark[4 * iOct + ic] += n;
+//       n += _cHilb(4 * iOct + ic, n, hilbert_production[hType][i]);
+//     }
+//   }
+// }
 
 void _cHilbParallel(void)
 { // dynamic programming method of hilbert curve production
@@ -164,7 +205,7 @@ void _cHilbParallel(void)
       cellMark[i] = 1;
   }
 
-  for (int level = maxLevel; level >= 0; level--)
+  for (int level = maxLevel; level > 0; level--)
   {
     for (iOct = 0; iOct < numberOfOcts; iOct++)
     {
@@ -183,9 +224,9 @@ void _cHilbParallel(void)
   cellHilb[0] = 0;
   cellMark[0] = 0;
 
-  for (int level = 0; level < maxLevel; level++)
+  for (int level = 1; level < maxLevel; level++)
   {
-    for (iOct = 0; iOct < numberOfOcts; iOct++)
+    for (iOct = 1; iOct < numberOfOcts; iOct++)
     {
       if (octLv[iOct] == level)
       {
@@ -208,9 +249,24 @@ void constructHilbertIndex(void)
   int iCell, iOct, i, ic, level;
   // _cHilbParallel();
   setCellInt1DZero(cellMark);
-  _cHilb(0, 0, 0);
+  _cHilbup(0, 0, 0);
+  // _cHilbdown(0, 0);
+  printf("%d\n\n", cellMark[1]);
+  int numLeaves = 0;
   for (iCell = 0; iCell < numberOfCells; iCell++)
   {
-    cellHilb[cellMark[iCell]] = iCell;
+    if (cellChOct[iCell] == 0)
+    {
+      printf("%d\n", cellMark[iCell]);
+      if (cellMark[iCell] > numberOfCells)
+      {
+        printf("somthing wrong\n");
+        exit(1);
+      }
+      cellHilb[cellMark[iCell]] = iCell;
+      numLeaves++;
+    }
   }
+  printf("num leaves : %d\n", numberOfCells);
+  exit(1);
 }

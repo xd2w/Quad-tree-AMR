@@ -135,6 +135,7 @@ void refineFTT(void)
   struct box rectangle;
   int n, nPoint, nCircle, nShock;
   FILE *fPoints;
+  int initMeshMode;
 
   Real A, B, C, a, b, phi, ave_kappa, refine_th;
   int index;
@@ -158,14 +159,15 @@ void refineFTT(void)
   nCircle = 4 * 4 * 3.14159 * radius / dx;
   delta = 2 * 3.14159 / nCircle;
   nPoint = nCircle + nShock;
+  refine_th = 0.5;
+  dfetch("refine_threshold", &refine_th);
 
+  // A x^2 + B xy + C y^2 = r^2
   A = init_VOF_coefs[0];
   B = init_VOF_coefs[1];
   C = init_VOF_coefs[2];
 
-  refine_th = 0.5;
-  dfetch("refine_threshold", &refine_th);
-
+  // converted into polar form
   phi = 0.5 * atan2(B, A - C);
   a = radius / sqrt(A * cos(phi) * cos(phi) + B * cos(phi) * sin(phi) + C * sin(phi) * sin(phi));
   b = radius / sqrt(A * sin(phi) * sin(phi) - B * cos(phi) * sin(phi) + C * cos(phi) * cos(phi));
@@ -178,12 +180,7 @@ void refineFTT(void)
     pList[n].x = xc + a * cos(theta) * cos(phi) - b * sin(theta) * sin(phi);
     pList[n].y = yc + a * cos(theta) * sin(phi) + b * sin(theta) * cos(phi);
   }
-  /*  delta = Ly/nShock;
-    for(n=nCircle; n<nPoint; n++)
-    {
-      pList[n].x = xShock; pList[n].y = (n+.5-nCircle)*delta;
-    }
-  */
+
   fPoints = fopen("meshSeeds", "w");
   for (n = 0; n < nCircle; n++)
   {
@@ -192,16 +189,12 @@ void refineFTT(void)
   fprintf(fPoints, "%g %g %g\n", pList[n].x, pList[n].y, equation_analytical_curvature(pList[n].x, pList[n].y, xc, yc));
   fprintf(fPoints, "\n");
   fclose(fPoints);
-  /*
-  for(n=nCircle; n<nPoint; n++)
-  {
-    fprintf(fPoints, "%g %g\n", pList[n].x, pList[n].y);
-  }
-  */
+
+  initMeshMode = 1; // 0 - to minIntfLevel, 1 - to curvature, 2 - to maxLevel
+  ifetch("initMeshMode", &initMeshMode);
+
   for (iCell = 0; iCell < numberOfCells; iCell++)
   {
-    //    printf("split cell %d, numberOfCells %d\n", iCell, numberOfCells);
-    //    getchar();
 
     iOct = iCell / cellNumberInOct;
     cLv = octLv[iOct];
@@ -220,29 +213,38 @@ void refineFTT(void)
     rectangle.pt1.y = yCell[iCell];
     rectangle.pt2.x = xCell[iCell] + dx;
     rectangle.pt2.y = yCell[iCell] + dy;
+
     /* point within cell, split the cell */
-    // if(ptListIntersectBox(pList, nPoint, rectangle) > 1)
     index = -1;
     if (ptListIntersectBox_extended(pList, nPoint, rectangle, &index))
-    {
-      // split cell
-      // printf("kappa : %f\n", equation_analytical_curvature(xCell[iCell] + dx/2, yCell[iCell] + dy/2, xc, yc));
-      if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
-        splitCell(iCell);
-      // if (cLv < minLevel)
-      // {
-      // if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
-      //   splitCell(iCell);
-      // }
-      // else
+    { // split cell
+
+      // if to max
+      if (initMeshMode == 2)
       {
-        // uncomment the following to initialise to curvature
-        // ave_kappa = equation_analytical_curvature(pList[index].x, pList[index].y, xc, yc);
-        // if (log(ave_kappa + 1) > refine_th * cLv)
-        // {
-        //   if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
-        //     splitCell(iCell);
-        // }
+        if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
+          splitCell(iCell);
+
+        continue;
+      }
+
+      // to minIntfLevel
+      if (cLv < minIntfLevel)
+      {
+        if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
+          splitCell(iCell);
+      }
+      else
+      { // if to curvature
+        if (initMeshMode == 1)
+        {
+          ave_kappa = equation_analytical_curvature(pList[index].x, pList[index].y, xc, yc);
+          if (log(ave_kappa + 1) > refine_th * cLv)
+          {
+            if (cellChOct[iCell] == 0 && cellType[iCell] == 0)
+              splitCell(iCell);
+          }
+        }
       }
     }
   }

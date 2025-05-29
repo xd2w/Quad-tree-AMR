@@ -43,7 +43,7 @@ void setOctInt1DZeroAtLevel(Int1D val, int level)
 void splitFlagCells(void)
 {
   int h, iCell, chOct;
-  for (iCell = cellHilb[h]; h < numberOfCells; h++)
+  for (iCell = cellHilb[h = 0]; h < numberOfCells; iCell = cellHilb[++h])
   {
     if (cellChOct[iCell] == 0 && cellFlag[iCell])
     {
@@ -56,7 +56,7 @@ void splitFlagCells(void)
 void splitFlagCellsAtLevel(int level)
 {
   int h, iCell, chOct, iOct;
-  for (iCell = cellHilb[h]; h < numberOfCells; h++)
+  for (iCell = cellHilb[h = 0]; h < numberOfCells; iCell = cellHilb[++h])
   {
     iOct = iCell / cellNumberInOct;
     if (cellChOct[iCell] == 0 && cellFlag[iCell] && octLv[iOct] == level)

@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
       plotFTTInterf(ndata);
       plotVOF(ndata);
       // printf("finished plotting vof\n");
-      plotCellGradAtIntf(ndata);
+      // plotCellGradAtIntf(ndata);
       plotCurvatureAtLeafCells(ndata);
       plotTheoreticalInterf(ndata);
     }
@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
       plotFTTInterf(ndata);
       plotVOF(ndata);
       // printf("finished plotting vof\n");
-      plotCellGradAtIntf(ndata);
+      // plotCellGradAtIntf(ndata);
       plotCurvatureAtLeafCells(ndata);
       plotTheoreticalInterf(ndata);
       return 0;
@@ -127,7 +127,7 @@ int main(int argc, char *argv[])
       plotFTTInterf(ndata);
       // plotVOF(ndata);
       // printf("finished plotting vof\n");
-      plotCellGradAtIntf(ndata);
+      // plotCellGradAtIntf(ndata);
       plotCurvatureAtLeafCells(ndata);
       plotTheoreticalInterf(ndata);
       // fttStatistics();

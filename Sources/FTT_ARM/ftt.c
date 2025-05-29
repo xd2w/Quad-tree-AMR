@@ -70,7 +70,8 @@ Real1D temp_vof;
 Real CFL;
 Real global_dt;
 Real t_total;
-int kappaMode; // 0 - Barick, 1 - HF, 2 - Meier
+int kappaMode; // 0 - Brakbill, 1 - HF, 2 - Meier
+// int initMeshMode; // 0 - to curvature, 1 - minIntfLevel, 2 - maxLevel
 
 // for thoretical lines
 int nThPoints;

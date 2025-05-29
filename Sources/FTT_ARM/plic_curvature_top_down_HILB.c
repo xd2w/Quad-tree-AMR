@@ -34,7 +34,7 @@ void computeXVOF(void)
   Real flux1, flux2, flux3;
 
   /* compute vof1, vof2, vof3 on flaged cells */
-  for (iCell = cellHilb[h]; h < numberOfCells; h++)
+  for (iCell = cellHilb[h = 0]; h < numberOfCells; iCell = cellHilb[++h])
   {
     if (cellFlag[iCell])
     {
@@ -43,7 +43,7 @@ void computeXVOF(void)
   }
   /* add vof1, vof2, vof3 on marked cells which are one layer less than
      flaged cells */
-  for (iCell = cellHilb[h]; h < numberOfCells; h++)
+  for (iCell = cellHilb[h = 0]; h < numberOfCells; iCell = cellHilb[++h])
   {
     if (cellMark[iCell])
     {
@@ -63,7 +63,7 @@ void computeYVOF(void)
   Real fraction, MinVof = 1.0e-16, MaxVof = 1.0 - MinVof;
 
   /* compute vof1, vof2, vof3 on flaged cells */
-  for (iCell = cellHilb[h]; h < numberOfCells; h++)
+  for (iCell = cellHilb[h = 0]; h < numberOfCells; iCell = cellHilb[++h])
   {
     if (cellFlag[iCell])
     {
@@ -72,7 +72,7 @@ void computeYVOF(void)
   }
   /* add vof1, vof2, vof3 on marked cells which are one layer less than
      flaged cells */
-  for (iCell = cellHilb[h]; h < numberOfCells; h++)
+  for (iCell = cellHilb[h = 0]; h < numberOfCells; iCell = cellHilb[++h])
   {
     if (cellMark[iCell])
     {
@@ -117,10 +117,11 @@ void flagInterfCells(void)
 
 void flagInterfLeaves(void)
 {
-  int iCell, iOct, iLv;
+  int iCell, iOct, iLv, h;
   Real fraction;
-  for (iCell = 0; iCell < numberOfCells; iCell++)
+  for (iCell = cellHilb[h = 0]; h < numberOfCells; iCell = cellHilb[h++])
   {
+    // printf("%d, %d\n", h, iCell);
     cellFlag[iCell] = 0;
     if (cellChOct[iCell] == 0)
     {
@@ -136,10 +137,10 @@ void flagInterfLeaves(void)
 /* propagate flag in direction dir */
 void propagateFlag(int dir)
 {
-  int iCell, ngbCell;
+  int iCell, ngbCell, h;
 
   copyCellInt1D(cellFlag, cellMark);
-  for (iCell = 0; iCell < numberOfCells; iCell++)
+  for (iCell = cellHilb[h = 0]; h < numberOfCells; iCell = cellHilb[++h])
   {
     if (cellMark[iCell])
     {

@@ -46,7 +46,7 @@ void plotCellGrad(int iCell, FILE *fpGd)
 	{
 		if (kappaMode == 1)
 		{
-			mm2 = kappaHF(iCell, cc);
+			mm2 = kappaHF(iCell, cc6);
 		}
 		else if (kappaMode == 2)
 		{
@@ -54,7 +54,7 @@ void plotCellGrad(int iCell, FILE *fpGd)
 		}
 		else
 		{
-			mm2 = kappaBarickALELike(iCell, cc);
+			mm2 = kappaBarickALELike(iCell, cc6);
 		}
 		// mm2 = kappaBarickALELike(iCell, cc6);
 		// mm2 = kappaHF(iCell, cc6);

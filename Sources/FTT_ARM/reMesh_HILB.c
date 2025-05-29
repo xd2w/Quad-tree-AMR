@@ -27,10 +27,15 @@ void reMesh(int itNb)
     cell_OctFlagAtLevel(level);
     setCellInt1DZeroAtLevel(cellFlag, level);
     propagateOctFlagAtLevel(level);
-    propagateOctFlagAtLevel(level);
-    // refineToKappaAtLevel(level);
-    refineToKappaAtLevel(level - 1);
-    // splitFlagCellsAtLevel(level - 1);
+    if (level > minIntfLevel)
+    {
+      propagateOctFlagAtLevel(level);
+      refineToKappaAtLevel(level - 1);
+    }
+    else
+    {
+      splitFlagCellsAtLevel(level - 1);
+    }
     binCollectionAtLevel(level);
     oct_PrCellFlagAtLvel(level);
     establishNb();
@@ -67,7 +72,7 @@ void refineToKappa(void)
   Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum, refine_th;
   int currentNumberOfCells = numberOfCells;
   dfetch("refine_threshold", &refine_th);
-  for (iCell = cellHilb[h]; h < numberOfCells; h++)
+  for (iCell = cellHilb[h = 0]; h < numberOfCells; iCell = cellHilb[++h])
   {
     cellFlag[iCell] = 0;
     if (cellChOct[iCell] == 0)
@@ -154,7 +159,20 @@ void refineToKappaAtLevel(int level)
         cellFlag[iCell] = 1;
 
         getCellNgbVOF_6x6(iOct, cc);
-        kappa = kappaBarickALELike(iCell, cc);
+
+        if (kappaMode == 1)
+        {
+          kappa = kappaHF(iCell, cc);
+        }
+        else if (kappaMode == 2)
+        {
+          kappa = kappaMeier(iCell);
+        }
+        else
+        {
+          kappa = kappaBarickALELike(iCell, cc);
+        }
+
         if (log(kappa) > refine_th * (iLv))
         {
           balanceCellsAround(iCell);

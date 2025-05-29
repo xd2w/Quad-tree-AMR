@@ -1,0 +1,1 @@
+( ./FTT_ARM ftt.par > out.txt; ) 2> time.txt  12.65s user 0.40s system 59% cpu 21.920 total
