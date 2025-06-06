@@ -53,6 +53,7 @@ def area_error(dir, fig_name=None):
     origin = np.array([xc, yc])
     # print(data)
     area = 0.0
+    moment = 0
     for i in range(0, data.shape[0], 2):
         r1 = data[i]
         r2 = data[i + 1]
@@ -68,18 +69,49 @@ def area_error(dir, fig_name=None):
         plt.plot([r1[0], r2[0]], [r1[1], r2[1]], "b-")
         plt.plot([l1[0], l2[0]], [l1[1], l2[1]], "k-")
 
-        area += 0.5 * np.linalg.norm(np.cross(l2 - l1, l2 - r2)) + 0.5 * np.linalg.norm(
+        area = 0.5 * np.linalg.norm(np.cross(l2 - l1, l2 - r2)) + 0.5 * np.linalg.norm(
             np.cross(r2 - r1, l1 - r1)
         )
     # area = np.pi * (r2**2 - r1**2)
-    print(f"{dir} : Error Area: {area/(np.pi * r**2):.4g}%")
+    print(f"{dir} : Error Area: {area/(np.pi * r**2):.4g} %")
     plt.axis("equal")
 
     if fig_name is not None:
         plt.savefig(f"Figs/{fig_name}.eps")
         plt.cla()
     else:
-        plt.show()
+        # plt.show()
+        pass
+
+
+def area_error_inf(dir, fig_name=None):
+    data = np.loadtxt(f"../{dir}/DATA/intf.400")
+    r = 0.2
+    xc = 0.5
+    yc = 0.75
+    origin = np.array([xc, yc])
+    # print(data)
+    # exit()
+    inf_norm = 0.0
+
+    inf_norm = np.abs(r**2 - ((data[:, 0] - xc) ** 2 + (data[:, 1] - yc) ** 2))
+
+    # for i in range(0, data.shape[0]):
+    #     r1 = data[i]
+
+    #     if abs(r**2 - (r1[0] ** 2 + r1[1] ** 2)) > inf_norm:
+    #         inf_norm = (r1[0] - l1[0]) ** 2 + (r1[1] - l1[1]) ** 2
+    # area = np.pi * (r2**2 - r1**2)
+    # print(inf_norm)
+    print(f"{dir} : inf norm: \t {np.sqrt(np.max(inf_norm))/r:.4g} %")
+    # plt.axis("equal")
+
+    if fig_name is not None:
+        plt.savefig(f"Figs/{fig_name}.eps")
+        plt.cla()
+    else:
+        # plt.show()
+        pass
 
 
 def plot_400(dir, label=None, color=None):
@@ -211,7 +243,7 @@ def str2time(time_str):
 
 
 def cpu_time(dir):
-    print(f"{dir}:")
+    print(f"{dir}:", end="\t")
     with open(f"../{dir}/time.txt", "r") as f:
         data = f.read()
     data = data.strip()
@@ -219,7 +251,6 @@ def cpu_time(dir):
     data = [datum.split() for datum in data]
     data = {key: str2time(val) for key, val in data}
     print(f"{data["sys"] + data["user"]:.3g}")
-    print()
 
 
 def plot_step_drop(n=9):
@@ -323,29 +354,62 @@ def plot_screen(dir, n):
     plt.ylim(0, 1)
 
 
+def plot_kappa(dir):
+
+    data = np.loadtxt(f"../../{dir}/DATA/kappa.000")
+    order = np.argsort(data[:, 0], axis=0)
+    print(order)
+    cmap = plt.get_cmap("tab10")
+    c = cmap(np.linspace(0, 1, 10))
+    plt.plot(data[order, 0], data[order, 1], "x", color=c[1])
+    plt.plot(data[order, 0], data[order, 2], "-", color=c[0])
+
+
+# def plot_trend(ext):
+
+
 if __name__ == "__main__":
     # total_computation("Lv9_3")
     # total_computation("Lv8_Uniform")
 
-    plt.box()
+    # plt.box()
 
     # area_error("Lv7_Uniform", "uni_7")
-    # area_error("Lv8_Uniform", "uni_8")
-    # area_error("Lv9_Uniform", "uni_9")
-    # area_error("Lv10_Uniform", "uni_10")
+    area_error_inf("Lv8_Uniform")
+    area_error_inf("Lv9_Uniform")
+    area_error_inf("Lv10_Uniform")
+    area_error_inf("Lv11_Uniform")
+    # area_error("Lv12_Uniform", "uni_12")
 
-    # area_error("Lv8_5", "kappa_8_5")
-    # area_error("Lv9_5", "kappa_9_5")
-    # area_error("Lv10_5", "kappa_10_5")
-    # area_error("Lv11_5", "kappa_11_5")
-    area_error("Lv12_3", "kappa_12_5")
-    area_error("Lv12_to9", "kappa_12_9")
+    # area_error_inf("Lv8_9")
+    area_error_inf("Lv9_9")
+    area_error_inf("Lv10_9")
+    area_error_inf("Lv11_9")
+    # area_error("Lv12_9", "kappa_12_9")
+    # area_error("Lv12_to9", "kappa_12_9")
+
+    # area_error_inf("Lv8_4")
+    area_error("Lv9_4")
+    area_error("Lv10_4")
+    area_error("Lv11_4")
+
+    # area_error_inf("Lv8_8HF")
+    # area_error_inf("Lv9_8HF")
+    # area_error_inf("Lv10_8HF")
+    # area_error_inf("Lv11_8HF")
+    # # area_error("Lv12_8HF", "kappa_HF_12_8")
+
+    # area_error_inf("Lv8_3HF")
+    # area_error_inf("Lv9_3HF")
+    # area_error_inf("Lv10_3HF")
+    # area_error_inf("Lv11_3HF")
+    # area_error("Lv12_3HF", "kappa_HF_12_3")
 
     # cpu_time("Lv7_Uniform")
-    # cpu_time("Lv8_Uniform")
-    # cpu_time("Lv9_Uniform")
-    # cpu_time("Lv10_Uniform")
-    # cpu_time("Lv11_Uniform")
+    # cpu_time("../Lv8_Uniform")
+    # cpu_time("../Lv9_Uniform")
+    # cpu_time("../Lv10_Uniform")
+    # cpu_time("../Lv11_Uniform")
     # cpu_time("Lv12_Uniform")
 
     # cpu_time("Lv893")
@@ -354,20 +418,43 @@ if __name__ == "__main__":
     # cpu_time("Lv11_9")
     # cpu_time("Lv12_to9")
 
-    # total_computation("Lv7_Uniform")
-    # total_computation("Lv8_Uniform")
-    # total_computation("Lv9_Uniform")
-    # total_computation("Lv10_Uniform")
+    # cpu_time("Lv8_8HF")
+    # cpu_time("Lv9_8HF")
+    # cpu_time("Lv10_8HF")
+    # cpu_time("Lv11_8HF")
 
-    # total_computation("Lv8_3")
+    # cpu_time("Lv8_3HF")
+    # cpu_time("Lv9_3HF")
+    # cpu_time("Lv10_3HF")
+    # cpu_time("Lv11_3HF")
+
+    # total_computation("Lv7_8HF")
+    # total_computation("Lv8_8HF")
+    # total_computation("Lv9_8HF")
+    # total_computation("Lv10_8HF")
+    # total_computation("Lv11_8HF")
+    # total_computation("Lv12_8HF")
+
+    # total_computation("Lv8_9")
     # total_computation("Lv9_3")
     # total_computation("Lv10_3")
     # total_computation("Lv11_3")
-    # total_computation("Lv12_3")
+    # total_computation("Lv12_9")
 
-    plot_all_400_uni()
-    plot_all_400_kappa()
-    plt.cla()
+    # total_computation("Lv8_3HF")
+    # total_computation("Lv9_3HF")
+    # total_computation("Lv10_3HF")
+    # total_computation("Lv11_3HF")
+    # total_computation("Lv12_8HF")
+
+    # total_computation("../Lv8_Uniform")
+    # total_computation("../Lv9_Uniform")
+    # total_computation("../Lv10_Uniform")
+    # total_computation("../Lv11_Uniform")
+
+    # plot_all_400_uni()
+    # plot_all_400_kappa()
+    # plt.cla()
 
     # plt.box()
     # plot_step_drop(8)
@@ -383,10 +470,12 @@ if __name__ == "__main__":
     # plot_all_200_kappa()
     # plt.cla()
 
-    # cell_evolution("Lv7_Uniform")
-    # cell_evolution("Lv8_Uniform")
-    # cell_evolution("Lv9_Uniform")
-    # cell_evolution("Lv10_Uniform")
+    # cell_evolution("Lv7_8HF")
+    # cell_evolution("Lv8_3HF")
+    # cell_evolution("Lv9_3HF")
+    # cell_evolution("Lv10_3HF")
+    # cell_evolution("Lv11_3HF")
+    # cell_evolution("Lv12_8HF")
     # cell_evolution("Lv11_3", label="Lv11 Kappa")
     # plt.title("Uniform")
     # plt.ylabel("No. of cells generated per unit time of simulation")
@@ -422,12 +511,12 @@ if __name__ == "__main__":
     # plt.legend()
     # plt.show()
 
-    # plot_mesh("Lv9_3", 10)
-    # plot_intf("Lv9_3", 10)
+    # plot_mesh("Lv8_3HF", 10)
+    # plot_intf("Lv8_3HF", 10)
     # plt.gcf().set_figheight(5)
     # plt.gcf().set_figwidth(5)
-    # plot_screen("Lv9_3", 10)
-    # # plt.show()
+    # plot_screen("Lv8_3HF", 10)
+    # plt.show()
     # plt.savefig("Figs/kappa_exmaple.eps")
     # plt.cla()
 
@@ -436,3 +525,25 @@ if __name__ == "__main__":
     # plt.savefig("Figs/uni_exmaple.eps")
 
     # print(f"{10:03d}")
+
+    # plot_kappa("HF")
+    # plt.title("Curvature estimation with HF (circle)")
+    # plt.xlabel("$\\theta$ [$^\circ$]")
+    # plt.ylabel("$\kappa$")
+    # plt.ylim(0, 5)
+    # plt.savefig("Figs/HF_theta_kappa_circle.eps")
+    # plt.show()
+    # # plt.cla()
+
+    # plot_kappa("CSF")
+    # plt.title("Curvature estimation with CSF (circle)")
+    # plt.xlabel("$\\theta$ [$^\circ$]")
+    # plt.ylabel("$\kappa$")
+    # plt.ylim(0, 5)
+    # plt.savefig("Figs/CSF_theta_kappa_circle.eps")
+    # plt.show()
+    # # plt.cla()
+
+    # plot_200("Lv10_3HF")
+    # plot_200("Lv10_8HF")
+    # plt.show()

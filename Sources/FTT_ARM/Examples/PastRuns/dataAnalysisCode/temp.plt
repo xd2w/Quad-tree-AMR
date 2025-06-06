@@ -1,2 +1,9 @@
-p '../CSF/DATA/fgrd.000' u 1:2:($3/($5+1e-50)*1e-3):($4/($5+1e-50)*1e-3) w vector
-pause 1
+
+set term eps
+set output "temp_out_intf.400.eps"
+        
+set size ratio -1
+
+set yrange [0.7:0.9]
+set xrange [0:0.2]
+p '../Lv12_3HF/DATA/thintf.200' w l notitle, '../Lv10_8HF/DATA/intf.200' w l notitle, 

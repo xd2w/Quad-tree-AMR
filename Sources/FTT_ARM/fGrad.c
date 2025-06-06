@@ -42,7 +42,7 @@ void plotCellGrad(int iCell, FILE *fpGd)
 	i = px[iCell % 4];
 	j = pz[iCell % 4];
 
-	if (0 < cc4[i][j] && cc4[i][j] < 1)
+	if (0 < vof[iCell] && vof[iCell] < 1)
 	{
 		if (kappaMode == 1)
 		{
@@ -245,13 +245,13 @@ void plotCellGradAtIntf(int ndata)
 	{
 		if (cellChOct[iCell] == 0)
 		{
-			// if (0 < vof[iCell] && vof[iCell] < 1)
-			// {
-			plotCellGrad(iCell, fp);
-			// plotCellGrad_4x4(iCell, fp);
-			// plotCellGradSmoothed(iCell, fp);
-			// plotCellGradSmoothed_4x4(iCell, fp);
-			// }
+			if (0 < vof[iCell] && vof[iCell] < 1)
+			{
+				plotCellGrad(iCell, fp);
+				// plotCellGrad_4x4(iCell, fp);
+				// plotCellGradSmoothed(iCell, fp);
+				// plotCellGradSmoothed_4x4(iCell, fp);
+			}
 		}
 	}
 }

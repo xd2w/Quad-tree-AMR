@@ -25,7 +25,9 @@ void reMesh(int itNb)
   // for (level = maxLevel; level > maxLevel - 1; level--)
   for (level = maxLevel; level > minLevel; level--)
   {
-    // cleanToKappaAtLevel(level);
+    if (level > minIntfLevel)
+      cleanToKappaAtLevel(level);
+
     setOctInt1DZeroAtLevel(octFlag, level);
     cell_OctFlagAtLevel(level);
     setCellInt1DZeroAtLevel(cellFlag, level);
@@ -226,11 +228,6 @@ void refineToKappaAtLevel(int level)
 
 void cleanToKappaAtLevel(int level)
 {
-  if (level < 7)
-  {
-    return;
-  }
-
   int iCell, iOct, iLv, cOct, i, j, dir, dest, prNbCell;
   Real fraction, kappa, cc[6][6], list[4], ccp[3][3], checkSum;
   int currentNumberOfCells = numberOfCells;
@@ -264,7 +261,7 @@ void cleanToKappaAtLevel(int level)
         }
 
         // if (-log(kappa) > -log(8 * dxCell[iLv - 1]))
-        if (log(kappa) < refine_th * (iLv - 2))
+        if (log(kappa + 1) < refine_th * (iLv - 2))
         {
           cellFlag[iCell] = 0;
         }

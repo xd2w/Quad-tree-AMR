@@ -58,9 +58,9 @@ int main(int argc, char *argv[])
     printf("\nFully Threaded Tree Data Structure: iteration = %d\n", itNb);
     setTimeStep();
 
-    if (t_total + global_dt >= 2 && t_total <= 2)
+    if (t_total + global_dt >= runtime / 2 && t_total <= runtime / 2)
     {
-      global_dt = 2 - t_total;
+      global_dt = runtime - t_total;
       // computeVelocityAtLeaves();
       // setPLICPramForAll();
       plic();
@@ -81,13 +81,13 @@ int main(int argc, char *argv[])
       plotFTTInterf(ndata);
       plotVOF(ndata);
       // printf("finished plotting vof\n");
-      // plotCellGradAtIntf(ndata);
+      plotCellGradAtIntf(ndata);
       plotCurvatureAtLeafCells(ndata);
       plotTheoreticalInterf(ndata);
     }
-    if (t_total + global_dt >= 4 && t_total <= 4)
+    if (t_total + global_dt >= runtime && t_total <= runtime)
     {
-      global_dt = 4 - t_total;
+      global_dt = runtime - t_total;
       // computeVelocityAtLeaves();
       // setPLICPramForAll();
       plic();
@@ -106,7 +106,7 @@ int main(int argc, char *argv[])
       plotFTTInterf(ndata);
       plotVOF(ndata);
       // printf("finished plotting vof\n");
-      // plotCellGradAtIntf(ndata);
+      plotCellGradAtIntf(ndata);
       plotCurvatureAtLeafCells(ndata);
       plotTheoreticalInterf(ndata);
       return 0;
@@ -127,7 +127,7 @@ int main(int argc, char *argv[])
       plotFTTInterf(ndata);
       // plotVOF(ndata);
       // printf("finished plotting vof\n");
-      // plotCellGradAtIntf(ndata);
+      plotCellGradAtIntf(ndata);
       plotCurvatureAtLeafCells(ndata);
       plotTheoreticalInterf(ndata);
       // fttStatistics();

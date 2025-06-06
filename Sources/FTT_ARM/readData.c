@@ -68,5 +68,10 @@ void readData(void)
     kappaMode = 0;
   }
 
+  if (dfetch("runtime", &runtime) != 1)
+  {
+    runtime = 4;
+  }
+
   return;
 }

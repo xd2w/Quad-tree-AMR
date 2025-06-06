@@ -17,11 +17,14 @@ Real computeVX(Real x, Real y)
 {
     // return x;
     // return 0.5 * y;
-    if (t_total < 2)
+    if (runtime == 0)
+        return -2 * sin(pi * x) * sin(pi * x) * sin(pi * (y + 0.5)) * cos(pi * (y + 0.5));
+
+    if (t_total < runtime / 2)
     {
         return -2 * sin(pi * x) * sin(pi * x) * sin(pi * (y + 0.5)) * cos(pi * (y + 0.5));
     }
-    if (t_total < 4)
+    if (t_total < runtime)
     {
         return 2 * sin(pi * x) * sin(pi * x) * sin(pi * (y + 0.5)) * cos(pi * (y + 0.5));
     }
@@ -32,11 +35,14 @@ Real computeVY(Real x, Real y)
 {
     // return 0;
     // return 0.25 * x;
-    if (t_total < 2)
+    if (runtime == 0)
+        return -2 * cos(pi * x) * sin(pi * x) * cos(pi * (y + 0.5)) * cos(pi * (y + 0.5));
+
+    if (t_total < runtime / 2)
     {
         return -2 * cos(pi * x) * sin(pi * x) * cos(pi * (y + 0.5)) * cos(pi * (y + 0.5));
     }
-    if (t_total < 4)
+    if (t_total < runtime)
     {
         return 2 * cos(pi * x) * sin(pi * x) * cos(pi * (y + .5)) * cos(pi * (y + .5));
     }

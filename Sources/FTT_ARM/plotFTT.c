@@ -33,7 +33,7 @@ void plotFTT(int ndata)
   int iCell, i, i1, i2, i3;
   char fname[] = "DATA/mesh.000";
   char fsfcv[] = "DATA/sfcv.000";
-  char fpGradName[] = "DATA/fgrd.000";
+  // char fpGradName[] = "DATA/fgrd.000";
   FILE *fp, *fsfci, *fpGrad;
   i = ndata;
   i1 = i % 10;
@@ -45,12 +45,12 @@ void plotFTT(int ndata)
   fname[11] = '0' + i2;
   fname[12] = '0' + i1;
 
-  fpGradName[10] = '0' + i3;
-  fpGradName[11] = '0' + i2;
-  fpGradName[12] = '0' + i1;
+  // fpGradName[10] = '0' + i3;
+  // fpGradName[11] = '0' + i2;
+  // fpGradName[12] = '0' + i1;
 
   fp = fopen(fname, "w");
-  fpGrad = fopen(fpGradName, "w");
+  // fpGrad = fopen(fpGradName, "w");
   for (iCell = 0; iCell < numberOfCells; iCell++)
   {
     if (cellChOct[iCell] == 0)
@@ -62,7 +62,7 @@ void plotFTT(int ndata)
     //    if(cellChOct[iCell]==0 && vof[iCell]>0.99999) plotFlagCell(iCell, fp);
   }
   fclose(fp);
-  fclose(fpGrad);
+  // fclose(fpGrad);
   printf("plot ftt mesh: numberOfCells %d\n", numberOfCells);
   // exit(1);
   return;

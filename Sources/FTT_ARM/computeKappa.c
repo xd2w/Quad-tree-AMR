@@ -297,7 +297,7 @@ Real kappaHF(int iCell, Real cc[][6])
             h[1] += cc[2 + (iLocal % 2)][i];
             h[2] += cc[3 + (iLocal % 2)][i];
         }
-        delta = dx;
+        delta = dy / (dx * dx + 1e-50);
         // hx = (h[2] - h[0]) / 2;
         // hxx = (h[2] - 2 * h[1] + h[0]);
 
@@ -313,12 +313,12 @@ Real kappaHF(int iCell, Real cc[][6])
             h[1] += cc[i][2 + (iLocal / 2)];
             h[2] += cc[i][3 + (iLocal / 2)];
         }
-        delta = dy;
+        delta = dx / (dy * dy + 1e-50);
     }
     hx = (h[2] - h[0]) / 2;
     hxx = (h[2] - 2 * h[1] + h[0]);
 
-    kappa = fabs(hxx / (pow(1 + hx * hx, 1.5) + 1e-50)) / (delta + 1e-50);
+    kappa = fabs(hxx / (pow(1 + hx * hx, 1.5) + 1e-50)) * delta;
 
     // kappa = DMIN(kappa1, kappa2);
 

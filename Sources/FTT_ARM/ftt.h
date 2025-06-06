@@ -164,6 +164,7 @@ extern Real CFL;
 extern Real global_dt;
 extern Real t_total;
 extern int kappaMode; // 0 - Barick, 1 - HF, 2 - Meier
+extern Real runtime;
 
 // for thoretical lines
 extern int nThPoints;

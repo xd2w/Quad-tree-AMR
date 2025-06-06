@@ -72,6 +72,7 @@ Real global_dt;
 Real t_total;
 int kappaMode; // 0 - Brakbill, 1 - HF, 2 - Meier
 // int initMeshMode; // 0 - to curvature, 1 - minIntfLevel, 2 - maxLevel
+Real runtime;
 
 // for thoretical lines
 int nThPoints;
